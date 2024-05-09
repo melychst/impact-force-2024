@@ -1,0 +1,257 @@
+@import '_general';
+@import '_global_wars';
+
+@include font-face('Akkurat LL Cyrillic Regular', '../fonts/Akkurat-Regular');
+@include font-face('Akkurat LL Cyrillic Light', '../fonts/Akkurat-Light');
+@include font-face('Akkurat LL Cyrillic Bold', '../fonts/Akkurat-Bold');
+@include font-face('Akkurat Mono LL', '../fonts/AkkuratMono-Regular');
+
+body {
+    color: #003548;
+    font-family: "Akkurat LL Cyrillic Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    header {
+        background-color: #ffffff;
+        padding-top: 65px;
+        padding-bottom: 25px;
+        border-bottom: #CDDC39 solid 2px;
+        .columns {
+            justify-content: space-between;
+        }
+        .top-row {
+            justify-content: space-between;
+            padding-top: 25px;
+            margin-bottom: 18px;
+            align-items: end;
+            li {
+                display: inline-flex;
+            }
+            .lenguage-wrap {
+                padding-top: 18px;
+                padding-left: 14px;
+            }
+            .social-wrap {
+                display: flex;
+                .social-link {
+                    margin-right: 25px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    a {
+                        display: inline-flex;
+                        width: 39px;
+                        height: 39px;
+                        border-radius: 50%;
+                        border: $blue-color solid 2px;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 0.2s;
+                        svg {
+                            path {
+                                transition: 0.2s;
+                            }
+                        }
+                        &:hover {
+                            border: $purple-color solid 2px;
+                            svg {
+                                path {
+                                    fill: $purple-color;
+                                    transition: 0.2s;
+                                }
+                            }
+                        }
+                    }
+                    &.facebook-link {
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: transparent;
+                                    stroke: $purple-color;
+                                    transition: 0.2s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .lenguage-wrap {
+                li {
+                    margin-right: 42px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 58px;
+                        height: 20px;
+                        border-radius: 25.422px;
+                        border: 1px solid $blue-color;
+                        color: $blue-color;
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 7px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 0.7px;
+                        text-transform: uppercase;
+                        padding-top: 3px;
+                        &.active {
+                            background-color: $blue-color;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+        .main-navigation {
+            li {
+                list-style: none;
+                display: inline-flex;
+                margin: 0px 8px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }
+            a {
+                display: inline-block;
+                color: $main-color;
+                font-family: "Akkurat Mono LL";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                transition: 0.2s;
+                padding: 0px 10px;
+                position: relative;
+                border-bottom: 2px solid transparent;
+                &:hover {
+                    color: $blue-color;
+                    border-bottom: 2px solid $green-color;
+                    transition: 0.2s;
+                }
+                &.purpure-link {
+                    color: $purple-color;
+                }
+                &.icon-link {
+                    padding-right: 34px;
+                    &::after {
+                        @include after-content(22px, 22px);
+                        position: absolute;
+                        right: 0px;
+                        top: -2px;
+                        background-color: $purple-color;
+                        background-image: url(../images/icon-square-arrow.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        footer {
+            padding-top: 34px;
+            padding-bottom: 21px;
+            background-color: $blue-color;
+
+            .footer-wrap {
+                .columns {
+                    justify-content: space-between;
+                    .columns-wrap {
+                        display: flex;
+                        .center-column {
+                            margin-left: 185px;
+                        }
+                    }
+                }
+                .navigation {
+                    li {
+                        list-style: none;
+                        margin-bottom: 26px;
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                        a {
+                            color: $main-color;
+                            font-family: "Akkurat Mono LL";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal
+
+                        }
+                    }
+                }
+                .footer-title {
+                    color: #FFF;
+                    font-family: "Akkurat LL Cyrillic Bold";
+                    font-size: 58px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 4.013px;
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                    -webkit-text-stroke: 1.33px;
+                }
+                .footer-subtitle {
+                    color: #FFF;
+                    font-family: "Akkurat LL Cyrillic Bold";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.8px;
+                    text-transform: uppercase;
+                    position: relative;
+                    &::before {
+                        @include before-content(180px, 8px);
+                        background-image: url(../images/social-title-bg.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        bottom: -7px;
+                        left: -2px;
+                    }
+                }
+                .social-wrap {
+                    display: flex;
+                    margin-top: 32px;
+                    .social-link {
+                        margin-right: 25px;
+                        a {
+                            display: flex;
+                            width: 52px;
+                            height: 52px;  
+                            border-radius: 50%;
+                            border: #fff solid 1px;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;   
+                            svg {
+                                width: 32px;
+                                height: 32px;
+                            }  
+                        }
+                        &.facebook-link {
+                            a {
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                }
+                .logo-wrap {
+                    padding-top: 25px;
+                }
+            }
+        }
+    }
+}
