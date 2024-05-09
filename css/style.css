@@ -217,6 +217,91 @@ body {
           background-position: center;
           background-repeat: no-repeat;
           border-radius: 50%; }
+  body main section {
+    position: relative;
+    overflow: hidden; }
+    body main section.hero {
+      min-height: 597px;
+      padding-top: 110px;
+      background-color: #00B0EB;
+      color: #fff; }
+      body main section.hero .background-image {
+        position: absolute;
+        right: -1px;
+        bottom: -4px; }
+      body main section.hero .top-row {
+        margin-bottom: 55px; }
+        body main section.hero .top-row .left-column {
+          width: 543px; }
+        body main section.hero .top-row .right-column {
+          width: 380px;
+          padding-left: 105px;
+          position: relative;
+          margin-left: 27px; }
+          body main section.hero .top-row .right-column::before {
+            content: '';
+            width: 73px;
+            height: 17px;
+            position: absolute;
+            display: block;
+            background-image: url(../images/icon-arrow.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 5px;
+            left: 0px; }
+          body main section.hero .top-row .right-column .sub-title {
+            font-family: "Akkurat Mono LL";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            text-transform: uppercase; }
+        body main section.hero .top-row h1 {
+          width: 543px;
+          font-family: "Akkurat LL Cyrillic Bold";
+          font-size: 111.364px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 12px;
+          text-transform: uppercase;
+          -webkit-text-stroke: 5.56px;
+          line-height: 135px;
+          margin-top: -6px; }
+      body main section.hero .bottom-row {
+        position: relative;
+        padding-left: 105px; }
+        body main section.hero .bottom-row::before {
+          content: '';
+          width: 73px;
+          height: 17px;
+          position: absolute;
+          display: block;
+          background-image: url(../images/icon-arrow.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          top: 17px;
+          left: 0px; }
+        body main section.hero .bottom-row .sub-title {
+          width: 525px;
+          font-family: "Akkurat Mono LL";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 40px;
+          text-transform: uppercase;
+          position: relative; }
+          body main section.hero .bottom-row .sub-title.decorate-title::before {
+            content: '';
+            width: 459px;
+            height: 20px;
+            position: absolute;
+            display: block;
+            background-image: url(../images/home-hero-title-bg.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            bottom: -12px;
+            left: 19px; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;
