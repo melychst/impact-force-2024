@@ -226,9 +226,14 @@ body {
       background-color: #00B0EB;
       color: #fff; }
       body main section.hero .background-image {
+        width: 770px;
+        height: 454px;
         position: absolute;
-        right: -1px;
-        bottom: -4px; }
+        right: 0px;
+        bottom: 0px; }
+        body main section.hero .background-image img {
+          width: 100%;
+          height: auto; }
       body main section.hero .top-row {
         margin-bottom: 55px; }
         body main section.hero .top-row .left-column {
@@ -302,6 +307,63 @@ body {
             background-repeat: no-repeat;
             bottom: -12px;
             left: 19px; }
+    body main section.who-we-are {
+      background-color: #003548;
+      min-height: 273px;
+      padding-top: 57px;
+      padding-bottom: 38px; }
+      body main section.who-we-are .background-image {
+        width: 348px;
+        height: 184px;
+        position: absolute;
+        right: 0px;
+        bottom: -6px; }
+        body main section.who-we-are .background-image img {
+          width: 100%;
+          height: auto; }
+      body main section.who-we-are .section-title {
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 10.5px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 3px;
+        color: #fff;
+        margin-bottom: 42px; }
+      body main section.who-we-are .content-link a {
+        display: inline-flex;
+        align-items: center;
+        padding-left: 108px;
+        padding-right: 152px;
+        background-color: #CDDC39;
+        border-radius: 35px;
+        height: 65px;
+        position: relative;
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        color: #003548;
+        padding-top: 6px;
+        letter-spacing: 0.5px; }
+        body main section.who-we-are .content-link a::after {
+          content: '';
+          width: 48px;
+          height: 48px;
+          position: absolute;
+          display: block;
+          background-color: #003548;
+          border-radius: 50%;
+          background-image: url(../images/icon-square-arrow-green.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          top: 8px;
+          right: 11px;
+          background-size: 20px 20px; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;

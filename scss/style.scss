@@ -167,9 +167,15 @@ body {
                 background-color: $blue-color;
                 color: #fff;
                 .background-image {
+                    width: 770px;
+                    height: 454px;
                     position: absolute;
-                    right: -1px;
-                    bottom: -4px;
+                    right: 0px;
+                    bottom: 0px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
                 .top-row {
                     margin-bottom: 55px;
@@ -241,6 +247,67 @@ body {
                                 bottom: -12px;
                                 left: 19px;
                             }
+                        }
+                    }
+                }
+            }
+            &.who-we-are {
+                background-color: $main-color;
+                min-height: 273px;
+                padding-top: 57px;
+                padding-bottom: 38px;
+                .background-image {
+                    width: 348px;
+                    height: 184px;
+                    position: absolute;
+                    right: 0px;
+                    bottom: -6px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .section-title {
+                    font-family: "Akkurat LL Cyrillic Bold";
+                    font-size: 70px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 10.5px;
+                    text-transform: uppercase;
+                     -webkit-text-stroke: 3px;
+                     color: #fff;
+                     margin-bottom: 42px;
+                }
+                .content-link {
+                    a {
+                        display: inline-flex;
+                        align-items: center;
+                        padding-left: 108px;
+                        padding-right: 152px;
+                        background-color: $green-color;
+                        border-radius: 35px;
+                        height: 65px;
+                        position: relative;
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-transform: uppercase;
+                        color: $main-color;
+                        padding-top: 6px;
+                        letter-spacing: 0.5px;
+                        &::after {
+                            @include after-content(48px, 48px);
+                            background-color: $main-color;
+                            border-radius: 50%;
+                            background-image: url(../images/icon-square-arrow-green.svg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            top: 8px;
+                            right: 11px;
+                            background-size: 20px 20px;
                         }
                     }
                 }
