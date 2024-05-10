@@ -618,6 +618,12 @@ body {
                 right: 8px; }
             body main section.reports .report-wrap .slider-navigation .nav-slide svg {
               position: absolute; }
+    body main section.impact {
+      padding: 50px 0px; }
+      body main section.impact .columns .left-column {
+        width: 495px; }
+      body main section.impact .columns .right-column {
+        width: 650px; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;
