@@ -887,7 +887,7 @@ body {
                 min-height: 810px;
             }
             &.partners {
-                padding: 22px;
+                padding: 22px 0px 50px;
                 .columns {
                     justify-content: space-between;
                     .left-column {
@@ -942,6 +942,227 @@ body {
                             max-height: 100%;
                             max-width: 100%;
                         }                        
+                    }
+                }
+            }
+            &.news {
+                padding-top: 78px;
+                padding-bottom: 119px;
+                .top-row {
+                    margin-bottom: 44px;
+                    .columns {
+                        justify-content: space-between;
+                    }
+                   .left-column {
+                        width: 560px;
+                    }
+                   .right-column {
+                        width: 392px;
+                        margin-top: auto;
+                    }
+                    .section-title {
+                        -webkit-text-stroke: 3px;
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 70px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 10.5px;
+                        text-transform: uppercase;
+                        color: $blue-color;
+                    }
+                    .sub-title {
+                        font-family: "Akkurat Mono LL";
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px; /* 111.111% */
+                        letter-spacing: 1.8px;
+                        text-transform: uppercase;
+                        padding-bottom: 1px;
+                        border-bottom: 1px solid $main-color;
+                        position: relative;
+                        &::after {
+                            @include after-content(14px, 14px);
+                            background-image: url(../images/icon-square-arrow.svg);
+                            background-size: 14px 14px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            right: 0px;
+                            top: 2px;
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+                .bottom-row {
+                    display: flex;
+                    justify-content: space-between;
+                   .left-column {
+                        width: 922px;
+                   }
+                   .right-column {
+                        width: 286px;
+                   }
+                    .news-slider {
+                        position: relative;
+                        .slider-item {
+                            position: relative;
+                            width: 100%;
+                            .image-wrap {
+                                border-radius: 0px 100px 0px 0px;
+                                overflow: hidden;
+                                width: 558px;
+                                height: 521px;
+                                img {
+                                    @include image-fit;
+                                }
+                            }
+                            .content-wrap {
+                                width: 487px;
+                                max-height: 380px;
+                                border-radius: 15px;
+                                border: 1px solid $blue-color;
+                                background: #FFF;
+                                box-shadow: 0px 4px 4px 0px rgba(194, 198, 217, 0.50);
+                                padding: 19px 25px 15px 25px;
+                                position: absolute;
+                                top: 92px;
+                                right: 0px;
+                                .date {
+                                    color: $blue-color;
+                                    font-family: "Akkurat Mono LL";
+                                    font-size: 18px;
+                                    text-transform: uppercase;
+                                    margin-bottom: 38px;
+                                }
+                                .title {
+                                    margin-bottom: 25px;
+                                    a {
+                                        color: $main-color;
+                                        font-family: "Akkurat LL Cyrillic Bold";
+                                        font-size: 24px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 30px;
+                                        letter-spacing: 2.4px;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                                .description {
+                                    font-size: 15px;
+                                    line-height: 25px; 
+                                    padding-bottom: 9px;
+                                    position: relative;
+                                    &::before {
+                                        content: '';
+                                        width: calc(100% - 24px);
+                                        height: 1px;
+                                        background-color: $main-color;
+                                        bottom: 0px;
+                                        left: 0px;
+                                        position: absolute;
+                                    }
+                                }
+                                .read-more {
+                                    position: absolute;
+                                    right: 21px;
+                                    bottom: 15px;
+                                    a {
+                                        display: inline-flex;
+                                        width: 27px;
+                                        height: 27px;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        background-color: $blue-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .slider-navigation {
+                        display: flex;
+                        margin-top: 53px;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                        .nav-slide {
+                            width: 148px;
+                            height: 26px; 
+                            border-radius: 32px;
+                            border: 1px solid $blue-color;
+                            background: #FFF;  
+                            transform: 0.2s; 
+                            font-size: 10px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            display: inline-flex;
+                            align-items: center;
+                            position: relative;
+                            cursor: pointer;
+                            &:hover {
+                                background: $purple-color;
+                                color: #fff;
+                                transition: 0.3s;
+                                background: $blue-color;
+                                svg {
+                                    path {
+                                        fill: #fff;
+                                    }
+                                }
+                            } 
+                            &.prev-slide {
+                                margin-right: 63px;
+                                padding: 9px 25px 7px 68px;
+                                svg {
+                                    left: 8px;
+                                }
+                            }    
+                            &.next-slide {
+                                padding: 9px 8px 7px 42px;
+                                svg {
+                                    right: 8px;
+                                }
+                            }   
+                            svg {
+                                position: absolute;
+                            }             
+                        }
+                    }
+                    .last-news {
+                        .news-item {
+                            margin-bottom: 44px;
+                            &:last-child {
+                                margin-bottom: 0px;
+                            }
+                            .date {
+                                border-radius: 53px;
+                                border: 1px solid #5D7989;
+                                background: #FFF;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 105px;
+                                height: 19px;
+                                margin-bottom: 7px;
+                                font-family: "Akkurat Mono LL";
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 17px;
+                                padding-top: 4px;
+                            }
+                            .title {
+                                a {
+                                    font-family: "Akkurat Mono LL";
+                                    font-size: 13px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 17px;
+                                    color: $main-color;
+                                }
+                            }
+                        }
                     }
                 }
             }
