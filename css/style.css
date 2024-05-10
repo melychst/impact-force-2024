@@ -619,7 +619,7 @@ body {
             body main section.reports .report-wrap .slider-navigation .nav-slide svg {
               position: absolute; }
     body main section.impact {
-      padding: 42px 0px; }
+      padding: 44px 0px 42px; }
       body main section.impact .columns {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
@@ -947,7 +947,8 @@ body {
           background-size: 20px 20px; }
     body main section.projects {
       min-height: 810px;
-      padding-top: 31px; }
+      padding-top: 31px;
+      padding-bottom: 54px; }
       body main section.projects .projects-slider {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1124,7 +1125,19 @@ body {
       body main section.projects .slider-navigation {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 498px;
+        margin-left: 20px;
+        margin-top: 23px; }
+        body main section.projects .slider-navigation .pages {
+          font-family: "Akkurat Mono LL";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          color: #00B0EB; }
     body main section.partners {
       padding: 22px 0px 50px; }
       body main section.partners .columns {
@@ -1283,7 +1296,7 @@ body {
               body main section.news .bottom-row .news-slider .slider-item .content-wrap .description {
                 font-size: 15px;
                 line-height: 25px;
-                padding-bottom: 9px;
+                padding-bottom: 10px;
                 position: relative; }
                 body main section.news .bottom-row .news-slider .slider-item .content-wrap .description::before {
                   content: '';
@@ -1452,7 +1465,7 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-top: 32px; }
+      margin-top: 35px; }
       body main footer .footer-wrap .social-wrap .social-link {
         margin-right: 25px; }
         body main footer .footer-wrap .social-wrap .social-link a {

@@ -550,7 +550,7 @@ body {
                 }       
             }
             &.impact {
-                padding: 42px 0px;
+                padding: 44px 0px 42px;
                 .columns {
                     justify-content: space-between;
                     .left-column {
@@ -886,6 +886,7 @@ body {
             &.projects {
                 min-height: 810px;
                 padding-top: 31px;
+                padding-bottom: 54px;
                 .projects-slider {
                     display: flex;
                     // justify-content: space-between;
@@ -1048,6 +1049,17 @@ body {
                 }
                 .slider-navigation {
                     display: flex;
+                    justify-content: space-between;
+                    width: 498px;
+                    margin-left: 20px;
+                    margin-top: 23px;
+                    .pages {
+                        font-family: "Akkurat Mono LL";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        color: $blue-color;
+                    }
                 }
             }
             &.partners {
@@ -1215,7 +1227,7 @@ body {
                                 .description {
                                     font-size: 15px;
                                     line-height: 25px; 
-                                    padding-bottom: 9px;
+                                    padding-bottom: 10px;
                                     position: relative;
                                     &::before {
                                         content: '';
@@ -1329,6 +1341,7 @@ body {
                         }
                     }
                 }
+
             }
         }
 
@@ -1398,7 +1411,7 @@ body {
                 }
                 .social-wrap {
                     display: flex;
-                    margin-top: 32px;
+                    margin-top: 35px;
                     .social-link {
                         margin-right: 25px;
                         a {
