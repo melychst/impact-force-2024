@@ -946,7 +946,185 @@ body {
           right: 7px;
           background-size: 20px 20px; }
     body main section.projects {
-      min-height: 810px; }
+      min-height: 810px;
+      padding-top: 31px; }
+      body main section.projects .projects-slider {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        body main section.projects .projects-slider .slide-item {
+          width: 320px;
+          margin-top: auto;
+          margin-right: 32px; }
+          body main section.projects .projects-slider .slide-item:last-child {
+            margin-right: 0px; }
+          body main section.projects .projects-slider .slide-item .image-wrap {
+            width: 318px;
+            height: 270px;
+            position: relative;
+            top: -6px; }
+            body main section.projects .projects-slider .slide-item .image-wrap img {
+              -o-object-fit: cover;
+                 object-fit: cover;
+              -o-object-position: center;
+                 object-position: center;
+              width: 100%;
+              height: 100%; }
+          body main section.projects .projects-slider .slide-item .content {
+            border-radius: 9.604px;
+            border: 1px solid #00B0EB;
+            background: #FFF;
+            -webkit-box-shadow: 0px 2.561px 2.561px 0px rgba(194, 198, 217, 0.5);
+                    box-shadow: 0px 2.561px 2.561px 0px rgba(194, 198, 217, 0.5);
+            padding: 39px 15px 22px 12px;
+            position: relative;
+            top: -34px;
+            right: -20px; }
+            body main section.projects .projects-slider .slide-item .content .title {
+              font-family: "Akkurat LL Cyrillic Bold";
+              font-size: 23.049px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 24.97px;
+              margin-bottom: 20px;
+              text-transform: uppercase;
+              color: #00B0EB; }
+            body main section.projects .projects-slider .slide-item .content .meta {
+              margin-bottom: 15px; }
+              body main section.projects .projects-slider .slide-item .content .meta .read-more {
+                text-align: right;
+                position: relative;
+                padding-right: 20px; }
+                body main section.projects .projects-slider .slide-item .content .meta .read-more::before {
+                  content: '';
+                  width: 13px;
+                  height: 13px;
+                  position: absolute;
+                  display: block;
+                  background-image: url(../images/icon-square-arrow-blue.svg);
+                  background-size: 13px 13px;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  left: 1px;
+                  top: 6px;
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
+                body main section.projects .projects-slider .slide-item .content .meta .read-more a {
+                  font-size: 7.043px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 12.805px;
+                  display: -webkit-inline-box;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  height: 14px;
+                  -webkit-box-align: center;
+                      -ms-flex-align: center;
+                          align-items: center;
+                  padding: 3px 23px 0px 16px;
+                  position: relative;
+                  color: #003548;
+                  background-color: #CDDC39;
+                  border-radius: 24.97px; }
+                  body main section.projects .projects-slider .slide-item .content .meta .read-more a::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    display: block;
+                    border-radius: 50%;
+                    background-color: #003548;
+                    background-image: url(../images/icon-square-arrow-green.svg);
+                    background-size: 5px 5px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    right: 2px;
+                    top: 1px; }
+            body main section.projects .projects-slider .slide-item .content .description {
+              font-size: 12.805px;
+              font-weight: 400;
+              line-height: 15.366px; }
+          body main section.projects .projects-slider .slide-item.active {
+            width: 520px;
+            margin-right: 43px; }
+            body main section.projects .projects-slider .slide-item.active .image-wrap {
+              width: 445px;
+              height: 370px;
+              top: 0px; }
+            body main section.projects .projects-slider .slide-item.active .title {
+              font-family: "Akkurat LL Cyrillic Bold";
+              font-size: 36px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 38px;
+              margin-bottom: 39px; }
+            body main section.projects .projects-slider .slide-item.active .content {
+              width: 498px;
+              top: -35px;
+              right: -20px;
+              padding-right: 45px;
+              padding: 61px 51px 15px 18px;
+              border-radius: 15px; }
+              body main section.projects .projects-slider .slide-item.active .content .meta {
+                margin-bottom: 23px; }
+                body main section.projects .projects-slider .slide-item.active .content .meta .read-more {
+                  text-align: right;
+                  position: relative;
+                  padding-right: 0px; }
+                  body main section.projects .projects-slider .slide-item.active .content .meta .read-more::before {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    display: block;
+                    background-size: 20px 20px;
+                    top: 2px;
+                    left: 1px; }
+                  body main section.projects .projects-slider .slide-item.active .content .meta .read-more a {
+                    font-size: 11px;
+                    line-height: 20px;
+                    display: -webkit-inline-box;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex;
+                    height: 21px;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    padding: 0px 39px 0px 25px;
+                    border-radius: 39px; }
+                    body main section.projects .projects-slider .slide-item.active .content .meta .read-more a::before {
+                      content: '';
+                      width: 15px;
+                      height: 15px;
+                      position: absolute;
+                      display: block;
+                      background-size: 8px 8px;
+                      right: 4px;
+                      top: 2px;
+                      -webkit-transform: rotate(45deg);
+                              transform: rotate(45deg); }
+              body main section.projects .projects-slider .slide-item.active .content .description {
+                font-size: 20px;
+                line-height: 24px;
+                /* 120% */ }
+            body main section.projects .projects-slider .slide-item.active .icon-wrap {
+              width: 77px;
+              height: 77px;
+              position: absolute;
+              z-index: 5;
+              right: -38px;
+              top: 36px; }
+              body main section.projects .projects-slider .slide-item.active .icon-wrap img {
+                -o-object-fit: cover;
+                   object-fit: cover;
+                -o-object-position: center;
+                   object-position: center;
+                width: 100%;
+                height: 100%; }
+      body main section.projects .slider-navigation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
     body main section.partners {
       padding: 22px 0px 50px; }
       body main section.partners .columns {

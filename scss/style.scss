@@ -885,6 +885,170 @@ body {
             }
             &.projects {
                 min-height: 810px;
+                padding-top: 31px;
+                .projects-slider {
+                    display: flex;
+                    // justify-content: space-between;
+                    .slide-item {
+                        width: 320px;
+                        margin-top: auto;
+                        margin-right: 32px;
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                        .image-wrap {
+                            width: 318px;
+                            height: 270px;
+                            position: relative;
+                            top: -6px;
+                            img {
+                                @include image-fit;
+                            }
+                        }
+                        .content {
+                            border-radius: 9.604px;
+                            border: 1px solid $blue-color;
+                            background: #FFF;
+                            box-shadow: 0px 2.561px 2.561px 0px rgba(194, 198, 217, 0.50);
+                            padding: 39px 15px 22px 12px;
+                            position: relative;
+                            top: -34px;
+                            right: -20px;
+                            .title {
+                                font-family: "Akkurat LL Cyrillic Bold";
+                                font-size: 23.049px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 24.97px;
+                                margin-bottom: 20px;
+                                text-transform: uppercase;
+                                color: $blue-color;
+                            }
+                            .meta {
+                                margin-bottom: 15px;
+                                .read-more {
+                                    text-align: right;
+                                    position: relative;
+                                    padding-right: 20px;
+                                    &::before {
+                                        @include before-content(13px, 13px);
+                                        background-image: url(../images/icon-square-arrow-blue.svg);
+                                        background-size: 13px 13px;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        left: 1px;
+                                        top: 6px;
+                                        transform: rotate(90deg);
+                                    }
+                                    a {
+                                        font-size: 7.043px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 12.805px;
+                                        display: inline-flex;
+                                        height: 14px;
+                                        align-items: center;
+                                        padding: 3px 23px 0px 16px;
+                                        position: relative;
+                                        color: $main-color;
+                                        background-color: $yellow-color;
+                                        border-radius: 24.97px;
+                                        &::before {
+                                            @include before-content(10px, 10px);
+                                            border-radius: 50%;
+                                            background-color: $main-color;
+                                            background-image: url(../images/icon-square-arrow-green.svg);
+                                            background-size: 5px 5px;
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            right: 2px;
+                                            top: 1px;
+                                        }
+
+                                    }
+                                }
+                            }
+                            .description {
+                                font-size: 12.805px;
+                                font-weight: 400;
+                                line-height: 15.366px;
+                            }
+                        }
+                        &.active {
+                            width: 520px;
+                            margin-right: 43px;
+                            .image-wrap {
+                                width: 445px;
+                                height: 370px;
+                                top: 0px;
+                            }
+                            .title {
+                                font-family: "Akkurat LL Cyrillic Bold";
+                                font-size: 36px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 38px;
+                                margin-bottom: 39px;
+                            }
+                            .content {
+                                width: 498px;
+                                top: -35px;
+                                right: -20px;
+                                padding-right: 45px;
+                                padding: 61px 51px 15px 18px;
+                                border-radius: 15px;
+                                .meta {
+                                    margin-bottom: 23px;
+                                    .read-more {
+                                        text-align: right;
+                                        position: relative;
+                                        padding-right: 0px;
+                                        &::before {
+                                            @include before-content(20px, 20px);
+                                            background-size: 20px 20px;
+                                            top: 2px;
+                                            left: 1px;
+                                        }
+                                        a {
+                                            font-size: 11px;
+                                            line-height: 20px;
+                                            display: inline-flex;
+                                            height: 21px;
+                                            align-items: center;
+                                            padding: 0px 39px 0px 25px;
+                                            border-radius: 39px;
+                                            &::before {
+                                                @include before-content(15px, 15px);
+                                                background-size: 8px 8px;
+                                                right: 4px;
+                                                top: 2px;
+                                                transform: rotate(45deg);
+                                            }
+                                        }
+                                    }
+                                }
+                                .description {
+                                    font-size: 20px;
+                                    line-height: 24px; /* 120% */
+                                }
+                            }
+                            .icon-wrap {
+                                width: 77px;
+                                height: 77px;
+                                position: absolute;
+                                z-index: 5;
+                                right: -38px;
+                                top: 36px;
+                                img {
+                                    @include image-fit;
+                                }
+                            }
+                        }
+                    }
+                }
+                .slider-navigation {
+                    display: flex;
+                }
             }
             &.partners {
                 padding: 22px 0px 50px;
