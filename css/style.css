@@ -945,6 +945,56 @@ body {
           top: 7px;
           right: 7px;
           background-size: 20px 20px; }
+    body main section.projects {
+      min-height: 810px; }
+    body main section.partners {
+      padding: 22px; }
+      body main section.partners .columns {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        body main section.partners .columns .left-column {
+          width: 535px;
+          padding-top: 30px; }
+        body main section.partners .columns .right-column {
+          width: 400px; }
+      body main section.partners .section-title {
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 10.5px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 3px;
+        color: #00B0EB; }
+      body main section.partners .image-wrap {
+        width: 373px;
+        height: 210px; }
+        body main section.partners .image-wrap img {
+          width: 100%;
+          height: auto; }
+      body main section.partners .logos-wrap {
+        margin-top: 104px; }
+        body main section.partners .logos-wrap .display-flex {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-bottom: 80px; }
+          body main section.partners .logos-wrap .display-flex:last-child {
+            margin-bottom: 0px; }
+        body main section.partners .logos-wrap .logo-item {
+          max-height: 70px;
+          width: auto;
+          margin-right: 32px; }
+          body main section.partners .logos-wrap .logo-item:last-child {
+            margin-right: 0px; }
+          body main section.partners .logos-wrap .logo-item img {
+            max-height: 100%;
+            max-width: 100%; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;

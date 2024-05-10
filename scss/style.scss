@@ -883,6 +883,68 @@ body {
                     }
                 }
             }
+            &.projects {
+                min-height: 810px;
+            }
+            &.partners {
+                padding: 22px;
+                .columns {
+                    justify-content: space-between;
+                    .left-column {
+                        width: 535px;
+                        padding-top: 30px;
+                    }
+                    .right-column {
+                        width: 400px;
+                    }                    
+                }
+                .section-title {
+                    font-family: "Akkurat LL Cyrillic Bold";
+                    font-size: 70px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 78px;
+                    letter-spacing: 10.5px;
+                    text-transform: uppercase; 
+                    -webkit-text-stroke: 3px;
+                    color: $blue-color;
+                }
+                .image-wrap {
+                    width: 373px;
+                    height: 210px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .logos-wrap {
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    margin-top: 104px;
+                    .display-flex {
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 80px;
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                    .logo-item {
+                        max-height: 70px;
+                        width: auto;
+                        margin-right: 32px;
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                        img {
+                            max-height: 100%;
+                            max-width: 100%;
+                        }                        
+                    }
+                }
+            }
         }
 
         footer {
