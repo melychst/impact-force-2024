@@ -619,13 +619,13 @@ body {
             body main section.reports .report-wrap .slider-navigation .nav-slide svg {
               position: absolute; }
     body main section.impact {
-      padding: 50px 0px; }
+      padding: 42px 0px; }
       body main section.impact .columns {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
         body main section.impact .columns .left-column {
-          width: 495px;
+          width: 475px;
           color: #00B0EB; }
         body main section.impact .columns .right-column {
           width: 710px; }
@@ -635,14 +635,14 @@ body {
           font-size: 50px;
           font-style: normal;
           font-weight: 700;
-          line-height: normal;
+          line-height: 58px;
           letter-spacing: 7.5px;
           text-transform: uppercase;
-          margin-bottom: 121px;
+          margin-bottom: 170px;
           width: 325px; }
         body main section.impact .columns .content {
           font-size: 24px;
-          line-height: normal;
+          line-height: 32px;
           letter-spacing: 0.24px; }
         body main section.impact .columns .sub-title {
           font-family: "Akkurat Mono LL";
@@ -651,14 +651,16 @@ body {
           font-weight: 400;
           line-height: normal;
           text-transform: uppercase;
-          margin-bottom: 12px; }
+          margin-bottom: 29px;
+          padding-top: 3px; }
         body main section.impact .columns .areas-wrap {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          padding-top: 50px; }
+          padding-top: 50px;
+          margin-bottom: 16px; }
           body main section.impact .columns .areas-wrap .area-item {
-            padding: 16px 12px 20px 12px;
+            padding: 19px 8px 20px 9px;
             border-radius: 12.671px;
             border-width: 2px;
             border-style: solid;
@@ -673,8 +675,11 @@ body {
               position: absolute;
               display: block;
               border-radius: 50%;
-              top: -50px;
-              z-index: -1; }
+              top: -53px;
+              left: 10px;
+              z-index: -1;
+              background-position: center 5px;
+              background-repeat: no-repeat; }
             body main section.impact .columns .areas-wrap .area-item:last-child {
               margin-right: 0px; }
             body main section.impact .columns .areas-wrap .area-item .number {
@@ -698,7 +703,7 @@ body {
               line-height: normal;
               letter-spacing: 1.2px;
               text-transform: uppercase;
-              margin-bottom: 31px; }
+              margin-bottom: 23px; }
               body main section.impact .columns .areas-wrap .area-item .name span {
                 margin-top: auto;
                 display: block; }
@@ -707,23 +712,59 @@ body {
               font-size: 14px;
               font-style: normal;
               font-weight: 700;
-              line-height: normal;
-              color: #003548; }
+              line-height: 21px;
+              color: #003548;
+              letter-spacing: 0.1px; }
             body main section.impact .columns .areas-wrap .area-item.blue-area {
               border-color: #00B0EB;
               color: #00B0EB; }
               body main section.impact .columns .areas-wrap .area-item.blue-area::before {
-                background-color: #00B0EB; }
+                background-color: #00B0EB;
+                background-image: url(../images/icon-areas-advocacy.svg); }
             body main section.impact .columns .areas-wrap .area-item.purple-area {
               border-color: #9575CD;
               color: #9575CD; }
               body main section.impact .columns .areas-wrap .area-item.purple-area::before {
-                background-color: #9575CD; }
+                background-color: #9575CD;
+                background-image: url(../images/icon-areas-capacity.svg); }
             body main section.impact .columns .areas-wrap .area-item.green-area {
               border-color: #43E0D5;
               color: #43E0D5; }
               body main section.impact .columns .areas-wrap .area-item.green-area::before {
-                background-color: #43E0D5; }
+                background-color: #43E0D5;
+                background-image: url(../images/icon-areas-community.svg); }
+        body main section.impact .columns .projects-wrap {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          body main section.impact .columns .projects-wrap .project-name {
+            margin-right: 14px;
+            margin-bottom: 6px; }
+            body main section.impact .columns .projects-wrap .project-name:nth-child(6n) {
+              margin-right: 0px; }
+            body main section.impact .columns .projects-wrap .project-name a {
+              height: 21px;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              font-size: 10px;
+              color: #003548;
+              padding: 6px 20px 5px 17px;
+              border-radius: 30px;
+              border-width: 1px;
+              border-style: solid;
+              background: #FFF; }
+            body main section.impact .columns .projects-wrap .project-name.blue-project a {
+              border-color: #00B0EB; }
+            body main section.impact .columns .projects-wrap .project-name.purple-project a {
+              border-color: #9575CD; }
+            body main section.impact .columns .projects-wrap .project-name.green-project a {
+              border-color: #43E0D5; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;
