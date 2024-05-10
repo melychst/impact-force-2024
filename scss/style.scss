@@ -134,7 +134,7 @@ body {
                 border-bottom: 2px solid transparent;
                 &:hover {
                     color: $blue-color;
-                    border-bottom: 2px solid $green-color;
+                    border-bottom: 2px solid $yellow-color;
                     transition: 0.2s;
                 }
                 &.purpure-link {
@@ -285,7 +285,7 @@ body {
                         align-items: center;
                         padding-left: 108px;
                         padding-right: 152px;
-                        background-color: $green-color;
+                        background-color: $yellow-color;
                         border-radius: 35px;
                         height: 65px;
                         position: relative;
@@ -552,11 +552,117 @@ body {
             &.impact {
                 padding: 50px 0px;
                 .columns {
+                    justify-content: space-between;
                     .left-column {
                         width: 495px;
+                        color: $blue-color;
                     }
                     .right-column {
-                        width: 650px;
+                        width: 710px;
+                    }
+                    .section-title {
+                        -webkit-text-stroke: 3px;
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 7.5px;
+                        text-transform: uppercase;
+                        margin-bottom: 121px;
+                        width: 325px;
+                    }
+                    .content {
+                        font-size: 24px;
+                        line-height: normal;
+                        letter-spacing: 0.24px;
+                    }
+                    .sub-title {
+                        font-family: "Akkurat Mono LL";
+                        font-size: 35px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-transform: uppercase;
+                        margin-bottom: 12px;
+                    }
+                    .areas-wrap {
+                        display: flex;
+                        padding-top: 50px;
+                        .area-item {
+                            padding: 16px 12px 20px 12px;
+                            border-radius: 12.671px;
+                            border-width: 2px;
+                            border-style: solid;
+                            background: #FFF;
+                            margin-right: 25px;
+                            width: 220px;
+                            position: relative;
+                            &::before {
+                                @include before-content(100px, 100px);
+                                border-radius: 50%;
+                                top: -50px;
+                                z-index: -1;
+                            }
+                            &:last-child {
+                                margin-right: 0px;
+                            }
+                            .number {
+                                display: block;
+                                font-family: "Akkurat Mono LL";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 1.629px;
+                                text-transform: uppercase;
+                            }  
+                            .name {
+                                min-height: 100px;
+                                display: flex;
+                                font-family: "Akkurat LL Cyrillic Bold";
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                letter-spacing: 1.2px;
+                                text-transform: uppercase;
+                                margin-bottom: 31px;
+                                span {
+                                    margin-top: auto;
+                                    display: block;
+                                }
+                            } 
+                            .content {
+                                font-family: "Akkurat LL Cyrillic Bold";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                color: $main-color;
+                            }
+                            &.blue-area {
+                                border-color: $blue-color;
+                                color: $blue-color;
+                                &::before  {
+                                    background-color: $blue-color;
+                                }
+                            }
+                            &.purple-area {
+                                border-color: $purple-color;
+                                color: $purple-color;
+                                &::before  {
+                                    background-color: $purple-color;
+                                }
+                            }
+                            &.green-area {
+                                border-color: $green-color;
+                                color: $green-color;
+                                &::before  {
+                                    background-color: $green-color;
+                                }
+                            }
+                        }
                     }
                 }
             }

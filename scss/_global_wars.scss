@@ -8,7 +8,8 @@ $xxl: 1290px;
 $main-color: #003548;
 $blue-color: #00B0EB;
 $purple-color: #9575CD;
-$green-color: #CDDC39;
+$yellow-color: #CDDC39;
+$green-color: #43E0D5;
 
 @mixin media($canvas) {
     @media only screen and (max-width: $canvas) { @content; }
