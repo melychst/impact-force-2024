@@ -713,6 +713,176 @@ body {
                     }
                 }
             }
+            &.goals {
+                padding: 60px 0px 88px;
+                .columns {
+                    justify-content: space-between;
+                }
+                .left-column {
+                    width: 636px;
+                }
+                .right-column {
+                    width: 560px;
+                    padding-top: 6px;
+                }
+                .section-title {
+                    font-family: "Akkurat Mono LL";
+                    font-size: 35px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 46px;
+                    letter-spacing: 2.45px;
+                    text-transform: uppercase;
+                    margin-bottom: 54px;
+                }
+                .goals-wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 604px;
+                    .goal-item {
+                        width: 180px;
+                        height: 116px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $blue-color;
+                        margin-bottom: 29px;
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                }
+                .our-goals {
+                    border-radius: 17px;
+                    border: 2px solid $blue-color;
+                    background: #FFF;
+                    padding: 75px 194px 47px 93px;
+                    position: relative;
+                    left: 136px;
+                    &::before {
+                        @include before-content(136px, 136px);
+                        border-radius: 50%;
+                        left: -72px;
+                        top: 19px;
+                        background-color: $blue-color;
+                        background-image: url(../images/goals-icon.svg);
+                        background-repeat: no-repeat;
+                        background-position: 16px 46px;
+                        z-index: -1;
+                    }
+                    .title-list {
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 38px;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 1.4px;
+                        text-transform: uppercase;
+                        margin-bottom: 55px;
+                        position: relative;
+                        &::before {
+                            @include before-content(48px, 48px);
+                            border-radius: 50%;
+                            position: absolute;
+                            background-color: $blue-color;
+                            background-image: url(../images/icon-square-arrow-white.svg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            transform: rotate(45deg);
+                            background-size: 25px 25px;
+                            left: -76px;
+                            top: -10px;
+                        }
+                    }
+                    .list-wrap {
+                        padding-top: 9px;
+                        .list-item {
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 32px;
+                            letter-spacing: 0.48px;
+                            margin-bottom: 55px;
+                            padding-left: 45px;
+                            position: relative;
+                            &::before {
+                                @include before-content(35px, 35px);
+                                background-image: url(../images/goals-list-icon.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                left: 0px;
+                                top: 0px;
+                            }
+                            &:last-child {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.programs {
+                background-color: $main-color;
+                min-height: 275px;
+                padding-top: 64px;
+                padding-bottom: 38px;
+                .background-image {
+                    width: 438px;
+                    height: 212px;
+                    position: absolute;
+                    right: 0px;
+                    bottom: -4px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .section-title {
+                    font-family: "Akkurat LL Cyrillic Bold";
+                    font-size: 70px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 12px;
+                    text-transform: uppercase;
+                     -webkit-text-stroke: 3px;
+                     color: #fff;
+                     margin-bottom: 37px;
+                }
+                .content-link {
+                    a {
+                        display: inline-flex;
+                        align-items: center;
+                        padding-left: 106px;
+                        padding-right: 152px;
+                        width: 820px;
+                        background-color: $yellow-color;
+                        border-radius: 35px;
+                        height: 54px;
+                        position: relative;
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-transform: uppercase;
+                        color: $main-color;
+                        letter-spacing: 4px;
+                        padding-top: 10px;
+                        &::after {
+                            @include after-content(40px, 40px);
+                            background-color: $main-color;
+                            border-radius: 50%;
+                            background-image: url(../images/icon-square-arrow-green.svg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            top: 7px;
+                            right: 7px;
+                            background-size: 20px 20px;
+                        }
+                    }
+                }
+            }
         }
 
         footer {

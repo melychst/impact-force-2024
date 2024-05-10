@@ -765,6 +765,186 @@ body {
               border-color: #9575CD; }
             body main section.impact .columns .projects-wrap .project-name.green-project a {
               border-color: #43E0D5; }
+    body main section.goals {
+      padding: 60px 0px 88px; }
+      body main section.goals .columns {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      body main section.goals .left-column {
+        width: 636px; }
+      body main section.goals .right-column {
+        width: 560px;
+        padding-top: 6px; }
+      body main section.goals .section-title {
+        font-family: "Akkurat Mono LL";
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 2.45px;
+        text-transform: uppercase;
+        margin-bottom: 54px; }
+      body main section.goals .goals-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 604px; }
+        body main section.goals .goals-wrap .goal-item {
+          width: 180px;
+          height: 116px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          background-color: #00B0EB;
+          margin-bottom: 29px; }
+          body main section.goals .goals-wrap .goal-item img {
+            max-width: 100%;
+            max-height: 100%; }
+      body main section.goals .our-goals {
+        border-radius: 17px;
+        border: 2px solid #00B0EB;
+        background: #FFF;
+        padding: 75px 194px 47px 93px;
+        position: relative;
+        left: 136px; }
+        body main section.goals .our-goals::before {
+          content: '';
+          width: 136px;
+          height: 136px;
+          position: absolute;
+          display: block;
+          border-radius: 50%;
+          left: -72px;
+          top: 19px;
+          background-color: #00B0EB;
+          background-image: url(../images/goals-icon.svg);
+          background-repeat: no-repeat;
+          background-position: 16px 46px;
+          z-index: -1; }
+        body main section.goals .our-goals .title-list {
+          font-family: "Akkurat LL Cyrillic Bold";
+          font-size: 38px;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 1.4px;
+          text-transform: uppercase;
+          margin-bottom: 55px;
+          position: relative; }
+          body main section.goals .our-goals .title-list::before {
+            content: '';
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #00B0EB;
+            background-image: url(../images/icon-square-arrow-white.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            background-size: 25px 25px;
+            left: -76px;
+            top: -10px; }
+        body main section.goals .our-goals .list-wrap {
+          padding-top: 9px; }
+          body main section.goals .our-goals .list-wrap .list-item {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0.48px;
+            margin-bottom: 55px;
+            padding-left: 45px;
+            position: relative; }
+            body main section.goals .our-goals .list-wrap .list-item::before {
+              content: '';
+              width: 35px;
+              height: 35px;
+              position: absolute;
+              display: block;
+              background-image: url(../images/goals-list-icon.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              left: 0px;
+              top: 0px; }
+            body main section.goals .our-goals .list-wrap .list-item:last-child {
+              margin-bottom: 0px; }
+    body main section.programs {
+      background-color: #003548;
+      min-height: 275px;
+      padding-top: 64px;
+      padding-bottom: 38px; }
+      body main section.programs .background-image {
+        width: 438px;
+        height: 212px;
+        position: absolute;
+        right: 0px;
+        bottom: -4px; }
+        body main section.programs .background-image img {
+          width: 100%;
+          height: auto; }
+      body main section.programs .section-title {
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 3px;
+        color: #fff;
+        margin-bottom: 37px; }
+      body main section.programs .content-link a {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-left: 106px;
+        padding-right: 152px;
+        width: 820px;
+        background-color: #CDDC39;
+        border-radius: 35px;
+        height: 54px;
+        position: relative;
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        color: #003548;
+        letter-spacing: 4px;
+        padding-top: 10px; }
+        body main section.programs .content-link a::after {
+          content: '';
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          display: block;
+          background-color: #003548;
+          border-radius: 50%;
+          background-image: url(../images/icon-square-arrow-green.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          top: 7px;
+          right: 7px;
+          background-size: 20px 20px; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;
