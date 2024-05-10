@@ -312,6 +312,243 @@ body {
                     }
                 }
             }
+            &.reports {
+                padding-top: 64px;
+                padding-bottom: 70px;
+                .columns {
+                    .column {
+                        position: relative;
+                        .number {
+                            font-family: "Akkurat Mono LL";
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                            color: $blue-color;
+                            position: absolute;
+                            top: 7px;
+                        }
+                        .column-title {
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-size: 60px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 68px;
+                            letter-spacing: 7.5px;
+                            text-transform: uppercase;
+                            padding-left: 102px;
+                            margin-bottom: 37px;
+                        }
+                        .content {
+                            line-height: 29px;
+                        }
+                    }
+                    &.top-row {
+                        margin-bottom: 102px;
+                        .column {
+                            width: 504px;
+                            &.left-column {
+                                margin-right: 132px;
+                            }
+                        }
+                    }
+                    &.bottom-row {
+                        margin-bottom: 32px;
+                        .left-column {
+                            width: 320px;
+                            margin-right: 204px;
+                            padding-top: 6px;
+                        }
+                        .right-column {
+                            width: 410px;
+                        }
+                        h3 {
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 1.8px;
+                            text-transform: uppercase;
+                            margin-bottom: 50px;
+                        }
+                        .content {
+                            line-height: 26px;
+                        }
+                        strong {
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-weight: 700;
+                        }
+                        .section-title {
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-size: 50px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 58px;
+                            letter-spacing: 7.5px;
+                            text-transform: uppercase;
+                            -webkit-text-stroke: 3px;
+                            color: $purple-color;
+                        }
+                    }
+                } 
+                .facts-wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+                    left: 104px;
+                    &::before{
+                        content: '';
+                        width: 394px;
+                    }
+                    .fact-item {
+                        width: 394px;
+                        margin-bottom: 50px;
+                        margin-top: 30px;
+                        margin-left: 28px;
+                        &:nth-child(3n){
+                            margin-left: 0px;
+                        }
+                        .title {
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-size: 80px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 9px;
+                            text-transform: uppercase;
+                            position: relative;
+                            margin-bottom: 24px;
+                            &::before {
+                                content: '';
+                                width: 100%;
+                                height: 1px;
+                                position: absolute;
+                                bottom: 0px;
+                                left: 0px;
+                                background-color: $purple-color;
+                            }
+                        }
+                        .content {
+                            line-height: 26px; /* 100% */
+                            letter-spacing: 1px;
+                            width: 300px;
+                            padding-left: 5px;
+                        }
+                    }
+                }     
+                .report-wrap {
+                    border-radius: 13px;
+                    border: 3px solid $purple-color;
+                    background: #FFF;
+                    padding: 57px 55px 35px 104px;
+                    .left-column {
+                        width: 405px;
+                        margin-right: 125px;
+                    }
+                    .right-column {
+                        width: 545px;
+                    }
+                    .title {
+                        font-family: "Akkurat Mono LL";
+                        font-size: 43px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-transform: uppercase;
+                    }
+                    .report-slider {
+                        display: flex;
+                        margin-top: 74px;
+                        .report-item {
+                            width: 225px;
+                            margin-right: 92px;
+                            &:last-child {
+                                margin-right: 0px;
+                            }
+                            .columns-wrap {
+                                display: flex;
+                                .icon-wrap {
+                                    width: 50px;
+                                    height: 50px;
+                                    img {
+                                        object-fit: cover;
+                                        object-position: center;
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .content {
+                                    padding-left: 24px;
+                                    padding-top: 6px;
+                                    .name {
+                                        font-family: "Akkurat LL Cyrillic Bold";
+                                        font-size: 26.834px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 16.771px; /* 62.5% */
+                                        letter-spacing: 1.342px;
+                                        margin-bottom: 13px;
+                                    }
+                                    .meta {
+                                        font-size: 16.771px;
+                                        line-height: 16.771px; /* 100% */
+                                        letter-spacing: 0.839px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .slider-navigation {
+                        display: flex;
+                        margin-top: 53px;
+                        .nav-slide {
+                            width: 148px;
+                            height: 26px; 
+                            border-radius: 32px;
+                            border: 1px solid $purple-color;
+                            background: #FFF;  
+                            transform: 0.2s; 
+                            font-size: 10px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            display: inline-flex;
+                            align-items: center;
+                            position: relative;
+                            cursor: pointer;
+                            &:hover {
+                                background: $purple-color;
+                                color: #fff;
+                                transition: 0.3s;
+                                background: $purple-color;
+                                svg {
+                                    path {
+                                        fill: #fff;
+                                    }
+                                }
+                            } 
+                            &.prev-slide {
+                                margin-right: 63px;
+                                padding: 9px 25px 7px 68px;
+                                svg {
+                                    left: 8px;
+                                }
+                            }    
+                            &.next-slide {
+                                padding: 9px 8px 7px 42px;
+                                svg {
+                                    right: 8px;
+                                }
+                            }   
+                            svg {
+                                position: absolute;
+                            }             
+                        }
+                    }
+                }       
+            }
         }
 
         footer {
