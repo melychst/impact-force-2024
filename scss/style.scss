@@ -1715,7 +1715,7 @@ body {
             }
             &.WWA-targets {
                 padding-top: 50px;
-                padding-bottom: 50px;
+                padding-bottom: 113px;
                 .top-row {
                     margin-bottom: 50px;
                     .columns {
@@ -1835,6 +1835,407 @@ body {
                     }
                 }                 
             }
+            &.WWA-team-board {
+                .team-item {
+                    width: 286px;
+                    .image-wrap {
+                        width: 100%;
+                        height: 230px;
+                        overflow: hidden;
+                        margin-bottom: 24px;
+                        img {
+                            @include image-fit;
+                        }
+                    }
+                    .name {
+                        font-size: 23px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 31px;
+                        letter-spacing: 0.69px;
+                        text-transform: uppercase;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            width: 100%;
+                            height: 1px;
+                            background-color: $main-color;
+                            position: absolute;
+                            bottom: -10px;
+                            left: 0px;
+                        }
+                    }
+                }
+                .board-title {
+                    background-color: $blue-color;
+                    min-height: 218px;
+                    padding-top: 42px;
+                    padding-bottom: 20px;
+                    position: relative;
+                    .title {
+                        -webkit-text-stroke-width: 3px;
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 70px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 78px;
+                        letter-spacing: 10.5px;
+                        text-transform: uppercase;
+                        color: #fff;
+                        width: 265px;
+                    }
+                    .background-image {
+                        position: absolute;
+                        width: 348px;
+                        height: 184px;
+                        right: 100px;
+                        bottom: 0px;
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                }
+                .managers {
+                    padding-top: 19px;
+                    .manager-row {
+                        margin-bottom: 30px;
+                        .columns {
+                            justify-content: space-between;
+                            .column-left {
+                                width: 365px;
+                            }
+                            .column-right {
+                                width: 478px;
+                                display: flex;
+                                padding-bottom: 10px;
+                            }
+                            .column-center {
+                                width: 386px;
+                                margin-top: 58px;
+                                padding-left: 48px;
+                                padding-bottom: 8px;
+                                display: flex;
+                                flex-wrap: wrap;
+
+                            }                        
+                        }
+                    }
+                    .position {
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 0.9px;
+                        margin-bottom: 47px;
+                        color: $blue-color;
+                        margin-top: 64px;
+                        display: inline-block;
+                    }
+                    .icon {
+                        width: 21px;
+                        height: 21px;
+                        margin-bottom: 17px;
+                        img{
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                    .description {
+                        font-size: 18px;
+                        font-style: normal;
+                        line-height: 26px;
+                        strong {
+                            font-family: "Akkurat LL Cyrillic Bold";
+                        }
+                    }
+                    .name {
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 80px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 88px;
+                        letter-spacing: 5.6px;
+                        text-transform: uppercase;
+                        width: 100%;
+                    }
+                    .link-email {
+                        margin-top: auto;
+                        margin-left: 7px;
+                        a {
+                            display: inline-flex;
+                            height: 32px;
+                            padding: 7px 49px 7px 26px;
+                            color: $blue-color;
+                            border-radius: 99px;
+                            background: $main-color;
+                            position: relative;
+                            &::before {
+                                @include before-content(26px, 26px);
+                                right: 3px;
+                                top: 3px;
+                                background-image: url(../images/icon-mail-main-color.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;                            
+                            }
+                        }
+                    }
+                    .image-wrap {
+                        width: 386px;
+                        height: 290px;
+                        position: relative;
+                        right: -192px;
+                        margin-top: auto;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                .advisors {
+                    padding-top: 80px;
+                    padding-bottom: 50px;
+                    .title-row {
+                        position: relative;
+                        margin-bottom: 80px;
+                        .title {
+                            -webkit-text-stroke: 2px;
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-size: 50px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 7.5px;
+                            text-transform: uppercase;
+                            color: $blue-color;
+                            width: 524px;
+                            margin-bottom: 30px;
+                        }
+                        .slider-navigation {
+                            display: flex;
+                            margin-top: 31px;
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            .nav-slide {
+                                width: 148px;
+                                height: 26px; 
+                                border-radius: 32px;
+                                border: 1px solid $purple-color;
+                                background: #FFF;  
+                                transform: 0.2s; 
+                                font-size: 10px;
+                                letter-spacing: 1px;
+                                text-transform: uppercase;
+                                display: inline-flex;
+                                align-items: center;
+                                position: relative;
+                                cursor: pointer;
+                                &:hover {
+                                    background: $purple-color;
+                                    color: #fff;
+                                    transition: 0.3s;
+                                    background: $purple-color;
+                                    svg {
+                                        path {
+                                            fill: #fff;
+                                        }
+                                    }
+                                } 
+                                &.prev-slide {
+                                    margin-right: 63px;
+                                    padding: 9px 25px 7px 68px;
+                                    svg {
+                                        left: 8px;
+                                    }
+                                }    
+                                &.next-slide {
+                                    padding: 9px 8px 7px 42px;
+                                    svg {
+                                        right: 8px;
+                                    }
+                                }   
+                                svg {
+                                    position: absolute;
+                                }             
+                            }
+                        }                      
+                    }
+                    .advisors-slider {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+                .team {
+                    padding-top: 70px;
+                    padding-bottom: 82px;
+                    .title-row {
+                        position: relative;
+                        margin-bottom: 58px;
+                        .title {
+                            -webkit-text-stroke: 2px;
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-size: 50px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 58px;
+                            letter-spacing: 7.5px;
+                            text-transform: uppercase;
+                            color: $blue-color;
+                            width: 524px;
+                            margin-bottom: 30px;
+                        } 
+                        .background-image {
+                            position: absolute;
+                            width: 434px;
+                            height: 161px;
+                            right: 0px;
+                            bottom: -30px;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }                     
+                    }
+                    .team-wrap {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .team-item {
+                            margin-bottom: 27px;
+                            .image-wrap {
+                                height: 245px;
+                            }
+                            .name {
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 38px;
+                                letter-spacing: 0.9px;
+                                text-transform: uppercase;
+                                padding-bottom: 0px;
+                                margin-bottom: 17px;
+                                &::before {
+                                    bottom: 5px;
+                                }
+                            }
+                            .description {
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 22px;
+                                letter-spacing: -0.36px; 
+                                span {
+                                    font-family: "Akkurat LL Cyrillic Bold";
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    display: inline-block;
+                                    position: relative;
+                                    &::before {
+                                        @include before-content(200px, 11px);
+                                        background-image: url(../images/team-description-bg.svg);
+                                        top: 12px;
+                                        left: -1px;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .volunter {
+                    padding-bottom: 124px;
+                    .title-row {
+                        background-color: $blue-color;
+                        min-height: 141px;
+                        padding: 44px 0px 27px 0px;  
+                        position: relative;                      
+                        .title {
+                            color: #FFF;
+                            -webkit-text-stroke: 3px;
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-size: 70px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 10.5px;
+                            text-transform: uppercase;
+                        }
+                        .background-image {
+                            width: 218px;
+                            height: 198px;   
+                            position: absolute;
+                            right: 17px;
+                            bottom: -71px;  
+                            img {
+                                max-width: 100%;
+                                height: auto;
+                            }                      
+                        }
+                    }
+                    .volunter-slider {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 1134px;
+                        .team-item {
+                            .image-wrap {
+                                height: 245px;
+                                margin-bottom: 24px;
+                            }
+                        }
+                    }
+                    .slider-navigation {
+                        display: flex;
+                        margin-top: 40px;
+                        margin-bottom: 9px;
+                        .nav-slide {
+                            width: 148px;
+                            height: 26px; 
+                            border-radius: 32px;
+                            border: 1px solid $purple-color;
+                            background: #FFF;  
+                            transform: 0.2s; 
+                            font-size: 10px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            display: inline-flex;
+                            align-items: center;
+                            position: relative;
+                            cursor: pointer;
+                            &:hover {
+                                background: $purple-color;
+                                color: #fff;
+                                transition: 0.3s;
+                                background: $purple-color;
+                                svg {
+                                    path {
+                                        fill: #fff;
+                                    }
+                                }
+                            } 
+                            &.prev-slide {
+                                margin-right: 63px;
+                                padding: 9px 25px 7px 68px;
+                                svg {
+                                    left: 8px;
+                                }
+                            }    
+                            &.next-slide {
+                                padding: 9px 8px 7px 42px;
+                                svg {
+                                    right: 8px;
+                                }
+                            }   
+                            svg {
+                                position: absolute;
+                            }             
+                        }
+                    }  
+                }
+            }
+
         }
 
         footer {

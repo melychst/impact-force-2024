@@ -1768,7 +1768,7 @@ body {
             margin-bottom: 24px; }
     body main section.WWA-targets {
       padding-top: 50px;
-      padding-bottom: 50px; }
+      padding-bottom: 113px; }
       body main section.WWA-targets .top-row {
         margin-bottom: 50px; }
         body main section.WWA-targets .top-row .columns {
@@ -1875,6 +1875,380 @@ body {
               color: #43E0D5; }
             body main section.WWA-targets .targets-wrap .target-item.green-item .title {
               color: #43E0D5; }
+    body main section.WWA-team-board .team-item {
+      width: 286px; }
+      body main section.WWA-team-board .team-item .image-wrap {
+        width: 100%;
+        height: 230px;
+        overflow: hidden;
+        margin-bottom: 24px; }
+        body main section.WWA-team-board .team-item .image-wrap img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          -o-object-position: center;
+             object-position: center;
+          width: 100%;
+          height: 100%; }
+      body main section.WWA-team-board .team-item .name {
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: 0.69px;
+        text-transform: uppercase;
+        position: relative; }
+        body main section.WWA-team-board .team-item .name::before {
+          content: '';
+          width: 100%;
+          height: 1px;
+          background-color: #003548;
+          position: absolute;
+          bottom: -10px;
+          left: 0px; }
+    body main section.WWA-team-board .board-title {
+      background-color: #00B0EB;
+      min-height: 218px;
+      padding-top: 42px;
+      padding-bottom: 20px;
+      position: relative; }
+      body main section.WWA-team-board .board-title .title {
+        -webkit-text-stroke-width: 3px;
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 10.5px;
+        text-transform: uppercase;
+        color: #fff;
+        width: 265px; }
+      body main section.WWA-team-board .board-title .background-image {
+        position: absolute;
+        width: 348px;
+        height: 184px;
+        right: 100px;
+        bottom: 0px; }
+        body main section.WWA-team-board .board-title .background-image img {
+          max-width: 100%;
+          max-height: 100%; }
+    body main section.WWA-team-board .managers {
+      padding-top: 19px; }
+      body main section.WWA-team-board .managers .manager-row {
+        margin-bottom: 30px; }
+        body main section.WWA-team-board .managers .manager-row .columns {
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          body main section.WWA-team-board .managers .manager-row .columns .column-left {
+            width: 365px; }
+          body main section.WWA-team-board .managers .manager-row .columns .column-right {
+            width: 478px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding-bottom: 10px; }
+          body main section.WWA-team-board .managers .manager-row .columns .column-center {
+            width: 386px;
+            margin-top: 58px;
+            padding-left: 48px;
+            padding-bottom: 8px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+      body main section.WWA-team-board .managers .position {
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        margin-bottom: 47px;
+        color: #00B0EB;
+        margin-top: 64px;
+        display: inline-block; }
+      body main section.WWA-team-board .managers .icon {
+        width: 21px;
+        height: 21px;
+        margin-bottom: 17px; }
+        body main section.WWA-team-board .managers .icon img {
+          max-width: 100%;
+          max-height: 100%; }
+      body main section.WWA-team-board .managers .description {
+        font-size: 18px;
+        font-style: normal;
+        line-height: 26px; }
+        body main section.WWA-team-board .managers .description strong {
+          font-family: "Akkurat LL Cyrillic Bold"; }
+      body main section.WWA-team-board .managers .name {
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px;
+        letter-spacing: 5.6px;
+        text-transform: uppercase;
+        width: 100%; }
+      body main section.WWA-team-board .managers .link-email {
+        margin-top: auto;
+        margin-left: 7px; }
+        body main section.WWA-team-board .managers .link-email a {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          height: 32px;
+          padding: 7px 49px 7px 26px;
+          color: #00B0EB;
+          border-radius: 99px;
+          background: #003548;
+          position: relative; }
+          body main section.WWA-team-board .managers .link-email a::before {
+            content: '';
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            display: block;
+            right: 3px;
+            top: 3px;
+            background-image: url(../images/icon-mail-main-color.svg);
+            background-position: center;
+            background-repeat: no-repeat; }
+      body main section.WWA-team-board .managers .image-wrap {
+        width: 386px;
+        height: 290px;
+        position: relative;
+        right: -192px;
+        margin-top: auto; }
+        body main section.WWA-team-board .managers .image-wrap img {
+          width: 100%;
+          height: auto; }
+    body main section.WWA-team-board .advisors {
+      padding-top: 80px;
+      padding-bottom: 50px; }
+      body main section.WWA-team-board .advisors .title-row {
+        position: relative;
+        margin-bottom: 80px; }
+        body main section.WWA-team-board .advisors .title-row .title {
+          -webkit-text-stroke: 2px;
+          font-family: "Akkurat LL Cyrillic Bold";
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 7.5px;
+          text-transform: uppercase;
+          color: #00B0EB;
+          width: 524px;
+          margin-bottom: 30px; }
+        body main section.WWA-team-board .advisors .title-row .slider-navigation {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: 31px;
+          position: absolute;
+          top: 0px;
+          right: 0px; }
+          body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide {
+            width: 148px;
+            height: 26px;
+            border-radius: 32px;
+            border: 1px solid #9575CD;
+            background: #FFF;
+            -webkit-transform: 0.2s;
+                    transform: 0.2s;
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            position: relative;
+            cursor: pointer; }
+            body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide:hover {
+              background: #9575CD;
+              color: #fff;
+              -webkit-transition: 0.3s;
+              transition: 0.3s;
+              background: #9575CD; }
+              body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide:hover svg path {
+                fill: #fff; }
+            body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide.prev-slide {
+              margin-right: 63px;
+              padding: 9px 25px 7px 68px; }
+              body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide.prev-slide svg {
+                left: 8px; }
+            body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide.next-slide {
+              padding: 9px 8px 7px 42px; }
+              body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide.next-slide svg {
+                right: 8px; }
+            body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide svg {
+              position: absolute; }
+      body main section.WWA-team-board .advisors .advisors-slider {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+    body main section.WWA-team-board .team {
+      padding-top: 70px;
+      padding-bottom: 82px; }
+      body main section.WWA-team-board .team .title-row {
+        position: relative;
+        margin-bottom: 58px; }
+        body main section.WWA-team-board .team .title-row .title {
+          -webkit-text-stroke: 2px;
+          font-family: "Akkurat LL Cyrillic Bold";
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 58px;
+          letter-spacing: 7.5px;
+          text-transform: uppercase;
+          color: #00B0EB;
+          width: 524px;
+          margin-bottom: 30px; }
+        body main section.WWA-team-board .team .title-row .background-image {
+          position: absolute;
+          width: 434px;
+          height: 161px;
+          right: 0px;
+          bottom: -30px; }
+          body main section.WWA-team-board .team .title-row .background-image img {
+            width: 100%;
+            height: auto; }
+      body main section.WWA-team-board .team .team-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        body main section.WWA-team-board .team .team-wrap .team-item {
+          margin-bottom: 27px; }
+          body main section.WWA-team-board .team .team-wrap .team-item .image-wrap {
+            height: 245px; }
+          body main section.WWA-team-board .team .team-wrap .team-item .name {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+            padding-bottom: 0px;
+            margin-bottom: 17px; }
+            body main section.WWA-team-board .team .team-wrap .team-item .name::before {
+              bottom: 5px; }
+          body main section.WWA-team-board .team .team-wrap .team-item .description {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: -0.36px; }
+            body main section.WWA-team-board .team .team-wrap .team-item .description span {
+              font-family: "Akkurat LL Cyrillic Bold";
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              display: inline-block;
+              position: relative; }
+              body main section.WWA-team-board .team .team-wrap .team-item .description span::before {
+                content: '';
+                width: 200px;
+                height: 11px;
+                position: absolute;
+                display: block;
+                background-image: url(../images/team-description-bg.svg);
+                top: 12px;
+                left: -1px;
+                z-index: -1; }
+    body main section.WWA-team-board .volunter {
+      padding-bottom: 124px; }
+      body main section.WWA-team-board .volunter .title-row {
+        background-color: #00B0EB;
+        min-height: 141px;
+        padding: 44px 0px 27px 0px;
+        position: relative; }
+        body main section.WWA-team-board .volunter .title-row .title {
+          color: #FFF;
+          -webkit-text-stroke: 3px;
+          font-family: "Akkurat LL Cyrillic Bold";
+          font-size: 70px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 10.5px;
+          text-transform: uppercase; }
+        body main section.WWA-team-board .volunter .title-row .background-image {
+          width: 218px;
+          height: 198px;
+          position: absolute;
+          right: 17px;
+          bottom: -71px; }
+          body main section.WWA-team-board .volunter .title-row .background-image img {
+            max-width: 100%;
+            height: auto; }
+      body main section.WWA-team-board .volunter .volunter-slider {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 1134px; }
+        body main section.WWA-team-board .volunter .volunter-slider .team-item .image-wrap {
+          height: 245px;
+          margin-bottom: 24px; }
+      body main section.WWA-team-board .volunter .slider-navigation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 9px; }
+        body main section.WWA-team-board .volunter .slider-navigation .nav-slide {
+          width: 148px;
+          height: 26px;
+          border-radius: 32px;
+          border: 1px solid #9575CD;
+          background: #FFF;
+          -webkit-transform: 0.2s;
+                  transform: 0.2s;
+          font-size: 10px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          position: relative;
+          cursor: pointer; }
+          body main section.WWA-team-board .volunter .slider-navigation .nav-slide:hover {
+            background: #9575CD;
+            color: #fff;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            background: #9575CD; }
+            body main section.WWA-team-board .volunter .slider-navigation .nav-slide:hover svg path {
+              fill: #fff; }
+          body main section.WWA-team-board .volunter .slider-navigation .nav-slide.prev-slide {
+            margin-right: 63px;
+            padding: 9px 25px 7px 68px; }
+            body main section.WWA-team-board .volunter .slider-navigation .nav-slide.prev-slide svg {
+              left: 8px; }
+          body main section.WWA-team-board .volunter .slider-navigation .nav-slide.next-slide {
+            padding: 9px 8px 7px 42px; }
+            body main section.WWA-team-board .volunter .slider-navigation .nav-slide.next-slide svg {
+              right: 8px; }
+          body main section.WWA-team-board .volunter .slider-navigation .nav-slide svg {
+            position: absolute; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;
