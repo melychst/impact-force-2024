@@ -1676,6 +1676,205 @@ body {
           background-size: 20px 20px;
           -webkit-transform: rotate(180deg);
                   transform: rotate(180deg); }
+    body main section.WWA-impact {
+      padding-top: 82px;
+      padding-bottom: 62px; }
+      body main section.WWA-impact .columns {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        body main section.WWA-impact .columns .column-left {
+          width: 712px; }
+        body main section.WWA-impact .columns .column-right {
+          width: 392px;
+          padding-top: 2px; }
+        body main section.WWA-impact .columns .top-content {
+          font-family: "Akkurat LL Cyrillic Bold";
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 36px;
+          text-transform: uppercase;
+          color: #43E0D5;
+          margin-bottom: 94px;
+          position: relative; }
+          body main section.WWA-impact .columns .top-content span {
+            color: #003548; }
+          body main section.WWA-impact .columns .top-content::before {
+            content: '';
+            width: 237px;
+            height: 13px;
+            position: absolute;
+            display: block;
+            background-image: url(../images/wwa-imapct-bg.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 78px;
+            left: -10px;
+            z-index: -1; }
+        body main section.WWA-impact .columns .slider-support .title {
+          font-family: "Akkurat Mono LL";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 1.72px;
+          text-transform: uppercase;
+          margin-bottom: 55px; }
+        body main section.WWA-impact .columns .slider-support .slider-wrap {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          body main section.WWA-impact .columns .slider-support .slider-wrap .slide-item {
+            width: 212px;
+            height: 137px;
+            background-color: #43E0D5;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            body main section.WWA-impact .columns .slider-support .slider-wrap .slide-item img {
+              max-width: 100%;
+              max-height: 100%; }
+        body main section.WWA-impact .columns .slider-support .slider-navigation {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          width: 100%;
+          margin-top: 40px; }
+          body main section.WWA-impact .columns .slider-support .slider-navigation .pages {
+            font-family: "Akkurat Mono LL";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            color: #43E0D5; }
+        body main section.WWA-impact .columns .content {
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: -0.6px; }
+          body main section.WWA-impact .columns .content p {
+            margin-bottom: 24px; }
+    body main section.WWA-targets {
+      padding-top: 50px;
+      padding-bottom: 50px; }
+      body main section.WWA-targets .top-row {
+        margin-bottom: 50px; }
+        body main section.WWA-targets .top-row .columns {
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+        body main section.WWA-targets .top-row .column-left {
+          width: 380px; }
+        body main section.WWA-targets .top-row .column-right {
+          width: 710px; }
+        body main section.WWA-targets .top-row .title {
+          -webkit-text-stroke: 2px;
+          color: #00B0EB;
+          font-family: "Akkurat LL Cyrillic Bold";
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 58px;
+          letter-spacing: 7.5px;
+          text-transform: uppercase; }
+        body main section.WWA-targets .top-row .content {
+          font-size: 35px;
+          font-style: normal;
+          line-height: 42px;
+          letter-spacing: 2.9px;
+          text-transform: uppercase; }
+      body main section.WWA-targets .targets-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: end; }
+        body main section.WWA-targets .targets-wrap .target-item {
+          padding: 16px 33px 9px 40px;
+          border-radius: 12.671px;
+          border-width: 2px;
+          border-style: solid;
+          background: #FFF;
+          margin-bottom: 26px;
+          margin-left: 68px;
+          position: relative;
+          width: 1068px;
+          min-height: 217px; }
+          body main section.WWA-targets .targets-wrap .target-item:last-child {
+            margin-bottom: 0px; }
+          body main section.WWA-targets .targets-wrap .target-item::before {
+            content: '';
+            width: 137px;
+            height: 137px;
+            position: absolute;
+            display: block;
+            top: 20px;
+            left: -68px;
+            border-radius: 50%;
+            z-index: -1; }
+          body main section.WWA-targets .targets-wrap .target-item .number {
+            font-family: "Akkurat Mono LL";
+            font-size: 16.291px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.629px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            display: inline-block; }
+          body main section.WWA-targets .targets-wrap .target-item .name {
+            font-family: "Akkurat LL Cyrillic Bold";
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.75px;
+            text-transform: uppercase;
+            margin-bottom: 9px; }
+          body main section.WWA-targets .targets-wrap .target-item .description {
+            letter-spacing: 0.8px;
+            line-height: 28px; }
+          body main section.WWA-targets .targets-wrap .target-item.blue-item {
+            border-color: #00B0EB; }
+            body main section.WWA-targets .targets-wrap .target-item.blue-item::before {
+              background-color: #00B0EB; }
+            body main section.WWA-targets .targets-wrap .target-item.blue-item .name {
+              color: #00B0EB; }
+            body main section.WWA-targets .targets-wrap .target-item.blue-item .title {
+              color: #00B0EB; }
+          body main section.WWA-targets .targets-wrap .target-item.purple-item {
+            border-color: #9575CD; }
+            body main section.WWA-targets .targets-wrap .target-item.purple-item::before {
+              background-color: #9575CD; }
+            body main section.WWA-targets .targets-wrap .target-item.purple-item .name {
+              color: #9575CD; }
+            body main section.WWA-targets .targets-wrap .target-item.purple-item .title {
+              color: #9575CD; }
+          body main section.WWA-targets .targets-wrap .target-item.green-item {
+            border-color: #43E0D5; }
+            body main section.WWA-targets .targets-wrap .target-item.green-item::before {
+              background-color: #43E0D5; }
+            body main section.WWA-targets .targets-wrap .target-item.green-item .name {
+              color: #43E0D5; }
+            body main section.WWA-targets .targets-wrap .target-item.green-item .title {
+              color: #43E0D5; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;
