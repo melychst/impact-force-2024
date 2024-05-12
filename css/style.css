@@ -1403,12 +1403,12 @@ body {
             font-weight: 400;
             line-height: 17px;
             color: #003548; }
-    body main section.page-hero {
+    body main section.WMA-hero {
       min-height: 597px;
       background-color: #003951;
       padding-top: 115px;
       padding-bottom: 90px; }
-      body main section.page-hero .hero-content-wrap .hero-title {
+      body main section.WMA-hero .hero-content-wrap .hero-title {
         -webkit-text-stroke: 5px;
         font-family: "Akkurat LL Cyrillic Bold";
         font-size: 111.364px;
@@ -1419,7 +1419,7 @@ body {
         text-transform: uppercase;
         color: #ffffff;
         margin-bottom: 203px; }
-      body main section.page-hero .hero-content-wrap .sub-title {
+      body main section.WMA-hero .hero-content-wrap .sub-title {
         font-family: "Akkurat Mono LL";
         font-size: 32px;
         line-height: 38px;
@@ -1428,14 +1428,14 @@ body {
         color: #00B0EB;
         width: 645px;
         padding-left: 122px; }
-        body main section.page-hero .hero-content-wrap .sub-title span {
+        body main section.WMA-hero .hero-content-wrap .sub-title span {
           position: absolute;
           top: 15px;
           left: 0px;
           line-height: 19px; }
-          body main section.page-hero .hero-content-wrap .sub-title span svg path {
+          body main section.WMA-hero .hero-content-wrap .sub-title span svg path {
             fill: #00B0EB; }
-        body main section.page-hero .hero-content-wrap .sub-title::before {
+        body main section.WMA-hero .hero-content-wrap .sub-title::before {
           content: '';
           width: 459px;
           height: 19px;
@@ -1446,13 +1446,13 @@ body {
           background-repeat: no-repeat;
           bottom: -13px;
           right: -50px; }
-      body main section.page-hero .background-image {
+      body main section.WMA-hero .background-image {
         position: absolute;
         width: 625px;
         height: 580px;
         bottom: 0px;
         right: 0px; }
-        body main section.page-hero .background-image img {
+        body main section.WMA-hero .background-image img {
           -o-object-fit: cover;
              object-fit: cover;
           -o-object-position: center;
@@ -2244,6 +2244,72 @@ body {
               right: 8px; }
           body main section.WWA-team-board .volunter .slider-navigation .nav-slide svg {
             position: absolute; }
+    body main section.OW-hero {
+      min-height: 670px;
+      background-color: #CDDC39; }
+    body main section.OW-programs .title-row {
+      background-color: #003548;
+      min-height: 275px;
+      padding-top: 40px;
+      padding-bottom: 21px; }
+      body main section.OW-programs .title-row .background-image {
+        width: 438px;
+        height: 212px;
+        position: absolute;
+        right: 0px;
+        bottom: -4px; }
+        body main section.OW-programs .title-row .background-image img {
+          width: 100%;
+          height: auto; }
+      body main section.OW-programs .title-row .section-title {
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 3px;
+        color: #fff;
+        margin-bottom: 37px;
+        width: 800px; }
+      body main section.OW-programs .title-row .content-link a {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-left: 106px;
+        padding-right: 50px;
+        width: 747px;
+        background-color: #CDDC39;
+        border-radius: 35px;
+        height: 54px;
+        position: relative;
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        color: #003548;
+        letter-spacing: 4px;
+        padding-top: 10px; }
+        body main section.OW-programs .title-row .content-link a::after {
+          content: '';
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          display: block;
+          background-color: #003548;
+          border-radius: 50%;
+          background-image: url(../images/icon-square-arrow-green.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          top: 7px;
+          right: 7px;
+          background-size: 20px 20px; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;

@@ -1343,7 +1343,7 @@ body {
                 }
 
             }
-            &.page-hero {
+            &.WMA-hero {
                 min-height: 597px;
                 background-color: #003951;
                 padding-top: 115px;
@@ -2227,7 +2227,77 @@ body {
                     }  
                 }
             }
+            &.OW-hero {
+                min-height: 670px;
+                background-color: $yellow-color;
+            }
+            &.OW-programs {
+                .title-row {
+                    background-color: $main-color;
+                    min-height: 275px;
+                    padding-top: 40px;
+                    padding-bottom: 21px; 
+                    .background-image {
+                        width: 438px;
+                        height: 212px;
+                        position: absolute;
+                        right: 0px;
+                        bottom: -4px;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .section-title {
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 70px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 12px;
+                        text-transform: uppercase;
+                        -webkit-text-stroke: 3px;
+                        color: #fff;
+                        margin-bottom: 37px;
+                        width: 800px;
+                    }
+                    .content-link {
+                        a {
+                            display: inline-flex;
+                            align-items: center;
+                            padding-left: 106px;
+                            padding-right: 50px;
+                            width: 747px;
+                            background-color: $yellow-color;
+                            border-radius: 35px;
+                            height: 54px;
+                            position: relative;
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            text-transform: uppercase;
+                            color: $main-color;
+                            letter-spacing: 4px;
+                            padding-top: 10px;
+                            &::after {
+                                @include after-content(40px, 40px);
+                                background-color: $main-color;
+                                border-radius: 50%;
+                                background-image: url(../images/icon-square-arrow-green.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                top: 7px;
+                                right: 7px;
+                                background-size: 20px 20px;
+                            }
+                        }
+                    }                                       
+                }
 
+
+            }
         }
 
         footer {
