@@ -2053,7 +2053,7 @@ body {
             width: 148px;
             height: 26px;
             border-radius: 32px;
-            border: 1px solid #9575CD;
+            border: 1px solid #00B0EB;
             background: #FFF;
             -webkit-transform: 0.2s;
                     transform: 0.2s;
@@ -2069,11 +2069,10 @@ body {
             position: relative;
             cursor: pointer; }
             body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide:hover {
-              background: #9575CD;
+              background: #00B0EB;
               color: #fff;
               -webkit-transition: 0.3s;
-              transition: 0.3s;
-              background: #9575CD; }
+              transition: 0.3s; }
               body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide:hover svg path {
                 fill: #fff; }
             body main section.WWA-team-board .advisors .title-row .slider-navigation .nav-slide.prev-slide {
@@ -2215,7 +2214,7 @@ body {
           width: 148px;
           height: 26px;
           border-radius: 32px;
-          border: 1px solid #9575CD;
+          border: 1px solid #CDDC39;
           background: #FFF;
           -webkit-transform: 0.2s;
                   transform: 0.2s;
@@ -2231,13 +2230,9 @@ body {
           position: relative;
           cursor: pointer; }
           body main section.WWA-team-board .volunter .slider-navigation .nav-slide:hover {
-            background: #9575CD;
-            color: #fff;
+            background: #CDDC39;
             -webkit-transition: 0.3s;
-            transition: 0.3s;
-            background: #9575CD; }
-            body main section.WWA-team-board .volunter .slider-navigation .nav-slide:hover svg path {
-              fill: #fff; }
+            transition: 0.3s; }
           body main section.WWA-team-board .volunter .slider-navigation .nav-slide.prev-slide {
             margin-right: 63px;
             padding: 9px 25px 7px 68px; }

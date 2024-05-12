@@ -2022,7 +2022,7 @@ body {
                                 width: 148px;
                                 height: 26px; 
                                 border-radius: 32px;
-                                border: 1px solid $purple-color;
+                                border: 1px solid $blue-color;
                                 background: #FFF;  
                                 transform: 0.2s; 
                                 font-size: 10px;
@@ -2033,10 +2033,9 @@ body {
                                 position: relative;
                                 cursor: pointer;
                                 &:hover {
-                                    background: $purple-color;
+                                    background: $blue-color;
                                     color: #fff;
                                     transition: 0.3s;
-                                    background: $purple-color;
                                     svg {
                                         path {
                                             fill: #fff;
@@ -2194,7 +2193,7 @@ body {
                             width: 148px;
                             height: 26px; 
                             border-radius: 32px;
-                            border: 1px solid $purple-color;
+                            border: 1px solid $yellow-color;
                             background: #FFF;  
                             transform: 0.2s; 
                             font-size: 10px;
@@ -2205,15 +2204,8 @@ body {
                             position: relative;
                             cursor: pointer;
                             &:hover {
-                                background: $purple-color;
-                                color: #fff;
+                                background: $yellow-color;
                                 transition: 0.3s;
-                                background: $purple-color;
-                                svg {
-                                    path {
-                                        fill: #fff;
-                                    }
-                                }
                             } 
                             &.prev-slide {
                                 margin-right: 63px;
