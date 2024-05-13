@@ -2308,7 +2308,7 @@ body {
                     left: 19px;
                 }
             }
-            &.OW-programs {
+            &.OW-pillars {
                 .title-row {
                     background-color: $main-color;
                     min-height: 275px;
@@ -2376,24 +2376,25 @@ body {
                 .pillars-wrap {
                     display: flex;
                     flex-direction: column;
-                    align-items: end;
+                    margin-top: 28px;
+                    margin-bottom: 50px;
                     .pillar-item {
-                        padding: 16px 33px 9px 40px;
+                        padding: 25px 33px 8px 36px;
                         border-radius: 12.671px;
                         border-width: 2px;
                         border-style: solid;
                         background: #FFF;  
-                        margin-bottom: 26px;
-                        margin-left: 68px;
+                        margin-bottom: 15px;
+                        margin-left: 66px;
                         position: relative;
                         width: 1068px;
-                        min-height: 217px;
+                        min-height: 190px;
                         &:last-child {
                             margin-bottom: 0px;
                         }   
                         &::before {
                             @include before-content(137px, 137px);
-                            top: 20px;
+                            top: 17px;
                             left: -68px;
                             border-radius: 50%;
                             z-index: -1;
@@ -2406,7 +2407,7 @@ body {
                             line-height: normal;
                             letter-spacing: 1.629px;
                             text-transform: uppercase;
-                            margin-bottom: 14px;
+                            margin-bottom: 26px;
                             display: inline-block;
                         }
                         .name {
@@ -2421,7 +2422,12 @@ body {
                         }
                         .description {
                             letter-spacing: 0.8px;
-                            line-height: 28px;
+                            line-height: 32px;
+                            font-size: 23px;
+                            font-style: normal;
+                            font-weight: 400;
+                            letter-spacing: 0.69px;
+
                         }  
                         .icon-wrap {
                             width: 83px;
@@ -2441,7 +2447,7 @@ body {
                             .name {
                                 color: $blue-color;
                             }
-                            .title {
+                            .number {
                                 color: $blue-color;
                             }
                             svg {
@@ -2457,7 +2463,7 @@ body {
                             .name {
                                 color: $purple-color;
                             }
-                            .title {
+                            .number {
                                 color: $purple-color;
                             }
                             svg {
@@ -2473,7 +2479,7 @@ body {
                             .name {
                                 color: $green-color;
                             }
-                            .title {
+                            .number {
                                 color: $green-color;
                             }
                             svg {
@@ -2482,13 +2488,130 @@ body {
                             }
                         }                                                                 
                     }
-                }                 
+                }   
+                .pillars-slider-wrap {
+                    padding-top: 50px;
+                    padding-bottom: 90px;
+                    .columns {
+                        .column-left {
+                            width: 610px;
+                        }
+                        .column-right {
+                            margin-left: 38px;
+                            width: 576px;
+                        }
+                    }
+                    .title {
+                        -webkit-text-stroke: 2px;
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 58px;
+                        letter-spacing: 7.5px;
+                        text-transform: uppercase;
+                        margin-bottom: 128px;
+                        color: $blue-color;
+                    }
+                    .pillars-slider {
+                        padding-bottom: 82px;
+                        .slide-item {
+                            .slide-title {
+                                font-family: "Akkurat LL Cyrillic Bold";
+                                font-size: 35px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 38px;
+                                letter-spacing: 1.75px;
+                                text-transform: uppercase;
+                                margin-bottom: 35px;                                 
+                            }
+                            &.blue-item {
+                                .slide-title {
+                                    color: $blue-color;
+                                }
+                            }
+                            &.green-item {
+                            .slide-title {
+                                    color: $green-color;
+                                }
+                            }
+                            &.purple-item {
+                                .slide-title {
+                                    color: $purple-color;
+                                } 
+                            }
+                        }
+                        .content {
+                            font-size: 23px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 30px;
+                            strong {
+                                font-family: "Akkurat LL Cyrillic Bold";
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .slider-navigation {
+                        display: flex;
+                        .nav-slide {
+                            width: 148px;
+                            height: 26px; 
+                            border-radius: 32px;
+                            border: 1px solid $blue-color;
+                            background: #FFF;  
+                            transform: 0.2s; 
+                            font-size: 10px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            display: inline-flex;
+                            align-items: center;
+                            position: relative;
+                            cursor: pointer;
+                            &:hover {
+                                background: $blue-color;
+                                color: #fff;
+                                transition: 0.3s;
+                                svg {
+                                    path {
+                                        fill: #fff;
+                                    }
+                                }
+                            } 
+                            &.prev-slide {
+                                margin-right: 63px;
+                                padding: 9px 25px 7px 68px;
+                                svg {
+                                    left: 8px;
+                                }
+                            }    
+                            &.next-slide {
+                                padding: 9px 8px 7px 42px;
+                                svg {
+                                    right: 8px;
+                                }
+                            }   
+                            svg {
+                                position: absolute;
+                            }             
+                        }
+                    } 
+                    image {
+                        width: 100%;
+                        height: 574px;
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                }           
             }
             &.OW-pillar-advocacy {
                 .title-row {
                     background-color: $blue-color;
                     min-height: 227px;
-                    padding-top: 40px;
+                    padding-top: 30px;
                     padding-bottom: 21px; 
                     position: relative;
                     .section-title {
@@ -2501,7 +2624,7 @@ body {
                         text-transform: uppercase;
                         -webkit-text-stroke: 3px;
                         color: #fff;
-                        margin-bottom: 37px;
+                        margin-bottom: 27px;
                         width: 660px;
                     }
                     .content-link {
@@ -2509,7 +2632,7 @@ body {
                             display: inline-flex;
                             align-items: center;
                             padding-left: 56px;
-                            padding-right: 56px;
+                            padding-right: 150px;
                             width: 100%;
                             background-color: $main-color;
                             border-radius: 106px;
@@ -2522,8 +2645,7 @@ body {
                             letter-spacing: 0.6px;
                             text-transform: uppercase;
                             color: #fff;
-                            letter-spacing: 4px;
-                            padding-top: 13px;
+                            letter-spacing: 1.1px;
                             &::after {
                                 @include after-content(48px, 48px);
                                 background-color: $blue-color;
@@ -2538,13 +2660,105 @@ body {
                         }
                     }                                       
                 }
+                .pillar-advocacy-wrap {
+                    padding-top: 67px;
+                    padding-bottom: 80px;
+                    .columns {
+                       // justify-content: space-between;
+                        .column-left {
+                            width: 578px;
+                        }
+                        .column-right {
+                            width: 605px;
+                            margin-left: 58px;
+                            position: relative;
+                            padding-bottom: 266px;
+                        }
+                        .title-column {
+                            position: relative;
+                            padding-left: 73px;
+                            margin-bottom: 55px;
+                            .number {
+                                font-family: "Akkurat Mono LL";
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 2px;
+                                text-transform: uppercase;
+                                color: $blue-color;
+                                position: absolute;
+                                top: 9px;
+                                left: 0px;
+                            }
+                            .name {
+                                -webkit-text-stroke: 1px;
+                                font-family: "Akkurat Mono LL";
+                                font-size: 35px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 35px;
+                                letter-spacing: 2.1px;
+                                text-transform: uppercase;
+                                display: inline-flex;
+                                align-items: center;
+                                height: 51px;
+                                border-radius: 71px;
+                                padding-left: 38px;
+                                padding-top: 10px;
+                                padding-right: 42px;
+                                border: $blue-color 2px solid;
+                                color: $blue-color;
+                            }
+                            &.main-color {
+                                .name {
+                                    color: $main-color;
+                                    border-color: $main-color;
+                                }
+                            }
+                        }
+                        .list-wrap {
+                            .list-item {
+                                margin-bottom: 85px;
+                                position: relative;
+                                &:last-child {
+                                    margin-bottom: 0px;
+                                }
+                                .image-wrap {
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 0px;
+                                }
+                                .content {
+                                    padding-left: 106px;
+                                    font-family: "Akkurat LL Cyrillic Bold";
+                                    font-size: 23px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 28px; /* 86.957% */
+                                    letter-spacing: 0.69px;
+                                }
+                            }
+                        }
+                        .background-image {
+                            width: 630px;
+                            height: 234px;
+                            position: absolute;
+                            bottom: 0px;
+                            left: 4px;   
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
             }
             &.OW-pillar-capacity-bildings {
                 .title-row {
                     background-color: $green-color;
                     min-height: 227px;
                     padding-top: 40px;
-                    padding-bottom: 21px; 
+                    padding-bottom: 25px; 
                     position: relative;
                     .section-title {
                         font-family: "Akkurat LL Cyrillic Bold";
@@ -2556,15 +2770,15 @@ body {
                         text-transform: uppercase;
                         -webkit-text-stroke: 3px;
                         color: #fff;
-                        margin-bottom: 37px;
-                        width: 660px;
+                        margin-bottom: 24px;
+                        width: 875px;
                     }
                     .content-link {
                         a {
                             display: inline-flex;
                             align-items: center;
                             padding-left: 56px;
-                            padding-right: 56px;
+                            padding-right: 255px;
                             width: 100%;
                             background-color: $main-color;
                             border-radius: 106px;
@@ -2573,15 +2787,14 @@ body {
                             font-size: 20px;
                             font-style: normal;
                             font-weight: 700;
-                            line-height: 26px;
+                            line-height: 28px;
                             letter-spacing: 0.6px;
                             text-transform: uppercase;
                             color: #fff;
-                            letter-spacing: 4px;
-                            padding-top: 13px;
+                            letter-spacing: 1.1px;
                             &::after {
                                 @include after-content(48px, 48px);
-                                background-color: $green-color;
+                                background-color: $blue-color;
                                 border-radius: 50%;
                                 background-image: url(../images/icon-square-arrow-white.svg);
                                 background-position: center;
@@ -2591,7 +2804,7 @@ body {
                                 background-size: 20px 20px;
                             }
                         }
-                    }                                       
+                    }                  
                 }
             }
             &.OW-pillar-community-empowerment{
@@ -2619,7 +2832,7 @@ body {
                             display: inline-flex;
                             align-items: center;
                             padding-left: 56px;
-                            padding-right: 56px;
+                            padding-right: 150px;
                             width: 100%;
                             background-color: $main-color;
                             border-radius: 106px;
@@ -2632,11 +2845,10 @@ body {
                             letter-spacing: 0.6px;
                             text-transform: uppercase;
                             color: #fff;
-                            letter-spacing: 4px;
-                            padding-top: 13px;
+                            letter-spacing: 1.1px;
                             &::after {
                                 @include after-content(48px, 48px);
-                                background-color: $purple-color;
+                                background-color: $blue-color;
                                 border-radius: 50%;
                                 background-image: url(../images/icon-square-arrow-white.svg);
                                 background-position: center;
@@ -2646,7 +2858,7 @@ body {
                                 background-size: 20px 20px;
                             }
                         }
-                    }                                       
+                    }                                      
                 }
             }
         }

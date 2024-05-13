@@ -2324,22 +2324,22 @@ body {
         position: absolute;
         bottom: 6px;
         left: 19px; }
-    body main section.OW-programs .title-row {
+    body main section.OW-pillars .title-row {
       background-color: #003548;
       min-height: 275px;
       padding-top: 38px;
       padding-bottom: 21px;
       position: relative; }
-      body main section.OW-programs .title-row .background-image {
+      body main section.OW-pillars .title-row .background-image {
         width: 420px;
         height: 203px;
         position: absolute;
         right: 67px;
         bottom: 0px; }
-        body main section.OW-programs .title-row .background-image img {
+        body main section.OW-pillars .title-row .background-image img {
           width: 100%;
           height: auto; }
-      body main section.OW-programs .title-row .section-title {
+      body main section.OW-pillars .title-row .section-title {
         font-family: "Akkurat LL Cyrillic Bold";
         font-size: 70px;
         font-style: normal;
@@ -2351,7 +2351,7 @@ body {
         color: #fff;
         margin-bottom: 13px;
         width: 820px; }
-      body main section.OW-programs .title-row .content-link a {
+      body main section.OW-pillars .title-row .content-link a {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
@@ -2374,7 +2374,7 @@ body {
         color: #003548;
         letter-spacing: 0.91px;
         padding-top: 6px; }
-        body main section.OW-programs .title-row .content-link a::after {
+        body main section.OW-pillars .title-row .content-link a::after {
           content: '';
           width: 40px;
           height: 40px;
@@ -2388,7 +2388,7 @@ body {
           top: 5px;
           right: 7px;
           background-size: 20px 20px; }
-    body main section.OW-programs .pillars-wrap {
+    body main section.OW-pillars .pillars-wrap {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2396,33 +2396,32 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: end; }
-      body main section.OW-programs .pillars-wrap .pillar-item {
-        padding: 16px 33px 9px 40px;
+      margin-top: 28px;
+      margin-bottom: 50px; }
+      body main section.OW-pillars .pillars-wrap .pillar-item {
+        padding: 25px 33px 8px 36px;
         border-radius: 12.671px;
         border-width: 2px;
         border-style: solid;
         background: #FFF;
-        margin-bottom: 26px;
-        margin-left: 68px;
+        margin-bottom: 15px;
+        margin-left: 66px;
         position: relative;
         width: 1068px;
-        min-height: 217px; }
-        body main section.OW-programs .pillars-wrap .pillar-item:last-child {
+        min-height: 190px; }
+        body main section.OW-pillars .pillars-wrap .pillar-item:last-child {
           margin-bottom: 0px; }
-        body main section.OW-programs .pillars-wrap .pillar-item::before {
+        body main section.OW-pillars .pillars-wrap .pillar-item::before {
           content: '';
           width: 137px;
           height: 137px;
           position: absolute;
           display: block;
-          top: 20px;
+          top: 17px;
           left: -68px;
           border-radius: 50%;
           z-index: -1; }
-        body main section.OW-programs .pillars-wrap .pillar-item .number {
+        body main section.OW-pillars .pillars-wrap .pillar-item .number {
           font-family: "Akkurat Mono LL";
           font-size: 16.291px;
           font-style: normal;
@@ -2430,9 +2429,9 @@ body {
           line-height: normal;
           letter-spacing: 1.629px;
           text-transform: uppercase;
-          margin-bottom: 14px;
+          margin-bottom: 26px;
           display: inline-block; }
-        body main section.OW-programs .pillars-wrap .pillar-item .name {
+        body main section.OW-pillars .pillars-wrap .pillar-item .name {
           font-family: "Akkurat LL Cyrillic Bold";
           font-size: 35px;
           font-style: normal;
@@ -2441,10 +2440,14 @@ body {
           letter-spacing: 1.75px;
           text-transform: uppercase;
           margin-bottom: 9px; }
-        body main section.OW-programs .pillars-wrap .pillar-item .description {
+        body main section.OW-pillars .pillars-wrap .pillar-item .description {
           letter-spacing: 0.8px;
-          line-height: 28px; }
-        body main section.OW-programs .pillars-wrap .pillar-item .icon-wrap {
+          line-height: 32px;
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 400;
+          letter-spacing: 0.69px; }
+        body main section.OW-pillars .pillars-wrap .pillar-item .icon-wrap {
           width: 83px;
           height: 83px;
           display: -webkit-box;
@@ -2459,43 +2462,134 @@ body {
           position: absolute;
           top: 10px;
           right: 10px; }
-        body main section.OW-programs .pillars-wrap .pillar-item.blue-item {
+        body main section.OW-pillars .pillars-wrap .pillar-item.blue-item {
           border-color: #00B0EB; }
-          body main section.OW-programs .pillars-wrap .pillar-item.blue-item::before {
+          body main section.OW-pillars .pillars-wrap .pillar-item.blue-item::before {
             background-color: #00B0EB; }
-          body main section.OW-programs .pillars-wrap .pillar-item.blue-item .name {
+          body main section.OW-pillars .pillars-wrap .pillar-item.blue-item .name {
             color: #00B0EB; }
-          body main section.OW-programs .pillars-wrap .pillar-item.blue-item .title {
+          body main section.OW-pillars .pillars-wrap .pillar-item.blue-item .number {
             color: #00B0EB; }
-          body main section.OW-programs .pillars-wrap .pillar-item.blue-item svg {
+          body main section.OW-pillars .pillars-wrap .pillar-item.blue-item svg {
             width: 72px;
             height: 72px; }
-        body main section.OW-programs .pillars-wrap .pillar-item.purple-item {
+        body main section.OW-pillars .pillars-wrap .pillar-item.purple-item {
           border-color: #9575CD; }
-          body main section.OW-programs .pillars-wrap .pillar-item.purple-item::before {
+          body main section.OW-pillars .pillars-wrap .pillar-item.purple-item::before {
             background-color: #9575CD; }
-          body main section.OW-programs .pillars-wrap .pillar-item.purple-item .name {
+          body main section.OW-pillars .pillars-wrap .pillar-item.purple-item .name {
             color: #9575CD; }
-          body main section.OW-programs .pillars-wrap .pillar-item.purple-item .title {
+          body main section.OW-pillars .pillars-wrap .pillar-item.purple-item .number {
             color: #9575CD; }
-          body main section.OW-programs .pillars-wrap .pillar-item.purple-item svg {
+          body main section.OW-pillars .pillars-wrap .pillar-item.purple-item svg {
             width: 81px;
             height: 62px; }
-        body main section.OW-programs .pillars-wrap .pillar-item.green-item {
+        body main section.OW-pillars .pillars-wrap .pillar-item.green-item {
           border-color: #43E0D5; }
-          body main section.OW-programs .pillars-wrap .pillar-item.green-item::before {
+          body main section.OW-pillars .pillars-wrap .pillar-item.green-item::before {
             background-color: #43E0D5; }
-          body main section.OW-programs .pillars-wrap .pillar-item.green-item .name {
+          body main section.OW-pillars .pillars-wrap .pillar-item.green-item .name {
             color: #43E0D5; }
-          body main section.OW-programs .pillars-wrap .pillar-item.green-item .title {
+          body main section.OW-pillars .pillars-wrap .pillar-item.green-item .number {
             color: #43E0D5; }
-          body main section.OW-programs .pillars-wrap .pillar-item.green-item svg {
+          body main section.OW-pillars .pillars-wrap .pillar-item.green-item svg {
             width: 53px;
             height: 83px; }
+    body main section.OW-pillars .pillars-slider-wrap {
+      padding-top: 50px;
+      padding-bottom: 90px; }
+      body main section.OW-pillars .pillars-slider-wrap .columns .column-left {
+        width: 610px; }
+      body main section.OW-pillars .pillars-slider-wrap .columns .column-right {
+        margin-left: 38px;
+        width: 576px; }
+      body main section.OW-pillars .pillars-slider-wrap .title {
+        -webkit-text-stroke: 2px;
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 7.5px;
+        text-transform: uppercase;
+        margin-bottom: 128px;
+        color: #00B0EB; }
+      body main section.OW-pillars .pillars-slider-wrap .pillars-slider {
+        padding-bottom: 82px; }
+        body main section.OW-pillars .pillars-slider-wrap .pillars-slider .slide-item .slide-title {
+          font-family: "Akkurat LL Cyrillic Bold";
+          font-size: 35px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 38px;
+          letter-spacing: 1.75px;
+          text-transform: uppercase;
+          margin-bottom: 35px; }
+        body main section.OW-pillars .pillars-slider-wrap .pillars-slider .slide-item.blue-item .slide-title {
+          color: #00B0EB; }
+        body main section.OW-pillars .pillars-slider-wrap .pillars-slider .slide-item.green-item .slide-title {
+          color: #43E0D5; }
+        body main section.OW-pillars .pillars-slider-wrap .pillars-slider .slide-item.purple-item .slide-title {
+          color: #9575CD; }
+        body main section.OW-pillars .pillars-slider-wrap .pillars-slider .content {
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; }
+          body main section.OW-pillars .pillars-slider-wrap .pillars-slider .content strong {
+            font-family: "Akkurat LL Cyrillic Bold";
+            font-weight: 700; }
+      body main section.OW-pillars .pillars-slider-wrap .slider-navigation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide {
+          width: 148px;
+          height: 26px;
+          border-radius: 32px;
+          border: 1px solid #00B0EB;
+          background: #FFF;
+          -webkit-transform: 0.2s;
+                  transform: 0.2s;
+          font-size: 10px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          position: relative;
+          cursor: pointer; }
+          body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide:hover {
+            background: #00B0EB;
+            color: #fff;
+            -webkit-transition: 0.3s;
+            transition: 0.3s; }
+            body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide:hover svg path {
+              fill: #fff; }
+          body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.prev-slide {
+            margin-right: 63px;
+            padding: 9px 25px 7px 68px; }
+            body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.prev-slide svg {
+              left: 8px; }
+          body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.next-slide {
+            padding: 9px 8px 7px 42px; }
+            body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.next-slide svg {
+              right: 8px; }
+          body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide svg {
+            position: absolute; }
+      body main section.OW-pillars .pillars-slider-wrap image {
+        width: 100%;
+        height: 574px; }
+        body main section.OW-pillars .pillars-slider-wrap image img {
+          max-width: 100%;
+          height: auto; }
     body main section.OW-pillar-advocacy .title-row {
       background-color: #00B0EB;
       min-height: 227px;
-      padding-top: 40px;
+      padding-top: 30px;
       padding-bottom: 21px;
       position: relative; }
       body main section.OW-pillar-advocacy .title-row .section-title {
@@ -2508,7 +2602,7 @@ body {
         text-transform: uppercase;
         -webkit-text-stroke: 3px;
         color: #fff;
-        margin-bottom: 37px;
+        margin-bottom: 27px;
         width: 660px; }
       body main section.OW-pillar-advocacy .title-row .content-link a {
         display: -webkit-inline-box;
@@ -2518,7 +2612,7 @@ body {
             -ms-flex-align: center;
                 align-items: center;
         padding-left: 56px;
-        padding-right: 56px;
+        padding-right: 150px;
         width: 100%;
         background-color: #003548;
         border-radius: 106px;
@@ -2531,8 +2625,7 @@ body {
         letter-spacing: 0.6px;
         text-transform: uppercase;
         color: #fff;
-        letter-spacing: 4px;
-        padding-top: 13px; }
+        letter-spacing: 1.1px; }
         body main section.OW-pillar-advocacy .title-row .content-link a::after {
           content: '';
           width: 48px;
@@ -2547,11 +2640,88 @@ body {
           top: 12px;
           right: 12px;
           background-size: 20px 20px; }
+    body main section.OW-pillar-advocacy .pillar-advocacy-wrap {
+      padding-top: 67px;
+      padding-bottom: 80px; }
+      body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .column-left {
+        width: 578px; }
+      body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .column-right {
+        width: 605px;
+        margin-left: 58px;
+        position: relative;
+        padding-bottom: 266px; }
+      body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column {
+        position: relative;
+        padding-left: 73px;
+        margin-bottom: 55px; }
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .number {
+          font-family: "Akkurat Mono LL";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #00B0EB;
+          position: absolute;
+          top: 9px;
+          left: 0px; }
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .name {
+          -webkit-text-stroke: 1px;
+          font-family: "Akkurat Mono LL";
+          font-size: 35px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 35px;
+          letter-spacing: 2.1px;
+          text-transform: uppercase;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: 51px;
+          border-radius: 71px;
+          padding-left: 38px;
+          padding-top: 10px;
+          padding-right: 42px;
+          border: #00B0EB 2px solid;
+          color: #00B0EB; }
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column.main-color .name {
+          color: #003548;
+          border-color: #003548; }
+      body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item {
+        margin-bottom: 85px;
+        position: relative; }
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item:last-child {
+          margin-bottom: 0px; }
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item .image-wrap {
+          position: absolute;
+          left: 0px;
+          top: 0px; }
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item .content {
+          padding-left: 106px;
+          font-family: "Akkurat LL Cyrillic Bold";
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px;
+          /* 86.957% */
+          letter-spacing: 0.69px; }
+      body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .background-image {
+        width: 630px;
+        height: 234px;
+        position: absolute;
+        bottom: 0px;
+        left: 4px; }
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .background-image img {
+          max-width: 100%; }
     body main section.OW-pillar-capacity-bildings .title-row {
       background-color: #43E0D5;
       min-height: 227px;
       padding-top: 40px;
-      padding-bottom: 21px;
+      padding-bottom: 25px;
       position: relative; }
       body main section.OW-pillar-capacity-bildings .title-row .section-title {
         font-family: "Akkurat LL Cyrillic Bold";
@@ -2563,8 +2733,8 @@ body {
         text-transform: uppercase;
         -webkit-text-stroke: 3px;
         color: #fff;
-        margin-bottom: 37px;
-        width: 660px; }
+        margin-bottom: 24px;
+        width: 875px; }
       body main section.OW-pillar-capacity-bildings .title-row .content-link a {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -2573,7 +2743,7 @@ body {
             -ms-flex-align: center;
                 align-items: center;
         padding-left: 56px;
-        padding-right: 56px;
+        padding-right: 255px;
         width: 100%;
         background-color: #003548;
         border-radius: 106px;
@@ -2582,19 +2752,18 @@ body {
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 26px;
+        line-height: 28px;
         letter-spacing: 0.6px;
         text-transform: uppercase;
         color: #fff;
-        letter-spacing: 4px;
-        padding-top: 13px; }
+        letter-spacing: 1.1px; }
         body main section.OW-pillar-capacity-bildings .title-row .content-link a::after {
           content: '';
           width: 48px;
           height: 48px;
           position: absolute;
           display: block;
-          background-color: #43E0D5;
+          background-color: #00B0EB;
           border-radius: 50%;
           background-image: url(../images/icon-square-arrow-white.svg);
           background-position: center;
@@ -2628,7 +2797,7 @@ body {
             -ms-flex-align: center;
                 align-items: center;
         padding-left: 56px;
-        padding-right: 56px;
+        padding-right: 150px;
         width: 100%;
         background-color: #003548;
         border-radius: 106px;
@@ -2641,15 +2810,14 @@ body {
         letter-spacing: 0.6px;
         text-transform: uppercase;
         color: #fff;
-        letter-spacing: 4px;
-        padding-top: 13px; }
+        letter-spacing: 1.1px; }
         body main section.OW-pillar-community-empowerment .title-row .content-link a::after {
           content: '';
           width: 48px;
           height: 48px;
           position: absolute;
           display: block;
-          background-color: #9575CD;
+          background-color: #00B0EB;
           border-radius: 50%;
           background-image: url(../images/icon-square-arrow-white.svg);
           background-position: center;
