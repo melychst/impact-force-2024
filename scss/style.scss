@@ -3027,6 +3027,363 @@ body {
                     }
                 }
             }
+            &.news-hero {
+                .hero-news-slider {
+                    .slider-navigation-wrap {
+                        position: absolute;
+                        z-index: 5;
+                        width: 100%;
+                        left: 0px;
+                        top: 38px;
+                        .slider-navigation {
+                            display: flex;
+                            margin-bottom: 61px;
+                            .nav-slide {
+                                color: #ffffff;
+                                width: 148px;
+                                height: 26px; 
+                                border-radius: 32px;
+                                border: 1px solid #ffffff;
+                                background: transparent;  
+                                transform: 0.2s; 
+                                font-size: 10px;
+                                letter-spacing: 1px;
+                                text-transform: uppercase;
+                                display: inline-flex;
+                                align-items: center;
+                                position: relative;
+                                cursor: pointer;
+                                &:hover {
+                                    background: #ffffff;
+                                    color: $blue-color;
+                                    transition: 0.3s;
+                                    svg {
+                                        path {
+                                            fill: #00B0EB;
+                                        }
+                                    }
+                                } 
+                                &.prev-slide {
+                                    margin-right: 63px;
+                                    padding: 9px 25px 7px 68px;
+                                    svg {
+                                        left: 8px;
+                                    }
+                                }    
+                                &.next-slide {
+                                    padding: 9px 8px 7px 42px;
+                                    svg {
+                                        right: 8px;
+                                    }
+                                }   
+                                svg {
+                                    position: absolute;
+                                }             
+                            }
+                        }                          
+                    }
+
+                    .slider-wrap {
+                        .slide-item {
+                            padding-top: 120px;
+                            .container {
+                                min-height: 550px;
+                                position: relative;
+                            }
+                            &.blue-theme {
+                                background-color: $blue-color;
+                            }
+                            .slide-content {
+                                width: 652px;
+                            }
+                            .title {
+                                color: #FFF;
+                                -webkit-text-stroke: 5px;
+                                font-family: "Akkurat LL Cyrillic Bold";
+                                font-size: 75px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 86px;
+                                letter-spacing: 11.8px;
+                                text-transform: uppercase;
+                                margin-bottom: 18px;
+                                width: 774px;
+                            }
+                            .sub-title {
+                                font-family: "Akkurat LL Cyrillic Bold";
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 38px;
+                                letter-spacing: 1.5px;
+                                text-transform: uppercase;
+                                margin-bottom: 20px;
+                            }
+                            .content {
+                                color: #FFF;
+                                font-size: 25px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 29px;
+                                margin-bottom: 26px;
+                            }
+                            .read-more {
+                                a {
+                                    display: inline-flex;
+                                    height: 32px;
+                                    padding: 7px 73px 0px 66px;
+                                    border-radius: 99px;
+                                    background: $main-color;
+                                    color: #FFF;
+                                    font-family: "Akkurat Mono LL";
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    letter-spacing: 0.9px;
+                                    text-transform: uppercase;
+                                    position: relative;
+                                    &:after {
+                                        @include after-content(26px, 26px);
+                                        background-image: url(../images/icon-square-arrow.svg);
+                                        background-size: 14px 14px;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        right: 3px;
+                                        bottom: 2px;
+                                        transform: rotate(90deg);
+                                        border-radius: 50%;
+                                        background-color: $yellow-color;
+                                    }
+                                }
+                            }
+                            .image-wrap {
+                                width: 640px;
+                                height: 640px;
+                                position: absolute;
+                                bottom: 0px;
+                                right: -52px;
+                                img {
+                                    @include image-fit;
+                                }
+                            }
+                        }
+                    }                   
+                }
+            }
+            &.blog {
+                padding-bottom: 100px;
+                .container {
+                    position: relative;
+                }
+                .news-wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding-top: 142px;
+                    .news-item {
+                        width: 391px;
+                        height: 401px;
+                        position: relative;
+                        margin-bottom: 64px;
+                        &::before {
+                            content: '';
+                            width: 391px;
+                            display: block;
+                        }
+                        .image-wrap {
+                            width: 308px;
+                            height: 287px;
+                            border-radius: 0px 77.793px 0px 0px;
+                            overflow: hidden;
+                            img {
+                                @include image-fit;
+                            }
+                        }
+                        .body-item {
+                            border-radius: 11.787px;
+                            border: 0.786px solid $blue-color;
+                            background: #FFF;
+                            box-shadow: 0px 3.143px 3.143px 0px rgba(194, 198, 217, 0.50);
+                            position: absolute;
+                            right: 0px;
+                            bottom: 0px;
+                            width: 374px;
+                            height: 192px;
+                            padding: 24px 14px 15px 17px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            .head {
+                                width: 100%;
+                                .date {
+                                    font-family: "Akkurat Mono LL";
+                                    color: $blue-color;
+                                    font-size: 14.144px;
+                                    font-style: normal;
+                                    line-height: 100%;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                }
+                                .title {
+                                    a {
+                                        font-family: "Akkurat LL Cyrillic" Bold;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 18px;
+                                        letter-spacing: 1.414px;
+                                        text-transform: uppercase;
+                                        color: $main-color;
+                                    }
+                                }                                
+                            }
+
+                            .excerpt {
+                                width: 100%;
+                                font-size: 12px;
+                                line-height: 20px; /* 133.333% */
+                                margin-top: auto;
+                                position: relative;
+                                &::before {
+                                    content: '';
+                                    width: calc(100% - 25px);
+                                    display: block;
+                                    height: 1px;
+                                    position: absolute;
+                                    bottom: -5px;
+                                    left: 0px;
+                                    background-color: $main-color;
+                                }
+                            }
+                            .read-more {
+                                position: absolute;
+                                bottom: 4px;
+                                right: 14px;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+                .page-navigation {
+                    position: absolute;
+                    width: 604px;
+                    display: flex;
+                    justify-content: space-between;
+                    bottom: 12px;
+                    right: 15px;
+                    font-family: "Akkurat Mono LL";
+                    font-size: 14.162px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    color: $blue-color;
+                }
+            }
+            &.subscription {
+                min-height: 550px;
+                background-position: center;
+                position: relative;
+                padding-top: 70px;
+                padding-bottom: 63px;
+                margin-bottom: 79px;
+                .image-background {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 1;
+                    img {
+                        @include image-fit;
+                    }
+                }
+                .container {
+                    z-index: 5;
+                    position: relative;
+                    .title {
+                        color: #FFF;
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 80px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 80px;
+                        letter-spacing: 7px;
+                        text-transform: uppercase;
+                        margin-bottom: 79px;
+                        width: 650px;
+                    }
+                }
+                form {
+                    .field-wrap {
+                        position: relative;
+                        input[type=email] {
+                            width: 100%;
+                            height: 41px;
+                            display: flex;
+                            align-items: center;
+                            border-radius: 90px;
+                            border: 1px solid #003548;
+                            background: rgba(255, 255, 255, 0.70);
+                            margin-bottom: 25px;
+                            padding-left: 74px;
+                            color: $main-color;
+                            font-family: "Akkurat Mono LL";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.9px;
+                            text-transform: uppercase;
+                            &::placeholder {
+                                color: $main-color;
+                            }
+                        }
+                        input[type=submit]{
+                            width: 100%;
+                            color: $yellow-color;
+                            font-family: "Akkurat Mono LL";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.9px;
+                            text-transform: uppercase;
+                            border-radius: 99px;
+                            background: $main-color;
+                            padding-left: 81px;
+                            padding-right: 50px;
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            border: none;
+                        }
+                        &.field-mail {
+                            width: 604px;
+                            &::before {
+                                @include before-content(32px, 24px);
+                                background-image: url(../images/icon-subscription-mail.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                top: 9px;
+                                left: 22px;
+                            }
+                        }
+                        &.field-submit {
+                            width: 286px;
+                            &::before {
+                                @include before-content(26px, 26px);
+                                background-image: url(../images/icon-subscription-submit.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                top: 3px;
+                                right: 4px;
+                                z-index: 5;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         footer {
