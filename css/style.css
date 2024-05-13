@@ -2771,23 +2771,116 @@ body {
           top: 12px;
           right: 12px;
           background-size: 20px 20px; }
+    body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap {
+      padding-top: 58px;
+      padding-bottom: 85px; }
+      body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-left {
+          width: 392px; }
+        body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-right {
+          width: 770px; }
+      body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .title {
+        -webkit-text-stroke-width: 2px;
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 7.5px;
+        text-transform: uppercase;
+        color: #43E0D5;
+        margin-bottom: 24px; }
+      body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .image-wrap {
+        width: 100%;
+        height: 381px;
+        background-color: #5D7989; }
+        body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .image-wrap img {
+          max-width: 100%; }
+      body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap {
+        padding-top: 17px; }
+        body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item {
+          padding-bottom: 65px;
+          position: relative;
+          padding-left: 60px; }
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item::before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            display: block;
+            background-image: url(../images/ow-icon-circle.svg);
+            background-size: 30px 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: 0px;
+            top: 0px; }
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item:last-child {
+            padding-bottom: 0px; }
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .content {
+            font-family: "Akkurat LL Cyrillic Bold";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            margin-bottom: 10px; }
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more {
+            text-align: right; }
+            body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more a {
+              color: #43E0D5;
+              font-size: 16px;
+              font-style: normal;
+              line-height: 20px;
+              /* 125% */
+              letter-spacing: 2.2px;
+              text-transform: uppercase;
+              position: relative;
+              display: inline-block;
+              width: 498px;
+              text-align: left; }
+              body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more a::before {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #003548;
+                position: absolute;
+                bottom: 0px;
+                left: 0px; }
+              body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more a::after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                display: block;
+                background-image: url(../images/icon-square-arrow.svg);
+                background-size: 14px 14px;
+                background-position: center;
+                background-repeat: no-repeat;
+                right: 0px;
+                bottom: 6px;
+                -webkit-transform: rotate(90deg);
+                        transform: rotate(90deg); }
     body main section.OW-pillar-community-empowerment .title-row {
       background-color: #9575CD;
       min-height: 227px;
-      padding-top: 40px;
-      padding-bottom: 21px;
+      padding-top: 42px;
+      padding-bottom: 27px;
       position: relative; }
       body main section.OW-pillar-community-empowerment .title-row .section-title {
         font-family: "Akkurat LL Cyrillic Bold";
         font-size: 70px;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        line-height: 78px;
         letter-spacing: 12px;
         text-transform: uppercase;
         -webkit-text-stroke: 3px;
         color: #fff;
-        margin-bottom: 37px;
+        margin-bottom: 21px;
         width: 660px; }
       body main section.OW-pillar-community-empowerment .title-row .content-link a {
         display: -webkit-inline-box;
@@ -2807,10 +2900,9 @@ body {
         font-style: normal;
         font-weight: 700;
         line-height: 26px;
-        letter-spacing: 0.6px;
         text-transform: uppercase;
         color: #fff;
-        letter-spacing: 1.1px; }
+        letter-spacing: 0.9px; }
         body main section.OW-pillar-community-empowerment .title-row .content-link a::after {
           content: '';
           width: 48px;
@@ -2825,6 +2917,75 @@ body {
           top: 12px;
           right: 12px;
           background-size: 20px 20px; }
+    body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap {
+      padding-top: 34px;
+      padding-bottom: 24px; }
+      body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .title {
+        -webkit-text-stroke: 2px;
+        font-family: "Akkurat LL Cyrillic Bold";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 8.4px;
+        text-transform: uppercase;
+        color: #9575CD;
+        margin-bottom: 34px; }
+      body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item {
+          margin-bottom: 32px;
+          width: 498px; }
+          body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item:nth-child(2n) {
+            width: 610px; }
+          body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .title-item {
+            font-family: "Akkurat LL Cyrillic Bold";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+            margin-bottom: 25px; }
+            body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .title-item::before {
+              content: '';
+              width: 100%;
+              height: 1px;
+              background-color: #9575CD;
+              position: absolute;
+              bottom: -4px;
+              left: 0px; }
+          body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content {
+            line-height: 26px;
+            letter-spacing: 0.8px; }
+            body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content span {
+              font-family: "Akkurat LL Cyrillic Bold";
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px;
+              /* 100% */
+              letter-spacing: 0.8px;
+              position: relative; }
+              body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content span::before {
+                content: '';
+                width: 277px;
+                height: 11px;
+                position: absolute;
+                display: block;
+                background-image: url(../images/ow-span-bg.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                left: 0px;
+                bottom: 0px; }
   body main footer {
     padding-top: 34px;
     padding-bottom: 21px;
