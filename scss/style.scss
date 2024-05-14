@@ -18,14 +18,40 @@ body {
         padding-top: 65px;
         padding-bottom: 25px;
         border-bottom: #CDDC39 solid 2px;
+        @include media($lg){
+            padding-top: 48px;
+            padding-bottom: 10px;
+        }
         .columns {
             justify-content: space-between;
+            .column-left {
+                @include media($lg){
+                    width: 90px;
+                }
+            }            
+            .column-right {
+                @include media($lg){
+                    width: 484px;
+                }
+            }  
+            .logo-wrap {
+                @include media($lg){
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
         }
         .top-row {
             justify-content: space-between;
             padding-top: 25px;
             margin-bottom: 18px;
             align-items: end;
+            @include media($lg){
+                padding-top: 0px;
+                margin-bottom: 2px;
+            }
             li {
                 display: inline-flex;
             }
@@ -37,6 +63,9 @@ body {
                 display: flex;
                 .social-link {
                     margin-right: 25px;
+                    @include media($lg){
+                        margin-right: 14px;
+                    }
                     &:last-child {
                         margin-right: 0px;
                     }
@@ -49,7 +78,15 @@ body {
                         align-items: center;
                         justify-content: center;
                         transition: 0.2s;
+                        @include media($lg){
+                            width: 21px;
+                            height: 21px;
+                        }
                         svg {
+                             @include media($lg){
+                                width: 10px;
+                                height: auto;
+                             }
                             path {
                                 transition: 0.2s;
                             }
@@ -80,6 +117,9 @@ body {
             .lenguage-wrap {
                 li {
                     margin-right: 42px;
+                    @include media($lg){
+                        margin-right: 24px;
+                    }
                     &:last-child {
                         margin-right: 0px;
                     }
@@ -100,6 +140,10 @@ body {
                         letter-spacing: 0.7px;
                         text-transform: uppercase;
                         padding-top: 3px;
+                        @include media($lg){
+                            height: 12px;
+                            width: 30px;
+                        }
                         &.active {
                             background-color: $blue-color;
                             color: #ffffff;
@@ -113,6 +157,9 @@ body {
                 list-style: none;
                 display: inline-flex;
                 margin: 0px 8px;
+                @include media($lg){
+                    margin: 0px 7px;
+                }
                 &:last-child {
                     margin-right: 0px;
                 }
@@ -132,6 +179,10 @@ body {
                 padding: 0px 10px;
                 position: relative;
                 border-bottom: 2px solid transparent;
+                @include media($lg){
+                    font-size: 12px;
+                    padding: 0px 7px;
+                }
                 &:hover {
                     color: $blue-color;
                     border-bottom: 2px solid $yellow-color;
@@ -152,6 +203,9 @@ body {
                         background-position: center;
                         background-repeat: no-repeat;
                         border-radius: 50%;
+                        @include media($lg){
+                            @include after-content(12px, 12px);
+                        }
                     }
                 }
             }
@@ -166,12 +220,33 @@ body {
                 padding-top: 110px;
                 background-color: $blue-color;
                 color: #fff;
+                @include media($xl){
+                    min-height: auto;
+                    padding-bottom: 50px;
+                }
+                @include media($lg){
+                    padding-top: 59px;
+                    min-height: 318px;
+                    padding-bottom: 44px;
+                }
                 .background-image {
                     width: 770px;
                     height: 454px;
                     position: absolute;
                     right: 0px;
                     bottom: 0px;
+                    @include media($xxl){
+                        width: 650px;
+                        height: 354px;
+                    }
+                    @include media($xl){
+                        width: 550px;
+                        height: 324px;
+                    }
+                    @include media($lg){
+                        width: 395px;
+                        height: 230px;
+                    }
                     img {
                         width: 100%;
                         height: auto;
@@ -179,14 +254,25 @@ body {
                 }
                 .top-row {
                     margin-bottom: 55px;
+                    @include media($lg){
+                        margin-bottom: 28px;
+                    }
                     .left-column {
                         width: 543px;
+                        @include media($lg){
+                            width: 290px;
+                        }
                     }
                     .right-column {
                         width: 380px;
                         padding-left: 105px;
                         position: relative;
                         margin-left: 27px;
+                        @include media($lg){
+                            padding-left: 56px;
+                            margin-left: 50px;
+                            width: 200px;
+                        }
                         &::before {
                            @include before-content(73px, 17px);
                            background-image: url(../images/icon-arrow.svg);
@@ -194,6 +280,11 @@ body {
                            background-repeat: no-repeat;
                            top: 5px;
                            left: 0px; 
+                           @include media($lg){
+                                @include before-content(38px, 10px);
+                                background-size: 100%;
+                                top: 0px;
+                           }
                         }
                         .sub-title {
                             font-family: "Akkurat Mono LL";
@@ -202,6 +293,14 @@ body {
                             font-weight: 400;
                             line-height: 30px;
                             text-transform: uppercase; 
+                            @include media($xl){
+                                font-size: 18px;
+                                line-height: 26px;
+                            }
+                            @include media($lg){
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
                         }
                     }
                     h1 {
@@ -210,17 +309,30 @@ body {
                         font-size: 111.364px;
                         font-style: normal;
                         font-weight: 700;
-                        line-height: normal;
                         letter-spacing: 12px;
                         text-transform: uppercase;
                         -webkit-text-stroke: 5.56px;
                         line-height: 135px;
                         margin-top: -6px;
+                        @include media($xl){
+                            font-size: 80px;
+                            line-height: 96px;
+                        }
+                        @include media($lg){
+                             -webkit-text-stroke: 3px;
+                            font-size: 60px;
+                            letter-spacing: 6px;
+                            width: 100%;
+                            line-height: 74px;
+                        }
                     }
                 }
                 .bottom-row {
                     position: relative;
                     padding-left: 105px;
+                    @include media($lg){
+                        padding-left: 56px;
+                    }
                     &::before {
                         @include before-content(73px, 17px);
                         background-image: url(../images/icon-arrow.svg);
@@ -228,6 +340,11 @@ body {
                         background-repeat: no-repeat;
                         top: 17px;
                         left: 0px; 
+                        @include media($lg){
+                            @include before-content(41px, 10px);
+                            background-size: 100%;
+                            top: 7px;
+                        }
                     }
                     .sub-title {
                         width: 525px;
@@ -238,14 +355,34 @@ body {
                         line-height: 40px;
                         text-transform: uppercase;
                         position: relative;
+                        @include media($xxl){
+                            width: 370px;
+                        }
+                        @include media($xl){
+                            font-size: 26px;
+                            line-height: 32px;
+                        }
+                        @include media($lg){
+                            font-size: 18px;
+                            width: 280px;
+                            line-height: 22px;
+                        }
                         &.decorate-title {
                             &::before {
-                            @include before-content(459px, 20px);
-                            background-image: url(../images/home-hero-title-bg.svg);
-                            background-position: center;
-                            background-repeat: no-repeat;
+                                @include before-content(459px, 20px);
+                                background-image: url(../images/home-hero-title-bg.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;
                                 bottom: -12px;
                                 left: 19px;
+                                @include media($xxl){
+                                    @include before-content(350px, 16px);
+                                    background-size: 100%;
+                                }
+                                @include media($lg){
+                                    @include before-content(245px, 10px);
+                                    bottom: -3px;
+                                }
                             }
                         }
                     }
@@ -256,12 +393,25 @@ body {
                 min-height: 273px;
                 padding-top: 57px;
                 padding-bottom: 38px;
+                @include media($lg){
+                    padding-top: 31px;
+                    padding-bottom: 21px;
+                    min-height: auto;
+                }
                 .background-image {
                     width: 348px;
                     height: 184px;
                     position: absolute;
                     right: 0px;
                     bottom: -6px;
+                    @include media($xl){
+                        width: 250px;
+                        height: 132px;
+                    }
+                    @include media($lg){
+                        width: 192px;
+                        height: 105px;
+                    }
                     img {
                         width: 100%;
                         height: auto;
@@ -278,6 +428,11 @@ body {
                      -webkit-text-stroke: 3px;
                      color: #fff;
                      margin-bottom: 42px;
+                     @include media($lg){
+                        font-size: 38px;
+                        margin-bottom: 20px;
+                        letter-spacing: 6px;
+                     }
                 }
                 .content-link {
                     a {
@@ -298,6 +453,18 @@ body {
                         color: $main-color;
                         padding-top: 6px;
                         letter-spacing: 0.5px;
+                        @include media($xxl){
+                            padding-left: 50px;
+                            padding-right: 90px;
+                            font-size: 18px;
+                            height: 40px;
+                        }
+                        @include media($lg){
+                            font-size: 12px;
+                            padding-left: 58px;
+                            padding-right: 94px;
+                            height: 34px;
+                        }
                         &::after {
                             @include after-content(48px, 48px);
                             background-color: $main-color;
@@ -308,6 +475,16 @@ body {
                             top: 8px;
                             right: 11px;
                             background-size: 20px 20px;
+                            @include media($xxl){
+                                @include after-content(26px, 26px);
+                                background-size: 12px 12px;
+                                top: 7px;
+                                right: 6px;
+                            }
+                            @include media($lg){
+                                top: 4px;
+                                right: 4px;
+                            }
                         }
                     }
                 }
