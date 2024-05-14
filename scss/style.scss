@@ -3483,6 +3483,236 @@ body {
 
                     }
                 }
+                &.article-template-2 {
+                    padding-bottom: 93px;
+                    .header-article {
+                        .title {
+                            margin-bottom: 7px;
+                        }
+                        svg {
+                            path {
+                                fill: $purple-color;
+                            }
+                        }
+                        .date {
+                            color: $purple-color;
+                        }
+                    }
+                    .title-row {
+                        position: relative;
+                        min-height: 141px;
+                        padding-top: 39px;
+                        -webkit-text-stroke: 3px;
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 70px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 10.5px;
+                        text-transform: uppercase;
+                        color: #fff;
+                        background-color: $purple-color;
+                        &.right-align {
+                            text-align: right;
+                            .title {
+                                padding-right: 18px;
+                            }
+                            .background-image {
+                                width: 190px;
+                                height: 198px;
+                                position: absolute;
+                                top: 16px;
+                                left: -1px;
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    .top-section {
+                        .columns {
+                            justify-content: space-between;
+                        }
+                        .column-left {
+                            width: 592px;
+                            display: flex;
+                            .image-wrap {
+                                width: 100%;
+                                height: auto;
+                                text-align: center;
+                                margin-top: auto;
+                                display: flex;
+                                img {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                        .column-right {
+                            width: 603px;
+                            font-size: 18px;
+                            line-height: 11.5px; 
+                            line-height: 26px;
+                            padding-bottom: 15px;
+                            .content {
+                                position: relative;
+                                padding-top: 38px;
+                                &::before {
+                                    @include before-content(21px, 21px);
+                                    background-image: url(../images/icon-square-arrow-purple.svg);
+                                    top: 0px;
+                                    left: 0px;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: 21px 21px;
+                                    transform: rotate(90deg);
+                                }
+                            }
+                            strong {
+                                font-family: "Akkurat LL Cyrillic Bold";
+                                font-weight: 700;
+                            }
+                            p {
+                                margin-bottom: 28px;
+                            }
+                            .link-email {
+                                margin-top: auto;
+                                margin-bottom: 28px;
+                                a {
+                                    display: inline-flex;
+                                    height: 32px;
+                                    padding: 7px 49px 7px 26px;
+                                    color: $blue-color;
+                                    border-radius: 99px;
+                                    background: $main-color;
+                                    position: relative;
+                                    color: #fff;
+                                    &::before {
+                                        @include before-content(26px, 26px);
+                                        right: 3px;
+                                        top: 3px;
+                                        background-image: url(../images/icon-mail-main-color-purple.svg);
+                                        background-position: center;
+                                        background-repeat: no-repeat;                       
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .midle-section {
+                        font-size: 18px;
+                        line-height: 22px; /* 122.222% */
+                        letter-spacing: 0.36px; 
+                        padding-bottom: 47px; 
+                        strong {
+                            font-family: "Akkurat LL Cyrillic Bold";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: -0.36px; 
+                        }                      
+                        .content {
+                            padding-top: 51px;
+                            padding-bottom: 22px;
+                            h3 {
+                                font-family: "Akkurat Mono LL";
+                                font-size: 35px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: -0.7px;
+                                text-transform: uppercase;
+                                margin-bottom: 17px;
+                            }
+                            p {
+                                margin-bottom: 28px;
+                            }
+                        }
+                        .columns {
+                            justify-content: space-between;
+
+                            .column-left {
+                                width: 545px;
+                            }
+                            .column-right {
+                                width: 498px;
+                            }
+                        }
+                        .column-title {
+                            font-family: "Akkurat Mono LL";
+                            font-size: 35px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: -0.7px;
+                            text-transform: uppercase;
+                            position: relative;
+                            padding-left: 107px;
+                            margin-bottom: 37px;
+                            &::before {
+                                @include before-content(26px, 26px);
+                                left: -2px;
+                                top: 2px;
+                                background-image: url(../images/icon-square-arrow-purple.svg);
+                                background-size: 21px 21px;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                transform: rotate(90deg);                       
+                            }
+                        }
+                        .list-wrap {
+                            .list-item {
+                                position: relative;
+                                padding-left: 18px;
+                                margin-bottom: 17px;
+                                line-height: 18px;
+                                letter-spacing: -0.36px;
+                                &:last-child {
+                                    margin-bottom: 0px;
+                                }
+                                &::before {
+                                    content: '';
+                                    display: block;
+                                    width: 6px;
+                                    height: 6px;
+                                    border-radius: 50%;
+                                    background-color: $purple-color;
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 3px;
+                                }
+                            }
+                        }
+                    }
+                    .bottom-section {
+                        .offers {
+                            padding-top: 74px;
+                            display: flex;
+                            justify-content: space-between;
+                            .offer-wrap {
+                                width: 300px;
+                                .image-wrap {
+                                    width: 62px;
+                                    height: 62px;
+                                    margin-bottom: 13px;
+                                    img {
+                                        max-width: 100%;
+                                    }
+                                }
+                                .description {
+                                    font-family: "Akkurat LL Cyrillic Bold";
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 26px;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                }
             } 
         }
 
