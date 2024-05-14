@@ -3019,6 +3019,7 @@ body {
                                         background-repeat: no-repeat;
                                         left: 0px;
                                         bottom: 0px;
+                                        z-index: -1;
                                     }
                                 }
                             }
@@ -3384,6 +3385,105 @@ body {
                     }
                 }
             }
+            &.article {
+                padding-bottom: 88px;
+                .top-row {
+                    padding-top: 39px;
+                    padding-bottom: 53px;
+                    a {
+                        color: $main-color;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: "Akkurat Mono LL";
+                        font-size: 14.162px;
+                        line-height: normal;
+                        text-transform: uppercase;
+                        svg {
+                            margin-right: 20px;
+                            position: relative;
+                            top: 0px;
+                        }
+                    }
+                }
+                .header-article {
+                    .date {
+                        display: flex;
+                        align-items: end;
+                        font-family: "Akkurat Mono LL";
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.9px;
+                        color: $blue-color;
+                        margin-bottom: 43px;
+                        .icon-wrap {
+                            width: 32px;
+                            height: 34px;
+                            margin-right: 19px;
+                            position: relative;
+                            top: -5px;
+                        }
+                    }
+                    .title {
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-size: 80px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 87px;
+                        letter-spacing: 6.4px;
+                        text-transform: uppercase; 
+                        margin-bottom: 94px;
+                    }
+                }
+                .body-article {
+                    font-size: 18px;
+                    font-style: normal;
+                    line-height: 22px;
+                    letter-spacing: 0.36px; 
+                    strong {
+                        font-family: "Akkurat LL Cyrillic Bold";
+                        font-weight: 700;
+                    }  
+                    p {
+                        margin-bottom: 15px;
+                    }
+                    img {
+                        &.alignleft {
+                            float: left;
+                            margin: 32px 32px 32px 0px;
+                        }
+                        &.alignright {
+                            float: right;
+                            margin: 32px 0px 32px 32px;
+                        }
+                        &.aligncenter {
+                            display: block;
+                            text-align: center;
+                        }
+                    }                 
+                    .quote {
+                        line-height: 26px;
+                        padding-top: 45px;
+                        width: 517px;
+                        position: relative;
+                        margin-bottom: 50px;
+                        &::before {
+                            @include before-content(21px, 21px);
+                            background-image: url(../images/icon-square-arrow-blue.svg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 21px 21px;
+                            top: 0px;
+                            left: 0px;
+                            transform: rotate(90deg);
+                        }
+                    }
+                    .content {
+
+                    }
+                }
+            } 
         }
 
         footer {
