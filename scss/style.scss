@@ -1102,7 +1102,7 @@ body {
                     padding: 30px 0px 42px;  
                 }
                 @include media($md) {
-                    padding: 20px 0px 42px;  
+                    padding: 20px 0px 10px;  
                 }
                 .columns {
                     justify-content: space-between;
@@ -1382,6 +1382,10 @@ body {
                             margin-bottom: 6px;
                             @include media($lg) {
                                 margin-bottom: 0px;
+                                line-height: 12px;
+                            }
+                            @include media($md) {
+                                margin-right: 12px;
                             }
                             &:nth-child(6n) {
                                 //margin-right: 0px;
@@ -1429,8 +1433,14 @@ body {
                 @include media($lg) {
                     padding: 14px 0px 39px;
                 }
+                @include media($md){
+                    padding: 12px 0px 23px;
+                }
                 .columns {
                     justify-content: space-between;
+                    @include media($md) {
+                        flex-direction: column;
+                    }
                 }
                 .left-column {
                     width: 636px;
@@ -1439,6 +1449,9 @@ body {
                     }
                     @include media($lg) {
                         width: 380px;
+                    }
+                    @include media($md) {
+                        width: 100%;
                     }
                 }
                 .right-column {
@@ -1450,6 +1463,9 @@ body {
                     }
                     @include media($lg) {
                         width: 360px;
+                    }
+                    @include media($md) {
+                        width: 100%;
                     }
                 }
                 .section-title {
@@ -1469,6 +1485,12 @@ body {
                         font-size: 18px;
                         line-height: 24px;
                     }
+                    @include media($md) {
+                        font-size: 13.143px;
+                        letter-spacing: 0.92px;
+                        line-height: 18px;
+                        margin-bottom: 2px;
+                    }
                 }
                 .goals-wrap {
                     display: flex;
@@ -1476,6 +1498,13 @@ body {
                     justify-content: space-between;
                     width: 604px;
                     @include media($xl) {
+                        width: 100%;
+                    }
+                    @include media($md) {
+                        width: 320px;
+                        margin: 0 auto;
+                    }
+                    @include media($sm) {
                         width: 100%;
                     }
                     .goal-item {
@@ -1493,6 +1522,11 @@ body {
                             width: 95px;
                             height: 61px;
                             margin-bottom: 15px;
+                        }
+                        @include media($md) {
+                            width: 87px;
+                            height: 55px;
+                            margin-bottom: 8px;
                         }
                         img {
                             max-width: 100%;
@@ -1516,6 +1550,14 @@ body {
                         border-radius: 9.059px;
                         left: 111px;
                     }
+                    @include media($md) {
+                        width: calc(100% - 26px);
+                        left: 26px;
+                        padding: 27px 16px 11px 7px;
+                        border-radius: 6.384px;
+                        border: 1px solid $blue-color;
+                        margin-top: 12px;
+                    }
                     &::before {
                         @include before-content(136px, 136px);
                         border-radius: 50%;
@@ -1533,6 +1575,12 @@ body {
                             left: -38px;
                             top: 9px;
                         }
+                        @include media($md) {
+                            @include before-content(51px, 51px);
+                            background-size: 18px 18px;
+                            background-position: 5px 16px;
+                            left: -26px;
+                        }
                     }
                     .title-list {
                         font-family: "Akkurat LL Cyrillic Bold";
@@ -1543,17 +1591,18 @@ body {
                         text-transform: uppercase;
                         margin-bottom: 55px;
                         position: relative;
+                        color: $blue-color;
                         @include media($lg) {
                             font-size: 20.25px;
                             letter-spacing: 0.405px;
                             margin-bottom: 27px;
-
+                        }
+                        @include media($md) {
+                            padding-left: 28px;
+                            margin-bottom: 7px;
                         }
                         &::before {
                             @include before-content(48px, 48px);
-                            @include media($lg) {
-                               @include before-content(25px, 25px); 
-                            }
                             border-radius: 50%;
                             position: absolute;
                             background-color: $blue-color;
@@ -1565,14 +1614,24 @@ body {
                             left: -76px;
                             top: -10px;
                             @include media($lg) {
+                               @include before-content(25px, 25px); 
                                 left: -35px;
                                 top: -5px;
-                                background-size: 12px 12px;
+                                background-size: 12px 12px;                               
+                            }
+                            @include media($md) {
+                                @include before-content(18px, 18px); 
+                                left: 0px;
+                                top: 0px;
                             }
                         }
                     }
                     .list-wrap {
                         padding-top: 9px;
+                        @include media($md) {
+                            display: flex;
+                            justify-content: space-between;
+                        }
                         .list-item {
                             font-size: 24px;
                             font-style: normal;
@@ -1589,6 +1648,14 @@ body {
                                 padding-left: 29px;
                                 margin-bottom: 42px;
                             }
+                            @include media($md) {
+                                width: 90px;
+                                font-size: 8px;
+                                letter-spacing: 0.16px;
+                                line-height: 10px;
+                                padding-left: 17px;
+                                margin-bottom: 0px;
+                            }
                             &::before {
                                 @include before-content(35px, 35px);
                                 background-image: url(../images/goals-list-icon.svg);
@@ -1600,6 +1667,10 @@ body {
                                   @include before-content(18px, 18px); 
                                   background-size: cover; 
                                   left: 5px;
+                                }
+                                @include media($md) {
+                                     @include before-content(13px, 13px); 
+                                     left: 0px;
                                 }
                             }
                             &:last-child {
@@ -1619,12 +1690,21 @@ body {
                     padding-bottom: 24px;
                     min-height: auto;
                 }
+                @include media($md){
+                    padding-top: 22px;
+                    padding-bottom: 11px;
+                }
+                .container {
+                    position: relative;
+                    z-index: 5;
+                }                
                 .background-image {
                     width: 438px;
                     height: 212px;
                     position: absolute;
                     right: 0px;
                     bottom: -4px;
+                    z-index: 1;
                     @include media($xl){
                         width: 264px;
                         height: 132px;
@@ -1632,6 +1712,10 @@ body {
                     @include media($lg){
                         width: 212px;
                         height: 105px;
+                    }
+                    @include media($md){
+                        width: 110px;
+                        height: 56px;
                     }
                     img {
                         width: 100%;
@@ -1646,16 +1730,26 @@ body {
                     line-height: normal;
                     letter-spacing: 12px;
                     text-transform: uppercase;
-                     -webkit-text-stroke: 3px;
-                     color: #fff;
-                     margin-bottom: 37px;
-                     @include media($lg){
+                    -webkit-text-stroke: 3px;
+                    color: #fff;
+                    margin-bottom: 37px;
+                    @include media($lg){
                         font-size: 38px;
                         margin-bottom: 20px;
                         letter-spacing: 6px;
-                     }
+                        -webkit-text-stroke: 1px;
+                    }
+                    @include media($md){
+                        font-size: 20px;
+                        letter-spacing: 3px;
+                        line-height: 26px;
+                        margin-bottom: 11px;
+                    }
                 }
                 .content-link {
+                    @include media($md){
+                        line-height: 16px;
+                    }
                     a {
                         display: inline-flex;
                         align-items: center;
@@ -1690,6 +1784,15 @@ body {
                             padding-top: 2px;
                             height: 30px;
                         }
+                        @include media($md){
+                            font-size: 7px;
+                            line-height: 10px;
+                            letter-spacing: 0.49px;
+                            text-transform: uppercase;
+                            height: 16px;
+                            padding-left: 8px;
+                            padding-right: 125px;
+                        }
                         &::after {
                             @include after-content(40px, 40px);
                             background-color: $main-color;
@@ -1711,6 +1814,11 @@ body {
                                 background-size: 12px 12px;                                
                                 top: 2px;
                                 right: 4px;
+                            }
+                            @include media($lg){
+                                @include after-content(12px, 12px);
+                                background-size: 4px 4px; 
+                                right: 2px     
                             }
                         }
                     }
