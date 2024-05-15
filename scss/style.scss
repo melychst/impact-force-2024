@@ -492,6 +492,10 @@ body {
             &.reports {
                 padding-top: 64px;
                 padding-bottom: 70px;
+                @include media($lg) {
+                    padding-top: 28px;
+                    padding-bottom: 28px;
+                }
                 .columns {
                     .column {
                         position: relative;
@@ -506,6 +510,9 @@ body {
                             color: $blue-color;
                             position: absolute;
                             top: 7px;
+                            @include media($lg) {
+                                font-size: 11px;
+                            }
                         }
                         .column-title {
                             font-family: "Akkurat LL Cyrillic Bold";
@@ -517,29 +524,71 @@ body {
                             text-transform: uppercase;
                             padding-left: 102px;
                             margin-bottom: 37px;
+                            @include media($lg) {
+                                font-size: 32px;
+                                padding-left: 57px;
+                                line-height: 40px;
+                                margin-bottom: 18px;
+                            }
                         }
                         .content {
                             line-height: 29px;
+                            @include media($lg) {
+                                font-size: 11px;
+                                line-height: 16px;
+                            }
                         }
                     }
                     &.top-row {
                         margin-bottom: 102px;
+                            @include media($xl) {
+                                justify-content: space-between;
+                            }   
+                            @include media($lg) {
+                                margin-bottom: 50px;
+                            }                     
                         .column {
                             width: 504px;
+                            @include media($xl) {
+                                width: 390px;
+                            }
+                            @include media($lg) {
+                                width: 280px;
+                            }
                             &.left-column {
                                 margin-right: 132px;
+                                @include media($xl) {
+                                    margin-right: 0px;
+                                }
                             }
                         }
                     }
                     &.bottom-row {
                         margin-bottom: 32px;
+                        @include media($xl) {
+                            margin-bottom: 6px;
+                        }
                         .left-column {
                             width: 320px;
                             margin-right: 204px;
                             padding-top: 6px;
+                            @include media($xl) {
+                                margin-right: 100px;
+                                width: 270px;
+                            }
+                            @include media($lg) {
+                                margin-right: 100px;
+                                width: 170px;
+                            }
                         }
                         .right-column {
                             width: 410px;
+                            @include media($xl) {
+                               width: 390px;
+                            }
+                            @include media($lg) {
+                                width: 270px;
+                            }
                         }
                         h3 {
                             font-family: "Akkurat LL Cyrillic Bold";
@@ -550,9 +599,17 @@ body {
                             letter-spacing: 1.8px;
                             text-transform: uppercase;
                             margin-bottom: 50px;
+                            @include media($lg) {
+                                font-size: 10px;
+                                margin-bottom: 26px;
+                            }
                         }
                         .content {
                             line-height: 26px;
+                            @include media($lg) {
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
                         }
                         strong {
                             font-family: "Akkurat LL Cyrillic Bold";
@@ -568,6 +625,13 @@ body {
                             text-transform: uppercase;
                             -webkit-text-stroke: 3px;
                             color: $purple-color;
+                            @include media($xl) {
+                                font-size: 42px
+                            }
+                            @include media($lg) {
+                                font-size: 26px;
+                                line-height: 34px;
+                            }
                         }
                     }
                 } 
@@ -576,15 +640,39 @@ body {
                     flex-wrap: wrap;
                     position: relative;
                     left: 104px;
+                    @include media($lg) {
+                        left: 0px;
+                        justify-content: space-between;
+                     }
                     &::before{
                         content: '';
                         width: 394px;
+                        @include media($xxl) {
+                            width: 320px;
+                        }
+                        @include media($xl) {
+                            width: 250px;
+                        }
+                        @include media($lg) {
+                            width: 200px;
+                        }
                     }
                     .fact-item {
                         width: 394px;
                         margin-bottom: 50px;
                         margin-top: 30px;
                         margin-left: 28px;
+                        @include media($xxl) {
+                            width: 320px;
+                        }
+                        @include media($xl) {
+                            width: 250px;
+                        }
+                        @include media($lg) {
+                            width: 195px;
+                            margin-top: 28px;
+                            margin-bottom: 16px;
+                        }
                         &:nth-child(3n){
                             margin-left: 0px;
                         }
@@ -598,6 +686,15 @@ body {
                             text-transform: uppercase;
                             position: relative;
                             margin-bottom: 24px;
+                            @include media($xxl) {
+                                font-size: 60px;
+                            }
+                            @include media($xl) {
+                                font-size: 42px;
+                            }
+                            @include media($lg) {
+                                margin-bottom: 10px;
+                            }
                             &::before {
                                 content: '';
                                 width: 100%;
@@ -613,6 +710,13 @@ body {
                             letter-spacing: 1px;
                             width: 300px;
                             padding-left: 5px;
+                            @include media($xl) {
+                                width: 100%;
+                            }
+                            @include media($lg) {
+                                font-size: 12px;
+                                line-height: 16px;
+                            }
                         }
                     }
                 }     
@@ -621,12 +725,29 @@ body {
                     border: 3px solid $purple-color;
                     background: #FFF;
                     padding: 57px 55px 35px 104px;
+                    @include media($xl) {
+                        padding: 57px 55px 35px 56px;
+                    }
+                    @include media($lg) {
+                        padding: 32px 30px 14px 56px;
+                    }
                     .left-column {
                         width: 405px;
                         margin-right: 125px;
+                        @include media($xl) {
+                            margin-right: 20px;
+                            width: 350px;
+                        }
+                        @include media($lg) {
+                            width: 210px;
+                            margin-right: 72px;
+                        }
                     }
                     .right-column {
                         width: 545px;
+                        @include media($lg) {
+                            width: 350px;
+                        }
                     }
                     .title {
                         font-family: "Akkurat Mono LL";
@@ -635,21 +756,35 @@ body {
                         font-weight: 400;
                         line-height: normal;
                         text-transform: uppercase;
+                        @include media($lg) {
+                            font-size: 22px;
+                        }
                     }
                     .report-slider {
                         display: flex;
                         margin-top: 74px;
+                        @include media($lg) {
+                            margin-top: 38px;
+                        }
                         .report-item {
                             width: 225px;
                             margin-right: 92px;
                             &:last-child {
                                 margin-right: 0px;
                             }
+                            @include media($lg) {
+                                margin-right: 9px;
+                                width: 160px;
+                            }
                             .columns-wrap {
                                 display: flex;
                                 .icon-wrap {
                                     width: 50px;
                                     height: 50px;
+                                    @include media($lg) {
+                                        width: 26px;
+                                        height: 26px;
+                                    }
                                     img {
                                         object-fit: cover;
                                         object-position: center;
@@ -660,6 +795,10 @@ body {
                                 .content {
                                     padding-left: 24px;
                                     padding-top: 6px;
+                                    @include media($lg) {
+                                        padding-left: 12px;
+                                        padding-top: 0px;
+                                    }
                                     .name {
                                         font-family: "Akkurat LL Cyrillic Bold";
                                         font-size: 26.834px;
@@ -668,11 +807,18 @@ body {
                                         line-height: 16.771px; /* 62.5% */
                                         letter-spacing: 1.342px;
                                         margin-bottom: 13px;
+                                        @include media($lg) {
+                                            font-size: 15px;
+                                            margin-bottom: 0px;
+                                        }
                                     }
                                     .meta {
                                         font-size: 16.771px;
                                         line-height: 16.771px; /* 100% */
                                         letter-spacing: 0.839px;
+                                        @include media($lg) {
+                                            font-size: 8px;
+                                        }
                                     }
                                 }
                             }
@@ -681,13 +827,16 @@ body {
                     .slider-navigation {
                         display: flex;
                         margin-top: 53px;
+                        @include media($xl) {
+                            margin-top: 28px;
+                        }
                         .nav-slide {
                             width: 148px;
                             height: 26px; 
                             border-radius: 32px;
                             border: 1px solid $purple-color;
                             background: #FFF;  
-                            transform: 0.2s; 
+                            transition: 0.2s; 
                             font-size: 10px;
                             letter-spacing: 1px;
                             text-transform: uppercase;
@@ -695,6 +844,19 @@ body {
                             align-items: center;
                             position: relative;
                             cursor: pointer;
+                            @include media($xl) {
+                                width: 120px;
+                            }
+                            @include media($lg) {
+                                width: 80px;
+                                font-size: 5px;
+                                height: 14px;
+                            }
+                            svg {
+                                @include media($lg) {
+                                    width: 20px;
+                                }
+                            }
                             &:hover {
                                 background: $purple-color;
                                 color: #fff;
@@ -709,12 +871,26 @@ body {
                             &.prev-slide {
                                 margin-right: 63px;
                                 padding: 9px 25px 7px 68px;
+                                @include media($xl) {
+                                    margin-right: 20px;
+                                    padding: 9px 25px 7px 50px;
+                                }
+                                @include media($lg) {
+                                    margin-right: 34px;
+                                    padding: 7px 25px 5px 36px;
+                                }
                                 svg {
                                     left: 8px;
                                 }
                             }    
                             &.next-slide {
                                 padding: 9px 8px 7px 42px;
+                                @include media($xl) {
+                                    padding: 9px 8px 7px 30px;
+                                }
+                                @include media($lg) {
+                                    padding: 7px 8px 5px 22px;
+                                }
                                 svg {
                                     right: 8px;
                                 }
@@ -728,14 +904,35 @@ body {
             }
             &.impact {
                 padding: 44px 0px 42px;
+                @include media($xxl) {
+                    padding: 30px 0px 42px;  
+                }
                 .columns {
                     justify-content: space-between;
                     .left-column {
                         width: 475px;
                         color: $blue-color;
+                        @include media($xxl) {
+                            width: 400px;
+                        }
+                        @include media($xl) {
+                            width: 300px;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        @include media($lg) {
+                            width: 265px;
+                        }
                     }
                     .right-column {
                         width: 710px;
+                        @include media($xl) {
+                            width: 630px;
+                        }
+                        @include media($lg) {
+                            width: 432px;
+                            padding-right: 14px;
+                        }
                     }
                     .section-title {
                         -webkit-text-stroke: 3px;
@@ -748,11 +945,30 @@ body {
                         text-transform: uppercase;
                         margin-bottom: 170px;
                         width: 325px;
+                        @include media($xl) {
+                            width: 100%;
+                            font-size: 30px;
+                            margin-bottom: 0px;
+                        }
+                        @include media($lg) {
+                            width: 100%;
+                            font-size: 26px;
+                            line-height: 32px;
+                            
+                        }
                     }
                     .content {
                         font-size: 24px;
                         line-height: 32px;
                         letter-spacing: 0.24px;
+                        @include media($xl) {
+                            font-size: 18px;
+                            margin-top: auto;
+                        }
+                        @include media($lg) {
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
                     }
                     .sub-title {
                         font-family: "Akkurat Mono LL";
@@ -763,11 +979,25 @@ body {
                         text-transform: uppercase;
                         margin-bottom: 29px;
                         padding-top: 3px;
+                        @include media($xl) {
+                            font-size: 24px;
+                        }
+                        @include media($lg) {
+                            font-size: 18px;
+                            margin-bottom: 14px;
+                        }
                     }
                     .areas-wrap {
                         display: flex;
                         padding-top: 50px;
                         margin-bottom: 16px;
+                        @include media($xl) {
+                            justify-content: space-between;
+                            padding-top: 26px;
+                        }
+                        @include media($lg) {
+                            margin-bottom: 2px;
+                        }
                         .area-item {
                             padding: 19px 8px 20px 9px;
                             border-radius: 12.671px;
@@ -777,6 +1007,14 @@ body {
                             margin-right: 25px;
                             width: 220px;
                             position: relative;
+                            @include media($xl) {
+                                width: 200px;
+                            }
+                            @include media($lg) {
+                                width: 118px;
+                                padding: 11px 6px 11px 6px;
+                                border-radius: 6.752px;
+                            }
                             &::before {
                                 @include before-content(100px, 100px);
                                 border-radius: 50%;
@@ -785,6 +1023,10 @@ body {
                                 z-index: -1;
                                 background-position: center 5px;
                                 background-repeat: no-repeat;
+                                @include media($lg) {
+                                    @include before-content(52px, 52px);
+                                    top: -26px;
+                                }
                             }
                             &:last-child {
                                 margin-right: 0px;
@@ -798,6 +1040,9 @@ body {
                                 line-height: normal;
                                 letter-spacing: 1.629px;
                                 text-transform: uppercase;
+                                @include media($lg) {
+                                    font-size: 8px;
+                                }
                             }  
                             .name {
                                 min-height: 100px;
@@ -810,6 +1055,14 @@ body {
                                 letter-spacing: 1.2px;
                                 text-transform: uppercase;
                                 margin-bottom: 23px;
+                                @include media($xl) {
+                                    font-size: 18px;
+                                }
+                                @include media($lg) {
+                                    font-size: 12px;
+                                    min-height: 52px;
+                                    margin-bottom: 14px;
+                                }
                                 span {
                                     margin-top: auto;
                                     display: block;
@@ -823,6 +1076,10 @@ body {
                                 line-height: 21px;
                                 color: $main-color;
                                 letter-spacing: 0.1px;
+                                @include media($lg) {
+                                    font-size: 8px;
+                                    line-height: 11px;
+                                }
                             }
                             &.blue-area {
                                 border-color: $blue-color;
@@ -830,6 +1087,9 @@ body {
                                 &::before  {
                                     background-color: $blue-color;
                                     background-image: url(../images/icon-areas-advocacy.svg);
+                                    @include media($lg) {
+                                        background-size: 18px 18px;
+                                    }
                                 }
                             }
                             &.purple-area {
@@ -838,6 +1098,9 @@ body {
                                 &::before  {
                                     background-color: $purple-color;
                                     background-image: url(../images/icon-areas-capacity.svg);
+                                    @include media($lg) {
+                                        background-size: 13px 19px;
+                                    }
                                 }
                             }
                             &.green-area {
@@ -846,6 +1109,9 @@ body {
                                 &::before  {
                                     background-color: $green-color;
                                     background-image: url(../images/icon-areas-community.svg);
+                                    @include media($lg) {
+                                        background-size: 21px 16px;
+                                    }
                                 }
                             }
                         }
@@ -856,8 +1122,11 @@ body {
                         .project-name {
                             margin-right: 14px;
                             margin-bottom: 6px;
+                            @include media($lg) {
+                                margin-bottom: 0px;
+                            }
                             &:nth-child(6n) {
-                                margin-right: 0px;
+                                //margin-right: 0px;
                             }
                             a {
                                 height: 21px;
@@ -870,6 +1139,13 @@ body {
                                 border-width: 1px;
                                 border-style: solid;
                                 background: #FFF;
+                                @include media($lg) {
+                                    height: 12px;
+                                    font-size: 6px;
+                                    border-radius: 15px;
+                                    padding: 3px 8px 3px 8px;
+                                }
+
                             }
                             &.blue-project {
                                 a {
@@ -897,10 +1173,22 @@ body {
                 }
                 .left-column {
                     width: 636px;
+                    @include media($xl) {
+                        width: 500px;
+                    }
+                    @include media($lg) {
+                        width: 380px;
+                    }
                 }
                 .right-column {
                     width: 560px;
                     padding-top: 6px;
+                    @include media($xl) {
+                        width: 490px;
+                    }
+                    @include media($lg) {
+                        width: 360px;
+                    }
                 }
                 .section-title {
                     font-family: "Akkurat Mono LL";
@@ -911,12 +1199,23 @@ body {
                     letter-spacing: 2.45px;
                     text-transform: uppercase;
                     margin-bottom: 54px;
+                    @include media($xl) {
+                        font-size: 26px;
+                        line-height: 34px;
+                    }
+                    @include media($lg) {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
                 }
                 .goals-wrap {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
                     width: 604px;
+                    @include media($xl) {
+                        width: 100%;
+                    }
                     .goal-item {
                         width: 180px;
                         height: 116px;
@@ -925,6 +1224,13 @@ body {
                         justify-content: center;
                         background-color: $blue-color;
                         margin-bottom: 29px;
+                        @include media($xl) {
+                            width: 140px;
+                        }
+                        @include media($lg) {
+                            width: 95px;
+                            margin-bottom: 15px;
+                        }
                         img {
                             max-width: 100%;
                             max-height: 100%;
