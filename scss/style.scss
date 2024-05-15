@@ -1815,7 +1815,7 @@ body {
                                 top: 2px;
                                 right: 4px;
                             }
-                            @include media($lg){
+                            @include media($md){
                                 @include after-content(12px, 12px);
                                 background-size: 4px 4px; 
                                 right: 2px     
@@ -4984,6 +4984,10 @@ body {
                 padding-top: 10px;
                 padding-bottom: 6px;
             }
+            @include media($md){
+                padding-top: 17px;
+                padding-bottom: 16px;
+            }
             .footer-wrap {
                 .columns {
                     justify-content: space-between;
@@ -4995,15 +4999,36 @@ body {
                                 margin-left: 78px;
                                 padding-top: 10px;
                             }
+                            @include media($md){
+                                margin-left: 21px;
+                                width: 135px;
+                                padding-top: 7px;
+                            }
+                        }
+                        .left-column {
+                            @include media($md){
+                                width: 55px;
+                            }
+                        }
+                        .right-column {
+                            @include media($md){
+                                width: 77px;
+                            }
                         }
                     }
                 }
                 .navigation {
+                    @include media($md){
+                        padding-top: 4px;
+                    }
                     li {
                         list-style: none;
                         margin-bottom: 26px;
                         @include media($xl){
                             margin-bottom: 4px;
+                        }
+                        @include media($md){
+                            line-height: 11px;
                         }
                         &:last-child {
                             margin-bottom: 0px;
@@ -5018,6 +5043,12 @@ body {
                             @include media($xl){
                                 font-size: 10px;
                                 line-height: 12px;
+                            }
+                            @include media($md){
+                                font-size: 7px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
                             }
                         }
                     }
@@ -5038,6 +5069,14 @@ body {
                         letter-spacing: 2.139px;
                         margin-bottom: 14px;
                     }
+                    @include media($md){
+                        -webkit-text-stroke: 0.5px;
+                        -webkit-text-stroke-color: #FFF;
+                        font-size: 21.53px;
+                        line-height: 26px;
+                        letter-spacing: 1.507px;
+                        margin-bottom: 6px;
+                    }
                 }
                 .footer-subtitle {
                     color: #FFF;
@@ -5053,6 +5092,12 @@ body {
                         font-size: 9.592px;
                         letter-spacing: 0.959px;
                     }
+                    @include media($md){
+                        font-size: 6.759px;
+                        line-height: 10px;
+                        letter-spacing: 0.676px;
+                        margin-bottom: 7px;
+                    }
                     &::before {
                         @include before-content(180px, 8px);
                         background-image: url(../images/social-title-bg.svg);
@@ -5064,6 +5109,10 @@ body {
                             width: 95px;
                             background-size: cover;
                         }
+                        @include media($md){
+                            width: 65px;
+                            bottom: -5px;
+                        }
                     }
                 }
                 .social-wrap {
@@ -5072,10 +5121,16 @@ body {
                     @include media($xl){
                         margin-top: 18px;
                     }
+                    @include media($md){
+                        margin-top: 11px;
+                    }
                     .social-link {
                         margin-right: 25px;
                         @include media($xl){
                             margin-right: 15px;
+                        }
+                        @include media($md){
+                            margin-right: 9px;
                         }
                         a {
                             display: flex;
@@ -5090,12 +5145,20 @@ body {
                                 width: 27px;
                                 height: 27px;
                             }
+                            @include media($md){
+                                width: 20px;
+                                height: 20px;
+                            }
                             svg {
                                 width: 32px;
                                 height: 32px;
                                 @include media($xl){
                                     width: 17px;
                                     height: 17px;
+                                }
+                                @include media($md){
+                                    width: 12px;
+                                    height: 12px;
                                 }
                             }  
                         }
@@ -5114,6 +5177,10 @@ body {
                         img {
                             width: 100%;
                         }
+                    }
+                    @include media($md){
+                        width: 77px;
+                        padding-top: 36px;
                     }
                 }
             }

@@ -1976,7 +1976,7 @@ body {
               background-size: 12px 12px;
               top: 2px;
               right: 4px; } }
-          @media only screen and (max-width: 991px) {
+          @media only screen and (max-width: 767px) {
             body main section.programs .content-link a::after {
               content: '';
               width: 12px;
@@ -5028,6 +5028,10 @@ body {
       body main footer {
         padding-top: 10px;
         padding-bottom: 6px; } }
+    @media only screen and (max-width: 767px) {
+      body main footer {
+        padding-top: 17px;
+        padding-bottom: 16px; } }
     body main footer .footer-wrap .columns {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
@@ -5042,12 +5046,29 @@ body {
             body main footer .footer-wrap .columns .columns-wrap .center-column {
               margin-left: 78px;
               padding-top: 10px; } }
+          @media only screen and (max-width: 767px) {
+            body main footer .footer-wrap .columns .columns-wrap .center-column {
+              margin-left: 21px;
+              width: 135px;
+              padding-top: 7px; } }
+        @media only screen and (max-width: 767px) {
+          body main footer .footer-wrap .columns .columns-wrap .left-column {
+            width: 55px; } }
+        @media only screen and (max-width: 767px) {
+          body main footer .footer-wrap .columns .columns-wrap .right-column {
+            width: 77px; } }
+    @media only screen and (max-width: 767px) {
+      body main footer .footer-wrap .navigation {
+        padding-top: 4px; } }
     body main footer .footer-wrap .navigation li {
       list-style: none;
       margin-bottom: 26px; }
       @media only screen and (max-width: 1199px) {
         body main footer .footer-wrap .navigation li {
           margin-bottom: 4px; } }
+      @media only screen and (max-width: 767px) {
+        body main footer .footer-wrap .navigation li {
+          line-height: 11px; } }
       body main footer .footer-wrap .navigation li:last-child {
         margin-bottom: 0px; }
       body main footer .footer-wrap .navigation li a {
@@ -5061,6 +5082,12 @@ body {
           body main footer .footer-wrap .navigation li a {
             font-size: 10px;
             line-height: 12px; } }
+        @media only screen and (max-width: 767px) {
+          body main footer .footer-wrap .navigation li a {
+            font-size: 7px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal; } }
     body main footer .footer-wrap .footer-title {
       color: #FFF;
       font-family: "Akkurat LL Cyrillic Bold";
@@ -5077,6 +5104,14 @@ body {
           font-size: 30.552px;
           letter-spacing: 2.139px;
           margin-bottom: 14px; } }
+      @media only screen and (max-width: 767px) {
+        body main footer .footer-wrap .footer-title {
+          -webkit-text-stroke: 0.5px;
+          -webkit-text-stroke-color: #FFF;
+          font-size: 21.53px;
+          line-height: 26px;
+          letter-spacing: 1.507px;
+          margin-bottom: 6px; } }
     body main footer .footer-wrap .footer-subtitle {
       color: #FFF;
       font-family: "Akkurat LL Cyrillic Bold";
@@ -5091,6 +5126,12 @@ body {
         body main footer .footer-wrap .footer-subtitle {
           font-size: 9.592px;
           letter-spacing: 0.959px; } }
+      @media only screen and (max-width: 767px) {
+        body main footer .footer-wrap .footer-subtitle {
+          font-size: 6.759px;
+          line-height: 10px;
+          letter-spacing: 0.676px;
+          margin-bottom: 7px; } }
       body main footer .footer-wrap .footer-subtitle::before {
         content: '';
         width: 180px;
@@ -5106,6 +5147,10 @@ body {
           body main footer .footer-wrap .footer-subtitle::before {
             width: 95px;
             background-size: cover; } }
+        @media only screen and (max-width: 767px) {
+          body main footer .footer-wrap .footer-subtitle::before {
+            width: 65px;
+            bottom: -5px; } }
     body main footer .footer-wrap .social-wrap {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -5114,11 +5159,17 @@ body {
       @media only screen and (max-width: 1199px) {
         body main footer .footer-wrap .social-wrap {
           margin-top: 18px; } }
+      @media only screen and (max-width: 767px) {
+        body main footer .footer-wrap .social-wrap {
+          margin-top: 11px; } }
       body main footer .footer-wrap .social-wrap .social-link {
         margin-right: 25px; }
         @media only screen and (max-width: 1199px) {
           body main footer .footer-wrap .social-wrap .social-link {
             margin-right: 15px; } }
+        @media only screen and (max-width: 767px) {
+          body main footer .footer-wrap .social-wrap .social-link {
+            margin-right: 9px; } }
         body main footer .footer-wrap .social-wrap .social-link a {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -5140,6 +5191,10 @@ body {
             body main footer .footer-wrap .social-wrap .social-link a {
               width: 27px;
               height: 27px; } }
+          @media only screen and (max-width: 767px) {
+            body main footer .footer-wrap .social-wrap .social-link a {
+              width: 20px;
+              height: 20px; } }
           body main footer .footer-wrap .social-wrap .social-link a svg {
             width: 32px;
             height: 32px; }
@@ -5147,6 +5202,10 @@ body {
               body main footer .footer-wrap .social-wrap .social-link a svg {
                 width: 17px;
                 height: 17px; } }
+            @media only screen and (max-width: 767px) {
+              body main footer .footer-wrap .social-wrap .social-link a svg {
+                width: 12px;
+                height: 12px; } }
         body main footer .footer-wrap .social-wrap .social-link.facebook-link a {
           padding-right: 5px; }
     body main footer .footer-wrap .logo-wrap {
@@ -5157,5 +5216,9 @@ body {
           padding-top: 21px; }
           body main footer .footer-wrap .logo-wrap img {
             width: 100%; } }
+      @media only screen and (max-width: 767px) {
+        body main footer .footer-wrap .logo-wrap {
+          width: 77px;
+          padding-top: 36px; } }
 
 /*# sourceMappingURL=style.css.map */
