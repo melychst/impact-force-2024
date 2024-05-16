@@ -1835,6 +1835,10 @@ body {
                     padding-top: 17px;
                     padding-bottom: 29px;
                 }
+                @include media($md){
+                    padding-top: 19px;
+                    padding-bottom: 10px;
+                }
                 .projects-slider {
                     display: flex;
                     @include media($xxl){
@@ -1842,6 +1846,11 @@ body {
                     }
                     @include media($lg){
                         justify-content: flex-start;
+                    }
+                    @include media($md){
+                        position: relative;
+                        left: -8px;
+                        width: 500px;
                     }
                     .slide-item {
                         width: 320px;
@@ -1856,6 +1865,10 @@ body {
                         }
                         @include media($lg){
                             width: 170px;
+                            margin-right: 19px;
+                        }
+                        @include media($md){
+                            width: 107px;
                             margin-right: 19px;
                         }
                         &:last-child {
@@ -1890,6 +1903,12 @@ body {
                                 right: -12px;
                                 top: -27px;
                             }
+                            @include media($md) {
+                                right: -6px;
+                                top: -19px;
+                                padding: 32px 10px 2px 5px;
+                                border-radius: 3.235px;
+                            }
                             .title {
                                 font-family: "Akkurat LL Cyrillic Bold";
                                 font-size: 23.049px;
@@ -1904,11 +1923,19 @@ body {
                                     line-height: 14px;
                                     margin-bottom: 8px;
                                 }
+                                @include media($md) {
+                                    font-size: 9px;
+                                    line-height: 10px;
+                                    margin-bottom: 0px;
+                                }
                             }
                             .meta {
                                 margin-bottom: 15px;
                                 @include media($lg){
                                     margin-bottom: 7px;
+                                }
+                                @include media($md){
+                                    display: none;
                                 }
                                 .read-more {
                                     text-align: right;
@@ -1974,6 +2001,9 @@ body {
                                     font-size: 7px;
                                     line-height: 7px;
                                  }
+                                 @include media($md) {
+                                    display: none;
+                                 }
                             }
                         }
                         &.active {
@@ -1990,6 +2020,10 @@ body {
                             @include media($lg){
                                 width: 240px;
                                 margin-right: 61px;
+                            }
+                            @include media($md){
+                                width: 150px;
+                                margin-right: 41px;
                             }
                             .image-wrap {
                                 width: 445px;
@@ -2012,6 +2046,12 @@ body {
                                     line-height: 21px;
                                     margin-bottom: 19px;
                                 }
+                                @include media($md){
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    line-height: 13.138px;
+                                    margin-bottom: 8px;
+                                }
                             }
                             .content {
                                 width: 498px;
@@ -2032,11 +2072,24 @@ body {
                                     padding: 33px 15px 10px 10px;
                                     font-size: 10px;
                                 }
+                                @include media($md) {
+                                    font-size: 7px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 8.085px;
+                                    width: 167px;
+                                    top: -18px;
+                                    right: -8px;
+                                    padding: 22px 15px 6px 6px;
+                                }
                                 .meta {
                                     margin-bottom: 23px;
                                     @include media($lg){
                                         margin-bottom: 7px;
-                                    }                                    
+                                    } 
+                                    @include media($md){
+                                        display: block;
+                                    }                                   
                                     .read-more {
                                         text-align: right;
                                         position: relative;
@@ -2087,6 +2140,14 @@ body {
                                         font-size: 10px;
                                         line-height: 13px;
                                     }
+                                    @include media($md) {
+                                        font-size: 7px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 8.085px;
+                                        width: 100%;
+                                        display: block;
+                                    }
                                 }
                             }
                             .icon-wrap {
@@ -2101,6 +2162,12 @@ body {
                                     height: 41px;
                                     right: -19px;
                                     top: 23px;
+                                }
+                                @include media($md){
+                                    width: 26px;
+                                    height: 26px;
+                                    right: -14px;
+                                    top: 14px;
                                 }
                                 img {
                                     @include image-fit;
@@ -2124,6 +2191,11 @@ body {
                     @include media($lg){
                         width: 265px;
                         margin-top: 0px;
+                        margin-left: 0px;
+                    }
+                    @include media($md) {
+                        width: 167px;
+                        margin-top: -5px;
                     }
                     .nav-slide {
                         @include media($xxl){
@@ -2134,6 +2206,9 @@ body {
                         }
                         @include media($lg){
                             width: 95px
+                        }
+                        @include media($md) {
+                            width: 60px;
                         }
                         svg {
                             width: 100%;
@@ -2148,13 +2223,19 @@ body {
                         @include media($lg){
                             font-size: 8px;
                         }
+                        @include media($md) {
+                            font-size: 5.39px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 18.352px;
+                        }
                     }
                 }
             }
             &.partners {
                 padding: 22px 0px 50px;
                 @include media($xl){
-                    padding: 22px 0px 25px;
+                    padding: 18px 0px 25px;
                 }
                 .columns {
                     justify-content: space-between;
@@ -2168,9 +2249,18 @@ body {
                             width: 285px;
                             padding-top: 0px;
                         }
+                        @include media($md){
+                            width: 160px;
+                        }
                     }
-                    .right-column {
+                    .column-right {
                         width: 400px;
+                        @include media($md){
+                            width: 100px;
+                            img {
+                                width: 100%;
+                            }
+                        }
                     }                    
                 }
                 .section-title {
@@ -2193,6 +2283,12 @@ body {
                         line-height: 42px;
                         -webkit-text-stroke: 1.598657488822937px;
                     }
+                    @include media($md) {
+                        -webkit-text-stroke: 1px;
+                        font-size: 20px;
+                        line-height: 23px;
+                        letter-spacing: 3px;
+                    }
                 }
                 .image-wrap {
                     width: 373px;
@@ -2206,6 +2302,10 @@ body {
                     @include media($lg){
                         width: 200px;
                     }
+                    @include media($lg){
+                        width: 100%;
+                        top: -9px;
+                    }
                     img {
                         width: 100%;
                         height: auto;
@@ -2213,9 +2313,6 @@ body {
                 }
 
                 .logos-wrap {
-                    // display: flex;
-                    // align-items: center;
-                    // justify-content: center;
                     margin-top: 104px;
                     @include media($lg){
                         margin-top: 34px;
@@ -2227,6 +2324,10 @@ body {
                         @include media($lg){
                             margin-bottom: 39px;
                         }
+                        @include media($md){
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
                         &:last-child {
                             margin-bottom: 0px;
                         }
@@ -2235,6 +2336,11 @@ body {
                         max-height: 70px;
                         width: auto;
                         margin-right: 32px;
+                        @include media($md){
+                            width: 30%;
+                            margin-right: 0px;
+                            margin-bottom: 20px;
+                        }
                         &:last-child {
                             margin-right: 0px;
                         }

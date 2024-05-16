@@ -1996,6 +1996,10 @@ body {
         body main section.projects {
           padding-top: 17px;
           padding-bottom: 29px; } }
+      @media only screen and (max-width: 767px) {
+        body main section.projects {
+          padding-top: 19px;
+          padding-bottom: 10px; } }
       body main section.projects .projects-slider {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2010,6 +2014,11 @@ body {
             -webkit-box-pack: start;
                 -ms-flex-pack: start;
                     justify-content: flex-start; } }
+        @media only screen and (max-width: 767px) {
+          body main section.projects .projects-slider {
+            position: relative;
+            left: -8px;
+            width: 500px; } }
         body main section.projects .projects-slider .slide-item {
           width: 320px;
           margin-top: auto;
@@ -2024,6 +2033,10 @@ body {
           @media only screen and (max-width: 991px) {
             body main section.projects .projects-slider .slide-item {
               width: 170px;
+              margin-right: 19px; } }
+          @media only screen and (max-width: 767px) {
+            body main section.projects .projects-slider .slide-item {
+              width: 107px;
               margin-right: 19px; } }
           body main section.projects .projects-slider .slide-item:last-child {
             margin-right: 0px; }
@@ -2060,6 +2073,12 @@ body {
                 padding: 21px 10px 15px 5px;
                 right: -12px;
                 top: -27px; } }
+            @media only screen and (max-width: 767px) {
+              body main section.projects .projects-slider .slide-item .content {
+                right: -6px;
+                top: -19px;
+                padding: 32px 10px 2px 5px;
+                border-radius: 3.235px; } }
             body main section.projects .projects-slider .slide-item .content .title {
               font-family: "Akkurat LL Cyrillic Bold";
               font-size: 23.049px;
@@ -2074,11 +2093,19 @@ body {
                   font-size: 12.282px;
                   line-height: 14px;
                   margin-bottom: 8px; } }
+              @media only screen and (max-width: 767px) {
+                body main section.projects .projects-slider .slide-item .content .title {
+                  font-size: 9px;
+                  line-height: 10px;
+                  margin-bottom: 0px; } }
             body main section.projects .projects-slider .slide-item .content .meta {
               margin-bottom: 15px; }
               @media only screen and (max-width: 991px) {
                 body main section.projects .projects-slider .slide-item .content .meta {
                   margin-bottom: 7px; } }
+              @media only screen and (max-width: 767px) {
+                body main section.projects .projects-slider .slide-item .content .meta {
+                  display: none; } }
               body main section.projects .projects-slider .slide-item .content .meta .read-more {
                 text-align: right;
                 position: relative;
@@ -2155,6 +2182,9 @@ body {
                 body main section.projects .projects-slider .slide-item .content .description {
                   font-size: 7px;
                   line-height: 7px; } }
+              @media only screen and (max-width: 767px) {
+                body main section.projects .projects-slider .slide-item .content .description {
+                  display: none; } }
           body main section.projects .projects-slider .slide-item.active {
             width: 520px;
             margin-right: 43px; }
@@ -2170,6 +2200,10 @@ body {
               body main section.projects .projects-slider .slide-item.active {
                 width: 240px;
                 margin-right: 61px; } }
+            @media only screen and (max-width: 767px) {
+              body main section.projects .projects-slider .slide-item.active {
+                width: 150px;
+                margin-right: 41px; } }
             body main section.projects .projects-slider .slide-item.active .image-wrap {
               width: 445px;
               height: 370px;
@@ -2190,6 +2224,12 @@ body {
                   font-size: 20px;
                   line-height: 21px;
                   margin-bottom: 19px; } }
+              @media only screen and (max-width: 767px) {
+                body main section.projects .projects-slider .slide-item.active .title {
+                  font-size: 13px;
+                  font-weight: 700;
+                  line-height: 13.138px;
+                  margin-bottom: 8px; } }
             body main section.projects .projects-slider .slide-item.active .content {
               width: 498px;
               top: -35px;
@@ -2209,11 +2249,24 @@ body {
                   right: -15px;
                   padding: 33px 15px 10px 10px;
                   font-size: 10px; } }
+              @media only screen and (max-width: 767px) {
+                body main section.projects .projects-slider .slide-item.active .content {
+                  font-size: 7px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 8.085px;
+                  width: 167px;
+                  top: -18px;
+                  right: -8px;
+                  padding: 22px 15px 6px 6px; } }
               body main section.projects .projects-slider .slide-item.active .content .meta {
                 margin-bottom: 23px; }
                 @media only screen and (max-width: 991px) {
                   body main section.projects .projects-slider .slide-item.active .content .meta {
                     margin-bottom: 7px; } }
+                @media only screen and (max-width: 767px) {
+                  body main section.projects .projects-slider .slide-item.active .content .meta {
+                    display: block; } }
                 body main section.projects .projects-slider .slide-item.active .content .meta .read-more {
                   text-align: right;
                   position: relative;
@@ -2281,6 +2334,14 @@ body {
                   body main section.projects .projects-slider .slide-item.active .content .description {
                     font-size: 10px;
                     line-height: 13px; } }
+                @media only screen and (max-width: 767px) {
+                  body main section.projects .projects-slider .slide-item.active .content .description {
+                    font-size: 7px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 8.085px;
+                    width: 100%;
+                    display: block; } }
             body main section.projects .projects-slider .slide-item.active .icon-wrap {
               width: 77px;
               height: 77px;
@@ -2294,6 +2355,12 @@ body {
                   height: 41px;
                   right: -19px;
                   top: 23px; } }
+              @media only screen and (max-width: 767px) {
+                body main section.projects .projects-slider .slide-item.active .icon-wrap {
+                  width: 26px;
+                  height: 26px;
+                  right: -14px;
+                  top: 14px; } }
               body main section.projects .projects-slider .slide-item.active .icon-wrap img {
                 -o-object-fit: cover;
                    object-fit: cover;
@@ -2320,7 +2387,12 @@ body {
         @media only screen and (max-width: 991px) {
           body main section.projects .slider-navigation {
             width: 265px;
-            margin-top: 0px; } }
+            margin-top: 0px;
+            margin-left: 0px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.projects .slider-navigation {
+            width: 167px;
+            margin-top: -5px; } }
         @media only screen and (max-width: 1400px) {
           body main section.projects .slider-navigation .nav-slide {
             width: 120px; } }
@@ -2330,6 +2402,9 @@ body {
         @media only screen and (max-width: 991px) {
           body main section.projects .slider-navigation .nav-slide {
             width: 95px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.projects .slider-navigation .nav-slide {
+            width: 60px; } }
         body main section.projects .slider-navigation .nav-slide svg {
           width: 100%; }
         body main section.projects .slider-navigation .pages {
@@ -2341,11 +2416,17 @@ body {
           @media only screen and (max-width: 991px) {
             body main section.projects .slider-navigation .pages {
               font-size: 8px; } }
+          @media only screen and (max-width: 767px) {
+            body main section.projects .slider-navigation .pages {
+              font-size: 5.39px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 18.352px; } }
     body main section.partners {
       padding: 22px 0px 50px; }
       @media only screen and (max-width: 1199px) {
         body main section.partners {
-          padding: 22px 0px 25px; } }
+          padding: 18px 0px 25px; } }
       body main section.partners .columns {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
@@ -2360,8 +2441,16 @@ body {
             body main section.partners .columns .left-column {
               width: 285px;
               padding-top: 0px; } }
-        body main section.partners .columns .right-column {
+          @media only screen and (max-width: 767px) {
+            body main section.partners .columns .left-column {
+              width: 160px; } }
+        body main section.partners .columns .column-right {
           width: 400px; }
+          @media only screen and (max-width: 767px) {
+            body main section.partners .columns .column-right {
+              width: 100px; }
+              body main section.partners .columns .column-right img {
+                width: 100%; } }
       body main section.partners .section-title {
         font-family: "Akkurat LL Cyrillic Bold";
         font-size: 70px;
@@ -2382,6 +2471,12 @@ body {
             font-size: 36px;
             line-height: 42px;
             -webkit-text-stroke: 1.598657488822937px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.partners .section-title {
+            -webkit-text-stroke: 1px;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 3px; } }
       body main section.partners .image-wrap {
         width: 373px;
         height: 210px; }
@@ -2394,6 +2489,10 @@ body {
         @media only screen and (max-width: 991px) {
           body main section.partners .image-wrap {
             width: 200px; } }
+        @media only screen and (max-width: 991px) {
+          body main section.partners .image-wrap {
+            width: 100%;
+            top: -9px; } }
         body main section.partners .image-wrap img {
           width: 100%;
           height: auto; }
@@ -2413,12 +2512,24 @@ body {
           @media only screen and (max-width: 991px) {
             body main section.partners .logos-wrap .display-flex {
               margin-bottom: 39px; } }
+          @media only screen and (max-width: 767px) {
+            body main section.partners .logos-wrap .display-flex {
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; } }
           body main section.partners .logos-wrap .display-flex:last-child {
             margin-bottom: 0px; }
         body main section.partners .logos-wrap .logo-item {
           max-height: 70px;
           width: auto;
           margin-right: 32px; }
+          @media only screen and (max-width: 767px) {
+            body main section.partners .logos-wrap .logo-item {
+              width: 30%;
+              margin-right: 0px;
+              margin-bottom: 20px; } }
           body main section.partners .logos-wrap .logo-item:last-child {
             margin-right: 0px; }
           body main section.partners .logos-wrap .logo-item img {
