@@ -3873,6 +3873,21 @@ body {
         min-height: 670px;
         padding-top: 62px;
         position: relative; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-hero .container {
+            min-height: 356px;
+            padding-top: 30px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-hero .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            padding-top: 13px;
+            min-height: 432px; } }
       body main section.OW-hero .hero-content {
         font-size: 25px;
         font-style: normal;
@@ -3881,6 +3896,19 @@ body {
         letter-spacing: -0.25px;
         width: 710px;
         margin-left: auto; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-hero .hero-content {
+            font-size: 14px;
+            line-height: 16px;
+            width: 414px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-hero .hero-content {
+            -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
+                    order: 2;
+            width: 100%;
+            font-size: 12px;
+            line-height: 15px; } }
         body main section.OW-hero .hero-content span {
           font-family: "Akkurat LL Cyrillic Bold";
           font-size: 25px;
@@ -3889,6 +3917,10 @@ body {
           display: inline-block;
           position: relative;
           z-index: 2; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-hero .hero-content span {
+              font-size: 14px;
+              line-height: 12px; } }
           body main section.OW-hero .hero-content span::before {
             content: '';
             width: 192px;
@@ -3899,9 +3931,16 @@ body {
             bottom: -2px;
             left: -20px;
             z-index: -1; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-hero .hero-content span::before {
+                width: 102px;
+                height: 6px; } }
         body main section.OW-hero .hero-content .read-more {
           text-align: right;
           margin-top: 19px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-hero .hero-content .read-more {
+              margin-top: 9px; } }
           body main section.OW-hero .hero-content .read-more a {
             font-family: "Akkurat Mono LL";
             font-size: 18px;
@@ -3915,6 +3954,13 @@ body {
             padding-right: 63px;
             position: relative;
             color: #fff; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-hero .hero-content .read-more a {
+                font-size: 10px; } }
+            @media only screen and (max-width: 479px) {
+              body main section.OW-hero .hero-content .read-more a {
+                font-size: 14px;
+                padding-right: 37px; } }
             body main section.OW-hero .hero-content .read-more a::before {
               content: '';
               width: 13px;
@@ -3926,6 +3972,20 @@ body {
               background-position: center;
               right: 0px;
               top: 0px; }
+              @media only screen and (max-width: 991px) {
+                body main section.OW-hero .hero-content .read-more a::before {
+                  width: 9px;
+                  height: 9px;
+                  background-size: cover;
+                  right: 34px;
+                  top: 5px; } }
+              @media only screen and (max-width: 479px) {
+                body main section.OW-hero .hero-content .read-more a::before {
+                  width: 13px;
+                  height: 13px;
+                  background-size: cover;
+                  right: 0px;
+                  top: 2px; } }
             body main section.OW-hero .hero-content .read-more a::after {
               content: '';
               width: 280px;
@@ -3934,6 +3994,9 @@ body {
               position: absolute;
               bottom: 3px;
               left: 0px; }
+              @media only screen and (max-width: 991px) {
+                body main section.OW-hero .hero-content .read-more a::after {
+                  width: 150px; } }
       body main section.OW-hero .hero-title {
         color: #FFF;
         -webkit-text-stroke: 5px;
@@ -3947,18 +4010,54 @@ body {
         position: absolute;
         bottom: 6px;
         left: 19px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-hero .hero-title {
+            font-size: 81.612px;
+            line-height: 95%; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-hero .hero-title {
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1;
+            position: static;
+            -webkit-text-stroke: 2px;
+            font-size: 50px;
+            letter-spacing: 3.5px;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-bottom: 44px; } }
     body main section.OW-pillars .title-row {
       background-color: #003548;
       min-height: 275px;
       padding-top: 38px;
       padding-bottom: 21px;
       position: relative; }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillars .title-row {
+          min-height: 0px;
+          padding-top: 20px;
+          padding-bottom: 12px; } }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillars .title-row {
+          padding-top: 9px;
+          padding-bottom: 10px; } }
+      body main section.OW-pillars .title-row .container {
+        z-index: 5; }
       body main section.OW-pillars .title-row .background-image {
         width: 420px;
         height: 203px;
         position: absolute;
         right: 67px;
         bottom: 0px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillars .title-row .background-image {
+            bottom: -12px;
+            width: 234px;
+            height: 125px;
+            right: 130px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillars .title-row .background-image {
+            display: none; } }
         body main section.OW-pillars .title-row .background-image img {
           width: 100%;
           height: auto; }
@@ -3974,6 +4073,24 @@ body {
         color: #fff;
         margin-bottom: 13px;
         width: 820px; }
+        @media only screen and (max-width: 1199px) {
+          body main section.OW-pillars .title-row .section-title {
+            font-size: 52px;
+            line-height: 110%;
+            width: 600px; } }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillars .title-row .section-title {
+            font-size: 37.339px;
+            letter-spacing: 5.601px;
+            -webkit-text-stroke: 1px;
+            width: 400px;
+            margin-bottom: 7px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillars .title-row .section-title {
+            font-size: 20px;
+            letter-spacing: 3px;
+            -webkit-text-stroke: 1px;
+            width: 100%; } }
       body main section.OW-pillars .title-row .content-link a {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -3997,6 +4114,22 @@ body {
         color: #003548;
         letter-spacing: 0.91px;
         padding-top: 6px; }
+        @media only screen and (max-width: 1199px) {
+          body main section.OW-pillars .title-row .content-link a {
+            width: 550px;
+            padding-left: 61px; } }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillars .title-row .content-link a {
+            font-size: 12.802px;
+            letter-spacing: 0.384px;
+            height: 26px;
+            padding-top: 3px;
+            width: 402px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillars .title-row .content-link a {
+            width: 100%;
+            font-size: 10px;
+            padding-left: 10px; } }
         body main section.OW-pillars .title-row .content-link a::after {
           content: '';
           width: 40px;
@@ -4011,6 +4144,16 @@ body {
           top: 5px;
           right: 7px;
           background-size: 20px 20px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillars .title-row .content-link a::after {
+              content: '';
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              display: block;
+              background-size: 8px 8px;
+              top: 3px;
+              right: 4px; } }
     body main section.OW-pillars .pillars-wrap {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4021,6 +4164,18 @@ body {
               flex-direction: column;
       margin-top: 28px;
       margin-bottom: 50px; }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillars .pillars-wrap {
+          padding-left: 78px;
+          margin-top: 20px; } }
+      @media only screen and (max-width: 767px) {
+        body main section.OW-pillars .pillars-wrap {
+          padding-left: 42px; } }
+      @media only screen and (max-width: 479px) {
+        body main section.OW-pillars .pillars-wrap {
+          margin-top: 11px;
+          padding-left: 20px;
+          margin-bottom: 23px; } }
       body main section.OW-pillars .pillars-wrap .pillar-item {
         padding: 25px 33px 8px 36px;
         border-radius: 12.671px;
@@ -4032,8 +4187,23 @@ body {
         position: relative;
         width: 1068px;
         min-height: 190px; }
+        @media only screen and (max-width: 1199px) {
+          body main section.OW-pillars .pillars-wrap .pillar-item {
+            width: 100%;
+            margin-bottom: 10px; } }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillars .pillars-wrap .pillar-item {
+            margin-left: 0px;
+            min-height: 1px;
+            padding: 10px 29px 8px 24px;
+            border-radius: 7.707px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillars .pillars-wrap .pillar-item {
+            padding: 10px 29px 8px 16px; } }
         body main section.OW-pillars .pillars-wrap .pillar-item:last-child {
-          margin-bottom: 0px; }
+          margin-bottom: 0px;
+          border-radius: 12.671px;
+          border-width: 2px; }
         body main section.OW-pillars .pillars-wrap .pillar-item::before {
           content: '';
           width: 137px;
@@ -4044,6 +4214,18 @@ body {
           left: -68px;
           border-radius: 50%;
           z-index: -1; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillars .pillars-wrap .pillar-item::before {
+              width: 84px;
+              height: 84px;
+              left: -42px;
+              top: 10px; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillars .pillars-wrap .pillar-item::before {
+              width: 68px;
+              height: 68px;
+              left: -34px;
+              top: 15px; } }
         body main section.OW-pillars .pillars-wrap .pillar-item .number {
           font-family: "Akkurat Mono LL";
           font-size: 16.291px;
@@ -4054,6 +4236,15 @@ body {
           text-transform: uppercase;
           margin-bottom: 26px;
           display: inline-block; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillars .pillars-wrap .pillar-item .number {
+              font-size: 10px;
+              line-height: 110%;
+              margin-bottom: 12px; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillars .pillars-wrap .pillar-item .number {
+              font-size: 16px;
+              margin-bottom: 7px; } }
         body main section.OW-pillars .pillars-wrap .pillar-item .name {
           font-family: "Akkurat LL Cyrillic Bold";
           font-size: 35px;
@@ -4063,6 +4254,14 @@ body {
           letter-spacing: 1.75px;
           text-transform: uppercase;
           margin-bottom: 9px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillars .pillars-wrap .pillar-item .name {
+              font-size: 22px;
+              line-height: 110%; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillars .pillars-wrap .pillar-item .name {
+              font-size: 18px;
+              margin-bottom: 12px; } }
         body main section.OW-pillars .pillars-wrap .pillar-item .description {
           letter-spacing: 0.8px;
           line-height: 32px;
@@ -4070,6 +4269,13 @@ body {
           font-style: normal;
           font-weight: 400;
           letter-spacing: 0.69px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillars .pillars-wrap .pillar-item .description {
+              font-size: 14px;
+              line-height: 110%; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillars .pillars-wrap .pillar-item .description {
+              font-size: 12px; } }
         body main section.OW-pillars .pillars-wrap .pillar-item .icon-wrap {
           width: 83px;
           height: 83px;
@@ -4085,6 +4291,10 @@ body {
           position: absolute;
           top: 10px;
           right: 10px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillars .pillars-wrap .pillar-item .icon-wrap {
+              top: -8px;
+              right: -8px; } }
         body main section.OW-pillars .pillars-wrap .pillar-item.blue-item {
           border-color: #00B0EB; }
           body main section.OW-pillars .pillars-wrap .pillar-item.blue-item::before {
@@ -4096,6 +4306,10 @@ body {
           body main section.OW-pillars .pillars-wrap .pillar-item.blue-item svg {
             width: 72px;
             height: 72px; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillars .pillars-wrap .pillar-item.blue-item svg {
+                width: 44px;
+                height: 44px; } }
         body main section.OW-pillars .pillars-wrap .pillar-item.purple-item {
           border-color: #9575CD; }
           body main section.OW-pillars .pillars-wrap .pillar-item.purple-item::before {
@@ -4107,6 +4321,10 @@ body {
           body main section.OW-pillars .pillars-wrap .pillar-item.purple-item svg {
             width: 81px;
             height: 62px; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillars .pillars-wrap .pillar-item.purple-item svg {
+                width: 34px;
+                height: 50px; } }
         body main section.OW-pillars .pillars-wrap .pillar-item.green-item {
           border-color: #43E0D5; }
           body main section.OW-pillars .pillars-wrap .pillar-item.green-item::before {
@@ -4118,14 +4336,46 @@ body {
           body main section.OW-pillars .pillars-wrap .pillar-item.green-item svg {
             width: 53px;
             height: 83px; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillars .pillars-wrap .pillar-item.green-item svg {
+                width: 50px;
+                height: 38px; } }
     body main section.OW-pillars .pillars-slider-wrap {
       padding-top: 50px;
       padding-bottom: 90px; }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillars .pillars-slider-wrap {
+          padding-top: 35px;
+          padding-bottom: 1px; } }
+      @media only screen and (max-width: 767px) {
+        body main section.OW-pillars .pillars-slider-wrap .columns {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
       body main section.OW-pillars .pillars-slider-wrap .columns .column-left {
         width: 610px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillars .pillars-slider-wrap .columns .column-left {
+            width: 52%; } }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillars .pillars-slider-wrap .columns .column-left {
+            width: 100%;
+            margin-bottom: 30px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillars .pillars-slider-wrap .columns .column-left {
+            margin-bottom: 8px; } }
       body main section.OW-pillars .pillars-slider-wrap .columns .column-right {
         margin-left: 38px;
         width: 576px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillars .pillars-slider-wrap .columns .column-right {
+            width: 46%;
+            margin-left: 15px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillars .pillars-slider-wrap .columns .column-right {
+            width: 100%;
+            margin-left: 0px; } }
       body main section.OW-pillars .pillars-slider-wrap .title {
         -webkit-text-stroke: 2px;
         font-family: "Akkurat LL Cyrillic Bold";
@@ -4137,8 +4387,29 @@ body {
         text-transform: uppercase;
         margin-bottom: 128px;
         color: #00B0EB; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillars .pillars-slider-wrap .title {
+            font-size: 30.041px;
+            letter-spacing: 4.506px;
+            line-height: 110%;
+            margin-bottom: 78px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillars .pillars-slider-wrap .title {
+            margin-bottom: 18px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillars .pillars-slider-wrap .title {
+            -webkit-text-stroke: 1px;
+            font-size: 20px;
+            letter-spacing: 3px;
+            line-height: 124%; } }
       body main section.OW-pillars .pillars-slider-wrap .pillars-slider {
         padding-bottom: 82px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillars .pillars-slider-wrap .pillars-slider {
+            padding-bottom: 48px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillars .pillars-slider-wrap .pillars-slider {
+            padding-bottom: 62px; } }
         body main section.OW-pillars .pillars-slider-wrap .pillars-slider .slide-item .slide-title {
           font-family: "Akkurat LL Cyrillic Bold";
           font-size: 35px;
@@ -4148,6 +4419,16 @@ body {
           letter-spacing: 1.75px;
           text-transform: uppercase;
           margin-bottom: 35px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillars .pillars-slider-wrap .pillars-slider .slide-item .slide-title {
+              font-size: 21px;
+              letter-spacing: 1px;
+              line-height: 110%;
+              margin-bottom: 22px; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillars .pillars-slider-wrap .pillars-slider .slide-item .slide-title {
+              font-size: 16px;
+              letter-spacing: 0.3px; } }
         body main section.OW-pillars .pillars-slider-wrap .pillars-slider .slide-item.blue-item .slide-title {
           color: #00B0EB; }
         body main section.OW-pillars .pillars-slider-wrap .pillars-slider .slide-item.green-item .slide-title {
@@ -4159,6 +4440,16 @@ body {
           font-style: normal;
           font-weight: 400;
           line-height: 30px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillars .pillars-slider-wrap .pillars-slider .content {
+              font-size: 13px;
+              letter-spacing: 0.13px;
+              line-height: 140%; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillars .pillars-slider-wrap .pillars-slider .content {
+              font-size: 12px;
+              line-height: 124%;
+              letter-spacing: 0px; } }
           body main section.OW-pillars .pillars-slider-wrap .pillars-slider .content strong {
             font-family: "Akkurat LL Cyrillic Bold";
             font-weight: 700; }
@@ -4166,6 +4457,11 @@ body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillars .pillars-slider-wrap .slider-navigation {
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; } }
         body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide {
           width: 148px;
           height: 26px;
@@ -4185,6 +4481,16 @@ body {
                   align-items: center;
           position: relative;
           cursor: pointer; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide {
+              font-size: 7px;
+              height: 16px;
+              width: auto; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide {
+              font-size: 8px;
+              height: 22px;
+              width: auto; } }
           body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide:hover {
             background: #00B0EB;
             color: #fff;
@@ -4195,18 +4501,43 @@ body {
           body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.prev-slide {
             margin-right: 63px;
             padding: 9px 25px 7px 68px; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.prev-slide {
+                padding: 4px 6px 1px 42px;
+                margin-right: 40px; } }
+            @media only screen and (max-width: 479px) {
+              body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.prev-slide {
+                padding: 4px 30px 1px 55px;
+                margin-right: 30px; } }
             body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.prev-slide svg {
               left: 8px; }
           body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.next-slide {
             padding: 9px 8px 7px 42px; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.next-slide {
+                padding: 4px 42px 1px 21px; } }
+            @media only screen and (max-width: 479px) {
+              body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.next-slide {
+                padding: 4px 69px 1px 31px; } }
             body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide.next-slide svg {
               right: 8px; }
           body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide svg {
             position: absolute; }
-      body main section.OW-pillars .pillars-slider-wrap image {
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide svg {
+                width: 22px;
+                top: 3px; } }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillars .pillars-slider-wrap .slider-navigation .nav-slide svg {
+                width: 32px;
+                top: 5px; } }
+      body main section.OW-pillars .pillars-slider-wrap .image-wrap {
         width: 100%;
         height: 574px; }
-        body main section.OW-pillars .pillars-slider-wrap image img {
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillars .pillars-slider-wrap .image-wrap {
+            height: auto; } }
+        body main section.OW-pillars .pillars-slider-wrap .image-wrap img {
           max-width: 100%;
           height: auto; }
     body main section.OW-pillar-advocacy .title-row {
@@ -4215,6 +4546,15 @@ body {
       padding-top: 30px;
       padding-bottom: 21px;
       position: relative; }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillar-advocacy .title-row {
+          min-height: 0px;
+          padding-top: 16px;
+          padding-bottom: 13px; } }
+      @media only screen and (max-width: 479px) {
+        body main section.OW-pillar-advocacy .title-row {
+          padding-top: 13px;
+          padding-bottom: 12px; } }
       body main section.OW-pillar-advocacy .title-row .section-title {
         font-family: "Akkurat LL Cyrillic Bold";
         font-size: 70px;
@@ -4227,6 +4567,25 @@ body {
         color: #fff;
         margin-bottom: 27px;
         width: 660px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-advocacy .title-row .section-title {
+            font-size: 37.339px;
+            letter-spacing: 5.601px;
+            -webkit-text-stroke: 1px;
+            width: 100%;
+            margin-bottom: 14px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-advocacy .title-row .section-title {
+            font-size: 20px;
+            letter-spacing: 3px;
+            -webkit-text-stroke: 1px;
+            width: 100%; } }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillar-advocacy .title-row .content-link {
+          padding-right: 68px; } }
+      @media only screen and (max-width: 767px) {
+        body main section.OW-pillar-advocacy .title-row .content-link {
+          padding-right: 0px; } }
       body main section.OW-pillar-advocacy .title-row .content-link a {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -4249,6 +4608,27 @@ body {
         text-transform: uppercase;
         color: #fff;
         letter-spacing: 1.1px; }
+        @media only screen and (max-width: 1199px) {
+          body main section.OW-pillar-advocacy .title-row .content-link a {
+            font-size: 18px;
+            line-height: 130%;
+            padding-right: 100px; } }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-advocacy .title-row .content-link a {
+            font-size: 12.802px;
+            letter-spacing: 0.384px;
+            width: 100%;
+            min-height: 0px;
+            padding: 7px 100px 1px 30px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillar-advocacy .title-row .content-link a {
+            font-size: 7px;
+            padding: 5px 100px 4px 30px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-advocacy .title-row .content-link a {
+            padding-left: 10px;
+            padding: 5px 9px 4px 9px;
+            letter-spacing: 0px; } }
         body main section.OW-pillar-advocacy .title-row .content-link a::after {
           content: '';
           width: 48px;
@@ -4263,20 +4643,91 @@ body {
           top: 12px;
           right: 12px;
           background-size: 20px 20px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillar-advocacy .title-row .content-link a::after {
+              width: 26px;
+              height: 26px;
+              background-size: 13px 13px;
+              top: 8px;
+              right: 8px; } }
+          @media only screen and (max-width: 767px) {
+            body main section.OW-pillar-advocacy .title-row .content-link a::after {
+              width: 16px;
+              height: 16px;
+              background-size: 8px 8px;
+              top: 5px;
+              right: 5px; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-advocacy .title-row .content-link a::after {
+              content: none; } }
     body main section.OW-pillar-advocacy .pillar-advocacy-wrap {
       padding-top: 67px;
       padding-bottom: 80px; }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap {
+          padding-top: 35px;
+          padding-bottom: 36px; } }
+      @media only screen and (max-width: 479px) {
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap {
+          padding-top: 26px;
+          padding-bottom: 20px; } }
+      @media only screen and (max-width: 1199px) {
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns {
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; } }
+      @media only screen and (max-width: 479px) {
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
       body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .column-left {
         width: 578px; }
+        @media only screen and (max-width: 1199px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .column-left {
+            width: 47%; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .column-left {
+            width: 100%; } }
       body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .column-right {
         width: 605px;
         margin-left: 58px;
         position: relative;
         padding-bottom: 266px; }
+        @media only screen and (max-width: 1199px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .column-right {
+            width: 50%;
+            margin-left: 0px;
+            padding-bottom: 148px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .column-right {
+            width: 100%;
+            padding-bottom: 0px; } }
+      @media only screen and (max-width: 479px) {
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .sub-columns {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; } }
+      @media only screen and (max-width: 479px) {
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .sub-columns .sub-colum {
+          position: relative;
+          width: 130px; } }
       body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column {
         position: relative;
         padding-left: 73px;
         margin-bottom: 55px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column {
+            padding-left: 45px;
+            margin-bottom: 31px; } }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column {
+            padding-left: 0px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column {
+            margin-bottom: 26px; } }
         body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .number {
           font-family: "Akkurat Mono LL";
           font-size: 20px;
@@ -4289,6 +4740,16 @@ body {
           position: absolute;
           top: 9px;
           left: 0px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .number {
+              font-size: 11.474px;
+              line-height: 100%;
+              letter-spacing: 1.147px;
+              top: 7px; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .number {
+              top: -17px;
+              font-size: 8px; } }
         body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .name {
           -webkit-text-stroke: 1px;
           font-family: "Akkurat Mono LL";
@@ -4311,18 +4772,68 @@ body {
           padding-right: 42px;
           border: #00B0EB 2px solid;
           color: #00B0EB; }
-        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column.main-color .name {
-          color: #003548;
-          border-color: #003548; }
+          @media only screen and (max-width: 1199px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .name {
+              font-size: 24px;
+              line-height: 110%; } }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .name {
+              font-size: 20.08px;
+              letter-spacing: 1.205px;
+              padding-top: 7px;
+              padding-right: 24px;
+              border-radius: 40.734px;
+              height: 29.26px;
+              padding-left: 20px; } }
+          @media only screen and (max-width: 767px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .name {
+              font-size: 10px;
+              line-height: 100%;
+              letter-spacing: 0.6px;
+              padding: 6px 10px 3px 10px;
+              height: auto; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .name {
+              border-radius: 31.748px;
+              border: 0.894px solid #00B0EB;
+              padding: 6px 8px 3px 10px;
+              width: 100%; } }
+        body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .display-mobile {
+          display: none; }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column .display-mobile {
+              display: block; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .title-column.display-desktop {
+            display: none; } }
       body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item {
         margin-bottom: 85px;
         position: relative; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item {
+            margin-bottom: 68px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item {
+            margin-bottom: 32px; } }
         body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item:last-child {
           margin-bottom: 0px; }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item:last-child {
+              margin-bottom: 32px; } }
         body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item .image-wrap {
           position: absolute;
           left: 0px;
           top: 0px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item .image-wrap {
+              width: 42px;
+              height: 42px; }
+              body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item .image-wrap img {
+                max-width: 100%; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item .image-wrap {
+              width: 33px;
+              height: 33px; } }
         body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item .content {
           padding-left: 106px;
           font-family: "Akkurat LL Cyrillic Bold";
@@ -4332,12 +4843,29 @@ body {
           line-height: 28px;
           /* 86.957% */
           letter-spacing: 0.69px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item .content {
+              font-size: 13.196px;
+              font-weight: 700;
+              line-height: 110%;
+              letter-spacing: 0.396px;
+              padding-left: 63px; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .list-wrap .list-item .content {
+              padding-left: 43px; } }
       body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .background-image {
         width: 630px;
         height: 234px;
         position: absolute;
         bottom: 0px;
         left: 4px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .background-image {
+            width: 361px;
+            height: initial; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .background-image {
+            display: none; } }
         body main section.OW-pillar-advocacy .pillar-advocacy-wrap .columns .background-image img {
           max-width: 100%; }
     body main section.OW-pillar-capacity-bildings .title-row {
@@ -4346,6 +4874,15 @@ body {
       padding-top: 40px;
       padding-bottom: 25px;
       position: relative; }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillar-capacity-bildings .title-row {
+          min-height: 0px;
+          padding-top: 20px;
+          padding-bottom: 13px; } }
+      @media only screen and (max-width: 479px) {
+        body main section.OW-pillar-capacity-bildings .title-row {
+          padding-top: 13px;
+          padding-bottom: 12px; } }
       body main section.OW-pillar-capacity-bildings .title-row .section-title {
         font-family: "Akkurat LL Cyrillic Bold";
         font-size: 70px;
@@ -4358,6 +4895,25 @@ body {
         color: #fff;
         margin-bottom: 24px;
         width: 875px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-capacity-bildings .title-row .section-title {
+            font-size: 37.339px;
+            letter-spacing: 5.601px;
+            -webkit-text-stroke: 1px;
+            width: 100%;
+            margin-bottom: 14px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-capacity-bildings .title-row .section-title {
+            font-size: 20px;
+            letter-spacing: 3px;
+            -webkit-text-stroke: 1px;
+            width: 100%; } }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillar-capacity-bildings .title-row .content-link {
+          padding-right: 68px; } }
+      @media only screen and (max-width: 767px) {
+        body main section.OW-pillar-capacity-bildings .title-row .content-link {
+          padding-right: 0px; } }
       body main section.OW-pillar-capacity-bildings .title-row .content-link a {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -4380,6 +4936,27 @@ body {
         text-transform: uppercase;
         color: #fff;
         letter-spacing: 1.1px; }
+        @media only screen and (max-width: 1199px) {
+          body main section.OW-pillar-capacity-bildings .title-row .content-link a {
+            font-size: 18px;
+            line-height: 130%;
+            padding-right: 100px; } }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-capacity-bildings .title-row .content-link a {
+            font-size: 12.802px;
+            letter-spacing: 0.384px;
+            width: 100%;
+            min-height: 0px;
+            padding: 7px 100px 1px 30px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillar-capacity-bildings .title-row .content-link a {
+            font-size: 7px;
+            padding: 5px 100px 4px 30px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-capacity-bildings .title-row .content-link a {
+            padding-left: 10px;
+            padding: 5px 9px 4px 9px;
+            letter-spacing: 0px; } }
         body main section.OW-pillar-capacity-bildings .title-row .content-link a::after {
           content: '';
           width: 48px;
@@ -4394,17 +4971,76 @@ body {
           top: 12px;
           right: 12px;
           background-size: 20px 20px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillar-capacity-bildings .title-row .content-link a::after {
+              width: 26px;
+              height: 26px;
+              background-size: 13px 13px;
+              top: 8px;
+              right: 8px; } }
+          @media only screen and (max-width: 767px) {
+            body main section.OW-pillar-capacity-bildings .title-row .content-link a::after {
+              width: 16px;
+              height: 16px;
+              background-size: 8px 8px;
+              top: 5px;
+              right: 5px; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-capacity-bildings .title-row .content-link a::after {
+              content: none; } }
     body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap {
       padding-top: 58px;
       padding-bottom: 85px; }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap {
+          padding-top: 32px;
+          padding-bottom: 46px; } }
+      @media only screen and (max-width: 479px) {
+        body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap {
+          padding-top: 18px;
+          padding-bottom: 17px; } }
       body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; } }
         body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-left {
           width: 392px; }
+          @media only screen and (max-width: 1199px) {
+            body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-left {
+              width: 29%; } }
+          @media only screen and (max-width: 767px) {
+            body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-left {
+              width: 100%; } }
         body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-right {
           width: 770px; }
+          @media only screen and (max-width: 1199px) {
+            body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-right {
+              width: 56.3%; } }
+          @media only screen and (max-width: 767px) {
+            body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-right {
+              width: 100%; } }
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-right .image-wrap-mobile {
+            display: none;
+            width: 100%;
+            min-height: 200px;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+            background-color: #5D7989;
+            margin-top: 15px; }
+            @media only screen and (max-width: 767px) {
+              body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-right .image-wrap-mobile {
+                display: block; } }
+            @media only screen and (max-width: 767px) {
+              body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-right .image-wrap-mobile {
+                min-height: 154px; } }
+            body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .columns .column-right .image-wrap-mobile img {
+              max-width: 100%; }
       body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .title {
         -webkit-text-stroke-width: 2px;
         font-family: "Akkurat LL Cyrillic Bold";
@@ -4416,18 +5052,51 @@ body {
         text-transform: uppercase;
         color: #43E0D5;
         margin-bottom: 24px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .title {
+            -webkit-text-stroke: 1px;
+            font-size: 26.671px;
+            line-height: 110%;
+            letter-spacing: 4.001px;
+            margin-bottom: 14px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .title {
+            -webkit-text-stroke: 1px;
+            font-size: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 10px; } }
       body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .image-wrap {
         width: 100%;
         height: 381px;
         background-color: #5D7989; }
+        @media only screen and (max-width: 1199px) {
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .image-wrap {
+            height: 204px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .image-wrap {
+            display: none; } }
         body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .image-wrap img {
           max-width: 100%; }
       body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap {
         padding-top: 17px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap {
+            padding-top: 9px; } }
         body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item {
           padding-bottom: 65px;
           position: relative;
           padding-left: 60px; }
+          @media only screen and (max-width: 1199px) {
+            body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item {
+              padding-left: 50px; } }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item {
+              padding-left: 32px;
+              padding-bottom: 32px; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item {
+              padding-left: 40px;
+              padding-bottom: 22px; } }
           body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item::before {
             content: '';
             width: 30px;
@@ -4440,6 +5109,16 @@ body {
             background-repeat: no-repeat;
             left: 0px;
             top: 0px; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item::before {
+                width: 14px;
+                height: 14px;
+                background-size: cover; } }
+            @media only screen and (max-width: 479px) {
+              body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item::before {
+                width: 21px;
+                height: 21px;
+                background-size: contain; } }
           body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item:last-child {
             padding-bottom: 0px; }
           body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .content {
@@ -4451,6 +5130,21 @@ body {
             letter-spacing: 1.8px;
             text-transform: uppercase;
             margin-bottom: 10px; }
+            @media only screen and (max-width: 1199px) {
+              body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .content {
+                font-size: 26px; } }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .content {
+                font-size: 16.002px;
+                letter-spacing: 0.96px;
+                line-height: 100%;
+                margin-bottom: -3px; } }
+            @media only screen and (max-width: 479px) {
+              body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .content {
+                font-size: 17px;
+                letter-spacing: 1.02px;
+                line-height: 112%;
+                margin-bottom: 5px; } }
           body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more {
             text-align: right; }
             body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more a {
@@ -4465,6 +5159,21 @@ body {
               display: inline-block;
               width: 498px;
               text-align: left; }
+              @media only screen and (max-width: 991px) {
+                body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more a {
+                  font-size: 8.535px;
+                  line-height: 10.668px;
+                  /* 125% */
+                  letter-spacing: 0.853px;
+                  width: 265px; } }
+              @media only screen and (max-width: 479px) {
+                body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more a {
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 16.071px;
+                  /* 133.929% */
+                  letter-spacing: 1.2px; } }
               body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more a::before {
                 content: '';
                 width: 100%;
@@ -4487,12 +5196,27 @@ body {
                 bottom: 6px;
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+                @media only screen and (max-width: 991px) {
+                  body main section.OW-pillar-capacity-bildings .pillar-capacity-bildings-wrap .list-wrap .list-item .read-more a::after {
+                    width: 9px;
+                    height: 9px;
+                    background-size: contain;
+                    bottom: 2px; } }
     body main section.OW-pillar-community-empowerment .title-row {
       background-color: #9575CD;
       min-height: 227px;
       padding-top: 42px;
       padding-bottom: 27px;
       position: relative; }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillar-community-empowerment .title-row {
+          min-height: 0px;
+          padding-top: 20px;
+          padding-bottom: 13px; } }
+      @media only screen and (max-width: 479px) {
+        body main section.OW-pillar-community-empowerment .title-row {
+          padding-top: 13px;
+          padding-bottom: 4px; } }
       body main section.OW-pillar-community-empowerment .title-row .section-title {
         font-family: "Akkurat LL Cyrillic Bold";
         font-size: 70px;
@@ -4505,6 +5229,27 @@ body {
         color: #fff;
         margin-bottom: 21px;
         width: 660px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-community-empowerment .title-row .section-title {
+            font-size: 37.339px;
+            letter-spacing: 5.601px;
+            -webkit-text-stroke: 1px;
+            width: 100%;
+            margin-bottom: 14px;
+            line-height: normal; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-community-empowerment .title-row .section-title {
+            font-size: 20px;
+            letter-spacing: 3px;
+            -webkit-text-stroke: 1px;
+            width: 100%;
+            margin-bottom: 1px; } }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillar-community-empowerment .title-row .content-link {
+          padding-right: 68px; } }
+      @media only screen and (max-width: 767px) {
+        body main section.OW-pillar-community-empowerment .title-row .content-link {
+          padding-right: 0px; } }
       body main section.OW-pillar-community-empowerment .title-row .content-link a {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -4526,6 +5271,27 @@ body {
         text-transform: uppercase;
         color: #fff;
         letter-spacing: 0.9px; }
+        @media only screen and (max-width: 1199px) {
+          body main section.OW-pillar-community-empowerment .title-row .content-link a {
+            font-size: 18px;
+            line-height: 130%;
+            padding-right: 100px; } }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-community-empowerment .title-row .content-link a {
+            font-size: 12.802px;
+            letter-spacing: 0.384px;
+            width: 100%;
+            min-height: 0px;
+            padding: 7px 100px 1px 30px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.OW-pillar-community-empowerment .title-row .content-link a {
+            font-size: 7px;
+            padding: 5px 100px 4px 30px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-community-empowerment .title-row .content-link a {
+            padding-left: 10px;
+            padding: 5px 9px 4px 9px;
+            letter-spacing: 0px; } }
         body main section.OW-pillar-community-empowerment .title-row .content-link a::after {
           content: '';
           width: 48px;
@@ -4540,9 +5306,34 @@ body {
           top: 12px;
           right: 12px;
           background-size: 20px 20px; }
+          @media only screen and (max-width: 991px) {
+            body main section.OW-pillar-community-empowerment .title-row .content-link a::after {
+              width: 26px;
+              height: 26px;
+              background-size: 13px 13px;
+              top: 8px;
+              right: 8px; } }
+          @media only screen and (max-width: 767px) {
+            body main section.OW-pillar-community-empowerment .title-row .content-link a::after {
+              width: 16px;
+              height: 16px;
+              background-size: 8px 8px;
+              top: 5px;
+              right: 5px; } }
+          @media only screen and (max-width: 479px) {
+            body main section.OW-pillar-community-empowerment .title-row .content-link a::after {
+              content: none; } }
     body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap {
       padding-top: 34px;
       padding-bottom: 24px; }
+      @media only screen and (max-width: 991px) {
+        body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap {
+          padding-top: 20px;
+          padding-bottom: 40px; } }
+      @media only screen and (max-width: 767px) {
+        body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap {
+          padding-top: 31px;
+          padding-bottom: 0px; } }
       body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .title {
         -webkit-text-stroke: 2px;
         font-family: "Akkurat LL Cyrillic Bold";
@@ -4554,6 +5345,22 @@ body {
         text-transform: uppercase;
         color: #9575CD;
         margin-bottom: 34px; }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .title {
+            font-size: 26.671px;
+            line-height: 110%;
+            letter-spacing: 4.001px;
+            -webkit-text-stroke: 1px;
+            margin-bottom: 20px; } }
+        @media only screen and (max-width: 991px) {
+          body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .title {
+            margin-bottom: 46px; } }
+        @media only screen and (max-width: 479px) {
+          body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .title {
+            -webkit-text-stroke: 1px;
+            font-size: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 43px; } }
       body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4566,8 +5373,19 @@ body {
         body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item {
           margin-bottom: 32px;
           width: 498px; }
-          body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item:nth-child(2n) {
-            width: 610px; }
+          @media only screen and (max-width: 1199px) {
+            body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item {
+              width: 45%; } }
+          @media only screen and (max-width: 767px) {
+            body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item {
+              width: 100%;
+              margin-bottom: 40px; } }
+          @media only screen and (max-width: 1199px) {
+            body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item:nth-child(2n) {
+              width: 45%; } }
+          @media only screen and (max-width: 767px) {
+            body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item:nth-child(2n) {
+              width: 100%; } }
           body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .title-item {
             font-family: "Akkurat LL Cyrillic Bold";
             font-size: 40px;
@@ -4578,6 +5396,16 @@ body {
             text-transform: uppercase;
             position: relative;
             margin-bottom: 25px; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .title-item {
+                font-size: 21.337px;
+                line-height: 110%;
+                letter-spacing: 1.067px;
+                margin-bottom: 17px; } }
+            @media only screen and (max-width: 479px) {
+              body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .title-item {
+                font-size: 15px;
+                letter-spacing: 0.75px; } }
             body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .title-item::before {
               content: '';
               width: 100%;
@@ -4589,6 +5417,15 @@ body {
           body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content {
             line-height: 26px;
             letter-spacing: 0.8px; }
+            @media only screen and (max-width: 991px) {
+              body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content {
+                font-size: 10.668px;
+                line-height: 14px;
+                letter-spacing: 0.3px; } }
+            @media only screen and (max-width: 479px) {
+              body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content {
+                font-size: 12px;
+                line-height: 15px; } }
             body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content span {
               font-family: "Akkurat LL Cyrillic Bold";
               font-size: 20px;
@@ -4598,6 +5435,11 @@ body {
               /* 100% */
               letter-spacing: 0.8px;
               position: relative; }
+              @media only screen and (max-width: 991px) {
+                body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content span {
+                  font-size: 10.668px;
+                  line-height: 14px;
+                  letter-spacing: 0.64px; } }
               body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content span::before {
                 content: '';
                 width: 277px;
@@ -4610,6 +5452,15 @@ body {
                 left: 0px;
                 bottom: 0px;
                 z-index: -1; }
+                @media only screen and (max-width: 991px) {
+                  body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content span::before {
+                    width: 147px;
+                    height: 6px;
+                    background-size: cover;
+                    bottom: -2px; } }
+                @media only screen and (max-width: 767px) {
+                  body main section.OW-pillar-community-empowerment .pillar-community-empowerment-wrap .list-wrap .list-item .content span::before {
+                    content: none; } }
     body main section.news-hero .hero-news-slider .slider-navigation-wrap {
       position: absolute;
       z-index: 5;
