@@ -4519,6 +4519,9 @@ body {
                         width: 100%;
                         left: 0px;
                         top: 38px;
+                        @include media($lg){
+                            top: 19px;
+                        }
                         .slider-navigation {
                             display: flex;
                             margin-bottom: 61px;
@@ -4537,6 +4540,13 @@ body {
                                 align-items: center;
                                 position: relative;
                                 cursor: pointer;
+                                @include media($lg){
+                                    width: 78px;
+                                    height: 14px;
+                                    font-size: 5.323px;
+                                    line-height: 110%;
+                                    letter-spacing: 0.532px;
+                                }
                                 &:hover {
                                     background: #ffffff;
                                     color: $blue-color;
@@ -4550,18 +4560,28 @@ body {
                                 &.prev-slide {
                                     margin-right: 63px;
                                     padding: 9px 25px 7px 68px;
+                                    @include media($lg){
+                                        padding: 4px 10px 3px 36px;
+                                        margin-right: 37px;
+                                    }
                                     svg {
                                         left: 8px;
                                     }
                                 }    
                                 &.next-slide {
                                     padding: 9px 8px 7px 42px;
+                                    @include media($lg){
+                                        padding: 4px 36px 3px 22px;
+                                    }
                                     svg {
                                         right: 8px;
                                     }
                                 }   
                                 svg {
                                     position: absolute;
+                                    @include media($lg){ 
+                                        width: 19px;
+                                    }
                                 }             
                             }
                         }                          
@@ -4570,15 +4590,33 @@ body {
                     .slider-wrap {
                         .slide-item {
                             padding-top: 120px;
+                            @include media($lg){
+                                padding-top: 63px;
+                            }
                             .container {
                                 min-height: 550px;
                                 position: relative;
+                                @include media($xl){
+                                    min-height: 0px;
+                                    padding-bottom: 16px;
+                                }
                             }
                             &.blue-theme {
                                 background-color: $blue-color;
                             }
                             .slide-content {
                                 width: 652px;
+                                position: relative;
+                                z-index: 5;
+                                @include media($xl){
+                                    width: 450px;
+                                }
+                                @include media($lg){
+                                    width: 350px;
+                                }
+                                @include media($md){
+                                    width: 130px;
+                                }
                             }
                             .title {
                                 color: #FFF;
@@ -4592,6 +4630,28 @@ body {
                                 text-transform: uppercase;
                                 margin-bottom: 18px;
                                 width: 774px;
+                                @include media($xxl){
+                                    font-size: 62px;
+                                    line-height: 110%;
+                                }
+                                @include media($xl){
+                                    font-size: 48px;
+                                }
+                                @include media($lg){
+                                    font-size: 40px;
+                                    letter-spacing: 5.988px;
+                                    -webkit-text-stroke: 2px;
+                                    margin-bottom: 15px;
+                                    width: 420px;
+                                }
+                                @include media($md){
+                                    font-size: 20px;
+                                    letter-spacing: 3px;
+                                    -webkit-text-stroke: 2px;
+                                    margin-bottom: 40px;
+                                    width: 207px;
+                                    
+                                }
                             }
                             .sub-title {
                                 font-family: "Akkurat LL Cyrillic Bold";
@@ -4602,6 +4662,21 @@ body {
                                 letter-spacing: 1.5px;
                                 text-transform: uppercase;
                                 margin-bottom: 20px;
+                                @include media($xl){
+                                    font-size: 24px;
+                                    line-height: 110%;
+                                }
+                                @include media($lg){
+                                    font-size: 15px;
+                                    letter-spacing: 0.8px;
+                                    margin-bottom: 15px;
+                                }
+                                @include media($md){
+                                    font-size: 12px;
+                                    letter-spacing: 0.6px;
+                                    margin-bottom: 18px;
+                                    line-height: 133%;
+                                }
                             }
                             .content {
                                 color: #FFF;
@@ -4610,8 +4685,25 @@ body {
                                 font-weight: 400;
                                 line-height: 29px;
                                 margin-bottom: 26px;
+                                @include media($xl){
+                                    font-size: 18px;
+                                    line-height: 118%;
+                                }
+                                @include media($lg){
+                                    font-size: 13px;
+                                    margin-bottom: 12px;
+                                }
+                                @include media($md){
+                                    font-size: 11px;
+                                    margin-bottom: 40px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.55px;
+                                    margin-bottom: 35px;
+                                }
                             }
                             .read-more {
+                                position: relative;
+                                z-index: 5;
                                 a {
                                     display: inline-flex;
                                     height: 32px;
@@ -4627,6 +4719,13 @@ body {
                                     letter-spacing: 0.9px;
                                     text-transform: uppercase;
                                     position: relative;
+                                    @include media($lg){
+                                        font-size: 10px;
+                                        line-height: 100%;
+                                        height: 17px;
+                                        border-radius: 52.698px;
+                                        padding: 5px 28px 0px 35px;
+                                    }
                                     &:after {
                                         @include after-content(26px, 26px);
                                         background-image: url(../images/icon-square-arrow.svg);
@@ -4638,6 +4737,10 @@ body {
                                         transform: rotate(90deg);
                                         border-radius: 50%;
                                         background-color: $yellow-color;
+                                        @include media($lg){
+                                            @include after-content(13px, 13px);
+                                            background-size: 7px 7px;
+                                        }
                                     }
                                 }
                             }
@@ -4647,6 +4750,28 @@ body {
                                 position: absolute;
                                 bottom: 0px;
                                 right: -52px;
+                                z-index: 1;
+                                &.mobile-mage-wrap {
+                                    display: none;
+                                    @include media($md){
+                                        display: block;
+                                        width: 199px;
+                                        height: 289px;
+                                        right: -24px;
+                                    }
+                                }
+                                @include media($xxl){
+                                    width: 540px;
+                                    height: 540px
+                                }
+                                @include media($lg){
+                                    width: 340px;
+                                    height: 340px;
+                                    right: 16px;
+                                }
+                                @include media($md){
+                                    display: none;
+                                }
                                 img {
                                     @include image-fit;
                                 }
@@ -4657,6 +4782,9 @@ body {
             }
             &.blog {
                 padding-bottom: 100px;
+                @include media($lg){
+                    padding-bottom: 26px;
+                }
                 .container {
                     position: relative;
                 }
@@ -4665,21 +4793,52 @@ body {
                     flex-wrap: wrap;
                     justify-content: space-between;
                     padding-top: 142px;
+                    @include media($lg){
+                        padding-top: 86px;
+                    }
+                    @include media($md){
+                        padding-top: 55px;
+                    }
                     .news-item {
                         width: 391px;
                         height: 401px;
                         position: relative;
                         margin-bottom: 64px;
+                        @include media($lg){
+                            width: 230px;
+                            height: 280px;
+                            margin-bottom: -8px;
+                        }
+                        @include media($md){
+                            width: 140px;
+                            height: 180px;
+                        }
                         &::before {
                             content: '';
                             width: 391px;
                             display: block;
+                            @include media($lg){
+                                width: 230px;
+                            }
+                            @include media($md){
+                                content: none;
+                            }
                         }
                         .image-wrap {
                             width: 308px;
                             height: 287px;
                             border-radius: 0px 77.793px 0px 0px;
                             overflow: hidden;
+                            @include media($lg){
+                                width: 180.472px;
+                                height: 168.502px;
+                                border-radius: 0px 45.578px 0px 0px;
+                            }
+                            @include media($md){
+                                width: 116.635px;
+                                height: 108.899px;
+                                border-radius: 0px 29.456px 0px 0px;
+                            }
                             img {
                                 @include image-fit;
                             }
@@ -4697,6 +4856,26 @@ body {
                             padding: 24px 14px 15px 17px;
                             display: flex;
                             flex-wrap: wrap;
+                            @include media($lg){
+                                width: 219.605px;
+                                height: 112.335px;
+                                flex-shrink: 0;
+                                border-radius: 6.906px;
+                                border: 0.46px solid $blue-color;
+                                box-shadow: 0px 1.842px 1.842px 0px rgba(194, 198, 217, 0.50);
+                                padding: 13px 10px 10px 10px;
+                                right: -3px;
+                                bottom: 46px;
+                                @include media($md){
+                                    width: 130.926px;
+                                    height: 72.6px;
+                                    border-radius: 4.463px;
+                                    border: 0.29px solid $blue-color;
+                                    box-shadow: 0px 1.19px 1.19px 0px rgba(194, 198, 217, 0.50);
+                                    padding: 6px 4px 4px 6px;
+                                    overflow: hidden;
+                                }
+                            }
                             .head {
                                 width: 100%;
                                 .date {
@@ -4707,8 +4886,18 @@ body {
                                     line-height: 100%;
                                     text-transform: uppercase;
                                     margin-bottom: 10px;
+                                    @include media($lg){
+                                        font-size: 8.287px;
+                                        margin-bottom: 15px;
+                                    }
+                                    @include media($md) {
+                                        margin-bottom: 5px;
+                                    }
                                 }
                                 .title {
+                                    @include media($lg){
+                                        line-height: 9px;
+                                    }
                                     a {
                                         font-family: "Akkurat LL Cyrillic" Bold;
                                         font-size: 14px;
@@ -4718,6 +4907,12 @@ body {
                                         letter-spacing: 1.414px;
                                         text-transform: uppercase;
                                         color: $main-color;
+                                        @include media($lg){
+                                            font-size: 8.287px;
+                                            font-weight: 700;
+                                            line-height: 110%;
+                                            letter-spacing: 0.829px;
+                                        }
                                     }
                                 }                                
                             }
@@ -4728,6 +4923,13 @@ body {
                                 line-height: 20px; /* 133.333% */
                                 margin-top: auto;
                                 position: relative;
+                                @include media($lg){
+                                    font-size: 6.906px;
+                                    line-height: 9.208px;
+                                }
+                                @include media($md){
+                                    display: none;
+                                }
                                 &::before {
                                     content: '';
                                     width: calc(100% - 25px);
@@ -4744,6 +4946,22 @@ body {
                                 bottom: 4px;
                                 right: 14px;
                                 background-color: #fff;
+                                @include media($lg){
+                                    bottom: 0px;
+                                    right: 8px;
+                                    svg {
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+                                }
+                                @include media($lg){ 
+                                    bottom: 0px;
+                                    right: 8px;
+                                    svg {
+                                        width: 8px;
+                                        height: 8px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -4762,6 +4980,24 @@ body {
                     line-height: normal;
                     text-transform: uppercase;
                     color: $blue-color;
+                    @include media($lg){
+                        font-size: 8.297px;
+                        line-height: 110%;
+                        width: 360px;
+                        bottom: 3px;
+                    }
+                    @include media($md){
+                        width: 100%;
+                        position: static;
+                    }
+                    svg {
+                        @include media($lg){
+                            width: 105px;
+                        }
+                        @include media($md){
+                            width: 100px;
+                        }
+                    }
                 }
             }
             &.subscription {
@@ -4771,6 +5007,17 @@ body {
                 padding-top: 70px;
                 padding-bottom: 63px;
                 margin-bottom: 79px;
+                @include media($lg){
+                    min-height: 0px;
+                    padding-top: 38px;
+                    padding-bottom: 34px;
+                    margin-bottom: 41px;
+                }
+                @include media($md){
+                    padding-top: 18px;
+                    padding-bottom: 17px;
+                    margin-bottom: 30px;
+                }
                 .image-background {
                     position: absolute;
                     width: 100%;
@@ -4796,6 +5043,19 @@ body {
                         text-transform: uppercase;
                         margin-bottom: 79px;
                         width: 650px;
+                        @include media($lg){
+                            width: 340px;
+                            font-size: 42px;
+                            letter-spacing: 3px;
+                            line-height: 105%;
+                            margin-bottom: 38px;
+                        }
+                        @include media($md){
+                            font-size: 22px;
+                            letter-spacing: 1.54px;
+                            padding-right: 100px;
+                            margin-bottom: 25px;
+                        }
                     }
                 }
                 form {
@@ -4819,6 +5079,17 @@ body {
                             line-height: normal;
                             letter-spacing: 0.9px;
                             text-transform: uppercase;
+                            @include media($lg){
+                                width: 320px;
+                                height: 22px;
+                                font-size: 10px;
+                                line-height: 105%;
+                                margin-bottom: 13px;
+                            }
+                            @include media($md){
+                                width: 100%;
+                                margin-bottom: 8px;
+                            }
                             &::placeholder {
                                 color: $main-color;
                             }
@@ -4841,9 +5112,22 @@ body {
                             display: flex;
                             align-items: center;
                             border: none;
+                            @include media($lg){
+                                height: 17px;
+                                font-size: 10px;
+                                line-height: 105%;
+                                padding-left: 38px;
+                                padding-top: 2px;
+                            }
                         }
                         &.field-mail {
                             width: 604px;
+                            @include media($lg){
+                                width: 152px;
+                            }
+                            @include media($md){
+                                width: 100%;
+                            }
                             &::before {
                                 @include before-content(32px, 24px);
                                 background-image: url(../images/icon-subscription-mail.svg);
@@ -4851,10 +5135,18 @@ body {
                                 background-repeat: no-repeat;
                                 top: 9px;
                                 left: 22px;
+                                @include media($lg){
+                                    @include before-content(17px, 12px);
+                                    top: 5px;
+                                    left: 13px;
+                                }
                             }
                         }
                         &.field-submit {
                             width: 286px;
+                            @include media($lg){
+                                width: 152px;
+                            }
                             &::before {
                                 @include before-content(26px, 26px);
                                 background-image: url(../images/icon-subscription-submit.svg);
@@ -4863,6 +5155,12 @@ body {
                                 top: 3px;
                                 right: 4px;
                                 z-index: 5;
+                                @include media($lg){
+                                    @include before-content(14px, 14px);
+                                    background-size: 10px 10px;
+                                    top: 1px;
+                                    right: 1px;
+                                }
                             }
                         }
                     }
