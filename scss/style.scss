@@ -5168,9 +5168,16 @@ body {
             }
             &.article {
                 padding-bottom: 88px;
+                @include media($lg){
+                    padding-bottom: 54px;
+                }
                 .top-row {
                     padding-top: 39px;
                     padding-bottom: 53px;
+                    @include media($lg){
+                        padding-top: 12px;
+                        padding-bottom: 30px;
+                    }
                     a {
                         color: $main-color;
                         align-items: center;
@@ -5179,10 +5186,19 @@ body {
                         font-size: 14.162px;
                         line-height: normal;
                         text-transform: uppercase;
+                        @include media($lg){ 
+                            font-size: 8px;
+                            line-height: 11%;
+                        }
                         svg {
                             margin-right: 20px;
                             position: relative;
                             top: 0px;
+                            @include media($lg){
+                                width: 98px;
+                                margin-right: 16px;
+                                top: 4px;
+                            }
                         }
                     }
                 }
@@ -5198,12 +5214,27 @@ body {
                         letter-spacing: 0.9px;
                         color: $blue-color;
                         margin-bottom: 43px;
+                        @include media($lg){
+                            font-size: 10px;
+                            line-height: 110%;
+                            margin-bottom: 21px;
+                        }
                         .icon-wrap {
                             width: 32px;
                             height: 34px;
                             margin-right: 19px;
                             position: relative;
                             top: -5px;
+                            @include media($lg){
+                                width: 17px;
+                                height: 18px;
+                                margin-right: 10px;
+                                top: 0px;
+                                svg {
+                                    width: 17px;
+                                    height: 18px;
+                                }
+                            }
                         }
                     }
                     .title {
@@ -5215,6 +5246,15 @@ body {
                         letter-spacing: 6.4px;
                         text-transform: uppercase; 
                         margin-bottom: 94px;
+                        @include media($lg){ 
+                            font-size: 43.655px;
+                            line-height: 110%;
+                            letter-spacing: 3.492px;
+                            margin-bottom: 50px;
+                        }
+                        @include media($md){ 
+                            font-size: 20px;
+                        }
                     }
                 }
                 .body-article {
@@ -5222,21 +5262,44 @@ body {
                     font-style: normal;
                     line-height: 22px;
                     letter-spacing: 0.36px; 
+                    @include media($lg){
+                        font-size: 10px;
+                        line-height: 110%;
+                    }
                     strong {
                         font-family: "Akkurat LL Cyrillic Bold";
                         font-weight: 700;
                     }  
                     p {
                         margin-bottom: 15px;
+                        @include media($lg){
+                            margin-bottom: 12px;
+                        }
                     }
                     img {
+                        max-width: 100%;
+                        @include media($lg){
+                            width: 216px;
+                        }
                         &.alignleft {
                             float: left;
                             margin: 32px 32px 32px 0px;
+                            @include media($lg){
+                                margin: 14px 76px 20px 0px;
+                            }
+                            @include media($md){
+                                float: none;
+                            }
                         }
                         &.alignright {
                             float: right;
                             margin: 32px 0px 32px 32px;
+                            @include media($lg){
+                                margin: 14px 0px 20px 32px;
+                            }
+                            @include media($md){
+                                float: none;
+                            }
                         }
                         &.aligncenter {
                             display: block;
@@ -5249,6 +5312,12 @@ body {
                         width: 517px;
                         position: relative;
                         margin-bottom: 50px;
+                        @include media($lg){
+                            line-height: 143%;
+                            width: 300px;
+                            padding-top: 21px;
+                            margin-bottom: 28px;
+                        }
                         &::before {
                             @include before-content(21px, 21px);
                             background-image: url(../images/icon-square-arrow-blue.svg);
@@ -5258,6 +5327,10 @@ body {
                             top: 0px;
                             left: 0px;
                             transform: rotate(90deg);
+                            @include media($lg){
+                                @include before-content(14px, 14px);
+                                background-size: cover;
+                            }
                         }
                     }
                     .content {

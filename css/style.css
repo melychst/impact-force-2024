@@ -5279,9 +5279,16 @@ body {
                 right: 1px; } }
     body main section.article {
       padding-bottom: 88px; }
+      @media only screen and (max-width: 991px) {
+        body main section.article {
+          padding-bottom: 54px; } }
       body main section.article .top-row {
         padding-top: 39px;
         padding-bottom: 53px; }
+        @media only screen and (max-width: 991px) {
+          body main section.article .top-row {
+            padding-top: 12px;
+            padding-bottom: 30px; } }
         body main section.article .top-row a {
           color: #003548;
           -webkit-box-align: center;
@@ -5294,10 +5301,19 @@ body {
           font-size: 14.162px;
           line-height: normal;
           text-transform: uppercase; }
+          @media only screen and (max-width: 991px) {
+            body main section.article .top-row a {
+              font-size: 8px;
+              line-height: 11%; } }
           body main section.article .top-row a svg {
             margin-right: 20px;
             position: relative;
             top: 0px; }
+            @media only screen and (max-width: 991px) {
+              body main section.article .top-row a svg {
+                width: 98px;
+                margin-right: 16px;
+                top: 4px; } }
       body main section.article .header-article .date {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -5313,12 +5329,26 @@ body {
         letter-spacing: 0.9px;
         color: #00B0EB;
         margin-bottom: 43px; }
+        @media only screen and (max-width: 991px) {
+          body main section.article .header-article .date {
+            font-size: 10px;
+            line-height: 110%;
+            margin-bottom: 21px; } }
         body main section.article .header-article .date .icon-wrap {
           width: 32px;
           height: 34px;
           margin-right: 19px;
           position: relative;
           top: -5px; }
+          @media only screen and (max-width: 991px) {
+            body main section.article .header-article .date .icon-wrap {
+              width: 17px;
+              height: 18px;
+              margin-right: 10px;
+              top: 0px; }
+              body main section.article .header-article .date .icon-wrap svg {
+                width: 17px;
+                height: 18px; } }
       body main section.article .header-article .title {
         font-family: "Akkurat LL Cyrillic Bold";
         font-size: 80px;
@@ -5328,31 +5358,70 @@ body {
         letter-spacing: 6.4px;
         text-transform: uppercase;
         margin-bottom: 94px; }
+        @media only screen and (max-width: 991px) {
+          body main section.article .header-article .title {
+            font-size: 43.655px;
+            line-height: 110%;
+            letter-spacing: 3.492px;
+            margin-bottom: 50px; } }
+        @media only screen and (max-width: 767px) {
+          body main section.article .header-article .title {
+            font-size: 20px; } }
       body main section.article .body-article {
         font-size: 18px;
         font-style: normal;
         line-height: 22px;
         letter-spacing: 0.36px; }
+        @media only screen and (max-width: 991px) {
+          body main section.article .body-article {
+            font-size: 10px;
+            line-height: 110%; } }
         body main section.article .body-article strong {
           font-family: "Akkurat LL Cyrillic Bold";
           font-weight: 700; }
         body main section.article .body-article p {
           margin-bottom: 15px; }
-        body main section.article .body-article img.alignleft {
-          float: left;
-          margin: 32px 32px 32px 0px; }
-        body main section.article .body-article img.alignright {
-          float: right;
-          margin: 32px 0px 32px 32px; }
-        body main section.article .body-article img.aligncenter {
-          display: block;
-          text-align: center; }
+          @media only screen and (max-width: 991px) {
+            body main section.article .body-article p {
+              margin-bottom: 12px; } }
+        body main section.article .body-article img {
+          max-width: 100%; }
+          @media only screen and (max-width: 991px) {
+            body main section.article .body-article img {
+              width: 216px; } }
+          body main section.article .body-article img.alignleft {
+            float: left;
+            margin: 32px 32px 32px 0px; }
+            @media only screen and (max-width: 991px) {
+              body main section.article .body-article img.alignleft {
+                margin: 14px 76px 20px 0px; } }
+            @media only screen and (max-width: 767px) {
+              body main section.article .body-article img.alignleft {
+                float: none; } }
+          body main section.article .body-article img.alignright {
+            float: right;
+            margin: 32px 0px 32px 32px; }
+            @media only screen and (max-width: 991px) {
+              body main section.article .body-article img.alignright {
+                margin: 14px 0px 20px 32px; } }
+            @media only screen and (max-width: 767px) {
+              body main section.article .body-article img.alignright {
+                float: none; } }
+          body main section.article .body-article img.aligncenter {
+            display: block;
+            text-align: center; }
         body main section.article .body-article .quote {
           line-height: 26px;
           padding-top: 45px;
           width: 517px;
           position: relative;
           margin-bottom: 50px; }
+          @media only screen and (max-width: 991px) {
+            body main section.article .body-article .quote {
+              line-height: 143%;
+              width: 300px;
+              padding-top: 21px;
+              margin-bottom: 28px; } }
           body main section.article .body-article .quote::before {
             content: '';
             width: 21px;
@@ -5367,6 +5436,14 @@ body {
             left: 0px;
             -webkit-transform: rotate(90deg);
                     transform: rotate(90deg); }
+            @media only screen and (max-width: 991px) {
+              body main section.article .body-article .quote::before {
+                content: '';
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                display: block;
+                background-size: cover; } }
       body main section.article.article-template-2 {
         padding-bottom: 93px; }
         body main section.article.article-template-2 .header-article .title {
@@ -5776,4 +5853,5 @@ body {
         body main footer .footer-wrap .logo-wrap {
           width: 77px;
           padding-top: 36px; } }
+
 /*# sourceMappingURL=style.css.map */
